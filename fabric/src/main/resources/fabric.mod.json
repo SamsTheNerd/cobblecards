@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "cobblecards",
+  "version": "${version}",
+
+  "name": "CobbleCards",
+  "description": "Adds cards for cobblemon",
+  "authors": [
+    "samsthenerd"
+  ],
+  "contact": {
+    "homepage": "https://github.com/SamsTheNerd/ducky-periphs",
+    "sources": "https://github.com/SamsTheNerd/ducky-periphs",
+    "issues": "https://github.com/SamsTheNerd/ducky-periphs/issues"
+  },
+
+  "license": "lgpl-3",
+  "icon": "assets/DuckyPeriphsIconLarge.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.samsthenerd.cobblecards.CobbleCardsFabric"
+    ],
+    "client": [
+      "com.samsthenerd.cobblecards.CobbleCardsFabricClient"
+    ]
+  },
+  "mixins": [
+    "cobblecards.mixins.json",
+    "cobblecards-common.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "architectury": ">=6.5.82",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  }
+}
