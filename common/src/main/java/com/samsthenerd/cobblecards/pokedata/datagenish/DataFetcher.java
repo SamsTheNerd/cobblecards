@@ -84,47 +84,15 @@ public class DataFetcher {
         for(String setId : newSetIDs){
             JsonArray cards = getCardsInSet(setId, key);
             List<JsonElement> rawCardJsons = cards.asList();
-            rawCardJsons.sort((a, b) -> {
-                int aNum = extractCardNum(a.getAsJsonObject().get("number").getAsString());
-                int bNum = extractCardNum(b.getAsJsonObject().get("number").getAsString());
-                return aNum - bNum;
-            });
             JsonArray cardOutputJsons = new JsonArray();
             for(int i = 0; i < rawCardJsons.size(); i++){
                 JsonObject rawCard = rawCardJsons.get(i).getAsJsonObject();
                 JsonObject cardOutput = new JsonObject();
 
-                // only do it on the first one
-                if(i == 0){
-                    String grossCardNum = rawCard.get("number").getAsString();
-                    if(grossCardNum.length() > 1){
-                        int zeroCount = 1;
-                        grossCardNum = grossCardNum.substring(0, grossCardNum.length()-1); // remove the 1
-                        while(grossCardNum.charAt(grossCardNum.length()-1) == '0'){
-                            grossCardNum = grossCardNum.substring(0, grossCardNum.length()-1);
-                            zeroCount++;
-                        }
-                        // gross card num is now just everything before the 0 and then a print int with the proper number of leading zeroes
-                        String idFormatter = grossCardNum + "%0" + zeroCount + "d";
-                        setJsons.get(setId).addProperty("idFormatter", idFormatter);
-                    }
-                }
-
-                int cardNum = extractCardNum(rawCard.get("number").getAsString());
+                String cardNum = rawCard.get("number").getAsString();
 
                 cardOutput.addProperty("set", setId);
-                String idFormatter = "%d";
-                if(setJsons.get(setId).has("idFormatter")){
-                    idFormatter = setJsons.get(setId).get("idFormatter").getAsString();
-                }
-                String expectedCardId = String.format(idFormatter, cardNum);
-                String cardId = rawCard.get("number").getAsString();
-                // only include if needed
-                if(!expectedCardId.equals(cardId)){
-                    CobbleCards.logPrint("found mismatched card id for " + setId + "-" + cardId + ", expected " + expectedCardId);
-                    cardOutput.addProperty("cardId", cardId);
-                }
-                cardOutput.addProperty("number", cardNum);
+                cardOutput.addProperty("cardNum", cardNum);
                 // very silly, just picking specific fields to copy over
                 cardOutput.add("name", rawCard.get("name"));
                 cardOutput.add("artist", rawCard.get("artist"));

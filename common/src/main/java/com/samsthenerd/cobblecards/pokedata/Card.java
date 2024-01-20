@@ -1,7 +1,6 @@
 package com.samsthenerd.cobblecards.pokedata;
 
 import java.util.HashSet;
-import java.util.Optional;
 import java.util.Set;
 
 import com.google.gson.JsonElement;
@@ -10,8 +9,7 @@ import com.samsthenerd.cobblecards.CobbleCards;
 
 public class Card {
     public final String setId;
-    public final Optional<String> cardId; // cardId is included if it's different from what you'd expect it to be based on the cardNum - doesn't include the set id
-    public final int cardNum; // not necessarily unique due to alt arts
+    public final String cardNum; // this is a string because the pokemon company doesn't understand what a number is. 
 
     public final String name;
     public final String artist;
@@ -24,11 +22,7 @@ public class Card {
     // you should only be using this to read in from data json files
     protected static Card fromJson(JsonObject json){
         String setId = json.get("set").getAsString();
-        int cardNum = json.get("number").getAsInt();
-        Optional<String> cardId = Optional.empty();
-        if(json.has("cardId")){
-            cardId = Optional.of(json.get("cardId").getAsString());
-        }
+        String cardNum = json.get("cardNum").getAsString();
         String name = json.get("name").getAsString();
         String artist = "";
         if(json.has("artist")){
@@ -61,13 +55,12 @@ public class Card {
                 dexNums.add(dexNumElem.getAsInt());
             }
         }
-        return new Card(setId, cardId, cardNum, name, artist, dexNums, types, superType, subTypes, flavorText);
+        return new Card(setId, cardNum, name, artist, dexNums, types, superType, subTypes, flavorText);
     }
 
-    private Card(String setId, Optional<String> cardId, int cardNum, String name, String artist, Set<Integer> pokedexNumbers, Set<String> types, 
+    private Card(String setId, String cardNum, String name, String artist, Set<Integer> pokedexNumbers, Set<String> types, 
         String superType, Set<String> subTypes, String flavorText) {
         this.setId = setId;
-        this.cardId = cardId;
         this.cardNum = cardNum;
         this.name = name;
         this.artist = artist;
@@ -83,10 +76,7 @@ public class Card {
     }
 
     public String cardId(){
-        if(cardId.isPresent()){
-            return cardId.get();
-        }
-        return getSet().getCardId(cardNum);
+        return cardNum;
     }
 
     public CardSet getSet(){

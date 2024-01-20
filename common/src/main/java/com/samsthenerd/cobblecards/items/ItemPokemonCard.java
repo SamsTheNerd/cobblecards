@@ -1,5 +1,6 @@
 package com.samsthenerd.cobblecards.items;
 
+import java.util.List;
 import java.util.Optional;
 
 import javax.annotation.Nullable;
@@ -10,10 +11,13 @@ import com.samsthenerd.cobblecards.pokedata.Card;
 import com.samsthenerd.cobblecards.pokedata.CardHolder;
 import com.samsthenerd.cobblecards.tooltips.data.PokemonCardTooltipData;
 
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.client.item.TooltipData;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtElement;
+import net.minecraft.text.Text;
+import net.minecraft.world.World;
 
 public class ItemPokemonCard extends Item {
     public ItemPokemonCard(Settings settings) {
@@ -41,6 +45,23 @@ public class ItemPokemonCard extends Item {
             return CardHolder.PRIMARY.getCard(stack.getNbt().getString("card"));
         }
         return null;
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        Card card = getCard(stack);
+        if(card != null){
+            
+        }
+    }
+
+    @Override
+    public Text getName(ItemStack stack) {
+        Card card = getCard(stack);
+        if(card != null){
+            return Text.of(card.name);
+        }
+        return super.getName(stack);
     }
 }
 

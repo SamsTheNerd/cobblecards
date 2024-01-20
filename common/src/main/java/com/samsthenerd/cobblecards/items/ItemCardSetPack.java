@@ -1,5 +1,6 @@
 package com.samsthenerd.cobblecards.items;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -36,11 +37,24 @@ public class ItemCardSetPack extends ItemCardPack{
     }
 
     public Set<Card> possibleCards(ItemStack stack){
+        CardSet set = getSet(stack);
+        if(set != null){
+            return set.getCards();
+        }
         return null;
     }
 
+    // TODO: make this actually random
     public List<Card> getRandomizedCards(ItemStack stack, ServerWorld world){
-        return null;
+        List<Card> cards = new ArrayList<>();
+        CardSet set = getSet(stack);
+        if(set != null){
+            for(Card card : set.getCards()){
+                if(cards.size() >= getPackSize(stack)) break;
+                cards.add(card);
+            }
+        }
+        return cards;
     }
 
     public int getPackSize(ItemStack stack){
@@ -49,7 +63,7 @@ public class ItemCardSetPack extends ItemCardPack{
 
     // allows it to wait for other stuff before it opens
     public boolean readyToOpen(ItemStack stack){
-        return true;
+        return getSet(stack) != null;
     }
 
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
