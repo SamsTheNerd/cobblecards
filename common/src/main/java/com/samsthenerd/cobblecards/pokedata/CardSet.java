@@ -63,6 +63,10 @@ public class CardSet {
         return CardHolder.PRIMARY.getCards(CardHolder.SET_INDEXER, id);
     }
 
+    public String getLogoUrl(){
+        return String.format("https://images.pokemontcg.io/%s/logo.png", id);
+    }
+
     public JsonObject toJson(){
         JsonObject json = new JsonObject();
         json.addProperty("id", id);

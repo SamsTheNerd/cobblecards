@@ -32,7 +32,7 @@ public abstract class ItemCardPack extends Item{
     public void openPack(ItemStack stack, PlayerEntity player, ServerWorld world){
         List<Card> cards = getRandomizedCards(stack, world);
         for(Card card : cards){
-            player.giveItemStack(CobbleCardsItems.POKEMON_CARD_ITEM.get().fromCard(card));
+            player.giveItemStack(CobbleCardsItems.POKEMON_CARD_ITEM.get().fromCard(card, true));
         }
     }
 

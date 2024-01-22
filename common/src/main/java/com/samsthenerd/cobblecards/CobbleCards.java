@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.google.common.base.Suppliers;
+import com.samsthenerd.cobblecards.network.CobbleCardsNetwork;
 import com.samsthenerd.cobblecards.pokedata.PokeDataLoader;
 import com.samsthenerd.cobblecards.registry.CobbleCardsCommands;
 import com.samsthenerd.cobblecards.registry.CobbleCardsItems;
@@ -63,6 +64,7 @@ public class CobbleCards{
 			CobbleCardsItems.items.register(block.getId(), () -> new BlockItem(block.get(), itemprops));
 		});
 		CobbleCardsItems.register();
+		CobbleCardsNetwork.init();
 
 		blockEntities.register();
 		entities.register();

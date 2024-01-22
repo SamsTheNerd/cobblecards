@@ -1,5 +1,19 @@
 {
     "parent": "item/generated",
+    "overrides":[
+        {
+          "model": "cobblecards:item/pokemon_card",
+          "predicate": {
+              "cobblecards:new_card": 0.0
+          }
+        },
+        {
+          "model": "cobblecards:item/new_pokemon_card",
+          "predicate": {
+              "cobblecards:new_card": 1.0
+          }
+        }
+    ],
     "textures": {
         "layer0": "cobblecards:item/cobblecard"
     }

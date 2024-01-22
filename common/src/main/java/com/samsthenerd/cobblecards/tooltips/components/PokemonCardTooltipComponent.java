@@ -35,7 +35,7 @@ public class PokemonCardTooltipComponent implements TooltipComponent {
         ps.push();
         ps.translate(mouseX, mouseY, 500);
         RenderSystem.setShaderColor(1f, 1f, 1f, 1f);
-        Identifier cardID = new Identifier("hexgloop", "pokecard/" + card.fullId());
+        Identifier cardID = new Identifier("cobblecards", "pokecard/" + card.fullId());
         Identifier cardTextureId = URLTextureUtils.loadTextureFromURL(card.getImageUrl(true), cardID);
         if(cardTextureId == null || cardTextureId.equals(new Identifier(""))){
             cardTextureId = CARD_BACK;

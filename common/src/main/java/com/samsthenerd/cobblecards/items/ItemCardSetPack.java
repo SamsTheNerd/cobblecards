@@ -2,15 +2,19 @@ package com.samsthenerd.cobblecards.items;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 import com.samsthenerd.cobblecards.pokedata.Card;
 import com.samsthenerd.cobblecards.pokedata.CardSet;
+import com.samsthenerd.cobblecards.tooltips.data.URLImageTooltipData;
 
+import net.minecraft.client.item.TooltipData;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Hand;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
@@ -70,5 +74,18 @@ public class ItemCardSetPack extends ItemCardPack{
         ItemStack stack = user.getStackInHand(hand);
         CardSet set = getSet(stack);
         return super.use(world, user, hand);
+    }
+
+    @Override
+    public Optional<TooltipData> getTooltipData(ItemStack stack) {
+        CardSet set = getSet(stack);
+        if(set != null){
+            return Optional.of(new URLImageTooltipData(
+                new Identifier("cobblecards", "pokeset/" + set.id),
+                set.getLogoUrl(),
+                (w, h) -> { return 96; }
+            ));
+        }
+        return Optional.empty();
     }
 }
