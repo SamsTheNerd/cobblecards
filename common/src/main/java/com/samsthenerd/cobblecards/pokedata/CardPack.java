@@ -22,7 +22,10 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.client.item.TooltipData;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.text.MutableText;
+import net.minecraft.text.Style;
 import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 
 // a class representing a pack of pokemon cards - can be read in from json and rw with nbt
@@ -33,6 +36,15 @@ public abstract class CardPack {
     static {
         registerType("set", SetPack::fromNbt, SetPack::fromJson);
         registerType("pokedex", PokedexPack::fromNbt, PokedexPack::fromJson);
+    }
+
+    // TODO: have this return datapack driven/registered packs too
+    public static CardPack get(String packId){
+        CardSet set = CardSet.get(packId);
+        if(set != null){
+            return new SetPack(set);
+        }
+        return null;
     }
 
     // used as a part of the item name and maybe in store area ?
@@ -66,7 +78,11 @@ public abstract class CardPack {
         return Optional.empty();
     }
 
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {}
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        MutableText seriesDesc = getSeries().copy();
+        seriesDesc.setStyle(Style.EMPTY.withItalic(true).withColor(Formatting.DARK_GRAY));
+        tooltip.add(seriesDesc);
+    }
 
     @Environment(EnvType.CLIENT)
     public DynamicModelOverride getModelOverride(ItemStack stack){

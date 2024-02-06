@@ -175,6 +175,10 @@ public class Card {
         this.attacks = List.copyOf(attacks);
     }
 
+    public static Card get(String fullId){
+        return CardHolder.PRIMARY.getCard(fullId);
+    }
+
     public String fullId(){
         return setId + "-" + cardId();
     }
@@ -191,7 +195,7 @@ public class Card {
     private String getImageUrl(boolean hires){
         return "https://images.pokemontcg.io/" + setId + "/" + cardNum + (hires ? "_hires" : "") + ".png";
     }
-    
+
     public WHTexture getTexture(boolean hires){
         return WHTexture.fromUrl(getImageUrl(hires), new Identifier("cobblecards", "pokecard/" + fullId().toLowerCase() + (hires ? "_hires" : "")));
     }

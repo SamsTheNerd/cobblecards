@@ -49,6 +49,12 @@ public class ItemCardPack extends Item implements IDynamicModelItem, IDetailText
         return null;
     }
 
+    public ItemStack fromPack(CardPack pack){
+        ItemStack stack = new ItemStack(this);
+        stack.getOrCreateNbt().put("pack", pack.toNbt());
+        return stack;
+    }
+
     // TODO: make player nullable
     public void openPack(ItemStack stack, ServerPlayerEntity player, ServerWorld world){
         List<Card> cards = getPack(stack).getRandomizedCards(new PullManager(player));
@@ -93,6 +99,7 @@ public class ItemCardPack extends Item implements IDynamicModelItem, IDetailText
         if(pack != null){
             pack.appendTooltip(stack, world, tooltip, context);
         }
+        super.appendTooltip(stack, world, tooltip, context);
     }
 
     @Override
@@ -102,5 +109,14 @@ public class ItemCardPack extends Item implements IDynamicModelItem, IDetailText
             return pack.getTooltipData(stack);
         }
         return Optional.empty();
+    }
+
+    @Override
+    public Text getName(ItemStack stack) {
+        CardPack pack = getPack(stack);
+        if(pack != null){
+            return pack.getPackName().copy().append(" Booster Pack");
+        }
+        return super.getName(stack);
     }
 }
