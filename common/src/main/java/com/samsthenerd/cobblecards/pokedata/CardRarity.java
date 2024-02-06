@@ -5,6 +5,8 @@ import java.util.Map;
 
 import javax.annotation.Nullable;
 
+import com.samsthenerd.cobblecards.CobbleCards;
+
 public class CardRarity {
     
     private static final Map<String, CardRarity> EXISTING_RARITIES = new HashMap<>();
@@ -13,17 +15,23 @@ public class CardRarity {
     public final boolean shiny; // idk for fun i guess
     public final BaseRarity baseRarity; // for easier categorization
     public final int weight; // for randomization of rare pulls.
+    public final boolean goesInHoloSlot; // for cards that go in the holo slot
 
-    private CardRarity(String name, boolean shiny, BaseRarity baseRarity, int weight){
+    private CardRarity(String name, boolean shiny, BaseRarity baseRarity, int weight, boolean goesInHoloSlot){
         this.name = name;
         this.shiny = shiny;
         this.baseRarity = baseRarity;
         this.weight = weight;
+        this.goesInHoloSlot = goesInHoloSlot;
     }
 
     @Nullable
     public static CardRarity get(String name){
-        return EXISTING_RARITIES.get(name);
+        CardRarity rarity = EXISTING_RARITIES.get(name);
+        if(rarity == null){
+            CobbleCards.LOGGER.error("Tried to get nonexistant rarity: " + name);
+        }
+        return rarity;
     }
 
     protected static CardRarityBuilder builder(String name){
@@ -38,6 +46,7 @@ public class CardRarity {
         private String name;
         private boolean shiny;
         private BaseRarity baseRarity = BaseRarity.COMMON;
+        private boolean goesInHoloSlot = false;
         private int additionalWeight = 0;
 
         public CardRarityBuilder(String name){
@@ -59,8 +68,13 @@ public class CardRarity {
             return this;
         }
 
+        public CardRarityBuilder goesInHoloSlot(){
+            this.goesInHoloSlot = true;
+            return this;
+        }
+
         public CardRarity build(){
-            CardRarity rarity = new CardRarity(name, shiny, baseRarity, baseRarity.weight + additionalWeight);
+            CardRarity rarity = new CardRarity(name, shiny, baseRarity, baseRarity.weight + additionalWeight, goesInHoloSlot);
             EXISTING_RARITIES.put(name, rarity);
             return rarity;
         }
@@ -72,8 +86,8 @@ public class CardRarity {
         COMMON("Common"),
         UNCOMMON("Uncommon"),
         RARE("Rare", 1),
-        GIMMICK_RARE("Gimmick Rare", 4),
-        EXTRA_RARE("Extra Rare", 12),
+        MORE_RARE("More Rare", 3), // mostly EXs and whatnot, rare but not extremely rare
+        EXTRA_RARE("Extra Rare", 8),
         PROMO("Promo");
 
         BaseRarity(String name){
@@ -95,7 +109,46 @@ public class CardRarity {
         }
     }
 
-    /*
+    // these are *VERY* approximate numbers, but hopefully enough to get close to useable - might end up adjusting some
+
+    public static final CardRarity PROMO = builder("Promo").fromBase(BaseRarity.PROMO).build();
+    public static final CardRarity COMMON = builder("Common").build();
+    public static final CardRarity UNCOMMON = builder("Uncommon").fromBase(BaseRarity.UNCOMMON).build();
+    public static final CardRarity RARE = builder("Rare").fromBase(BaseRarity.RARE).build();
+    public static final CardRarity RARE_HOLO = builder("Rare Holo").fromBase(BaseRarity.RARE).additionalWeight(1).build();
+    public static final CardRarity AMAZING_RARE = builder("Amazing Rare").fromBase(BaseRarity.RARE).additionalWeight(2).goesInHoloSlot().build();
+    public static final CardRarity CLASSIC_COLLECTION = builder("Classic Collection").fromBase(BaseRarity.RARE).build();
+    public static final CardRarity DOUBLE_RARE = builder("Double Rare").fromBase(BaseRarity.MORE_RARE).build();
+    public static final CardRarity ULTRA_RARE = builder("Ultra Rare").fromBase(BaseRarity.MORE_RARE).additionalWeight(4).build();
+    public static final CardRarity HYPER_RARE = builder("Hyper Rare").fromBase(BaseRarity.EXTRA_RARE).build();
+    public static final CardRarity ILLUSTRATION_RARE = builder("Illustration Rare").fromBase(BaseRarity.RARE).additionalWeight(2).goesInHoloSlot().build();
+    public static final CardRarity SPECIAL_ILLUSTRATION_RARE = builder("Special Illustration Rare").fromBase(BaseRarity.MORE_RARE).additionalWeight(3).goesInHoloSlot().build();
+    public static final CardRarity LEGEND = builder("LEGEND").fromBase(BaseRarity.MORE_RARE).additionalWeight(2).build();
+    public static final CardRarity RADIANT_RARE = builder("Radiant Rare").fromBase(BaseRarity.MORE_RARE).shiny().additionalWeight(2).goesInHoloSlot().build();
+    public static final CardRarity RARE_ACE = builder("Rare ACE").fromBase(BaseRarity.MORE_RARE).additionalWeight(3).goesInHoloSlot().build();
+    public static final CardRarity RARE_BREAK = builder("Rare BREAK").fromBase(BaseRarity.MORE_RARE).goesInHoloSlot().build();
+    public static final CardRarity RARE_HOLO_EX = builder("Rare Holo EX").fromBase(BaseRarity.MORE_RARE).build();
+    public static final CardRarity RARE_HOLO_GX = builder("Rare Holo GX").fromBase(BaseRarity.MORE_RARE).build();
+    public static final CardRarity RARE_HOLO_LVX = builder("Rare Holo LV.X").fromBase(BaseRarity.MORE_RARE).build();
+    public static final CardRarity RARE_HOLO_STAR = builder("Rare Holo Star").fromBase(BaseRarity.MORE_RARE).build();
+    public static final CardRarity RARE_HOLO_V = builder("Rare Holo V").fromBase(BaseRarity.MORE_RARE).build();
+    public static final CardRarity RARE_HOLO_VMAX = builder("Rare Holo VMAX").fromBase(BaseRarity.EXTRA_RARE).build();
+    public static final CardRarity RARE_HOLO_VSTAR = builder("Rare Holo VSTAR").fromBase(BaseRarity.MORE_RARE).additionalWeight(4).build();
+    public static final CardRarity RARE_PRIME = builder("Rare Prime").fromBase(BaseRarity.MORE_RARE).goesInHoloSlot().build();
+    public static final CardRarity RARE_PRISM_STAR = builder("Rare Prism Star").fromBase(BaseRarity.MORE_RARE).goesInHoloSlot().build();
+    public static final CardRarity RARE_RAINBOW = builder("Rare Rainbow").fromBase(BaseRarity.EXTRA_RARE).additionalWeight(6).build();
+    public static final CardRarity RARE_SECRET = builder("Rare Secret").fromBase(BaseRarity.EXTRA_RARE).additionalWeight(8).build();
+    public static final CardRarity RARE_SHINING = builder("Rare Shining").fromBase(BaseRarity.MORE_RARE).shiny().build();
+    public static final CardRarity RARE_SHINY = builder("Rare Shiny").fromBase(BaseRarity.MORE_RARE).shiny().goesInHoloSlot().build();
+    public static final CardRarity RARE_SHINY_GX = builder("Rare Shiny GX").fromBase(BaseRarity.MORE_RARE).additionalWeight(3).shiny().goesInHoloSlot().build();
+    public static final CardRarity RARE_ULTRA = builder("Rare Ultra").fromBase(BaseRarity.MORE_RARE).additionalWeight(3).build();
+    public static final CardRarity TRAINER_GALLERY = builder("Trainer Gallery Rare Holo").fromBase(BaseRarity.MORE_RARE).additionalWeight(3).build();
+    public static final CardRarity SHINY_RARE = builder("Shiny Rare").fromBase(BaseRarity.RARE).shiny().goesInHoloSlot().build();
+    public static final CardRarity SHINY_ULTRA_RARE = builder("Shiny Ultra Rare").fromBase(BaseRarity.EXTRA_RARE).shiny().build();
+
+
+    /**
+     * https://discord.com/channels/222559292497068043/222559292497068043/1061249148415905862 <- someone made a tier system for rarities, could be a good base
      * Documenting what rarities mean and with examples
      * explanation on sv changes: https://infinite.tcgplayer.com/article/How-Pok%C3%A9mon-Card-Rarities-Are-Changing-in-Scarlet-Violet/d3d9fbf9-5501-4c34-bdfd-4e47c9900312/
      * ------ 

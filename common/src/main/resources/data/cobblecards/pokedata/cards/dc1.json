@@ -13,6 +13,33 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "70",
+      "evolvesTo": [
+        "Camerupt"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Ember",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Discard an Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         322
       ]
@@ -29,6 +56,40 @@
       ],
       "subtypes": [
         "Stage 1"
+      ],
+      "hp": "110",
+      "evolvesFrom": "Team Magma's Numel",
+      "rarity": "Rare Holo",
+      "abilities": [
+        {
+          "name": "Burning Draft",
+          "text": "Once during your turn (before your attack), you may attach a Fighting or Fire Energy card from your discard pile to this Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Flame Ball",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "Move a basic Energy from this Pokémon to 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         323
@@ -47,6 +108,32 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "60",
+      "evolvesTo": [
+        "Sealeo"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Water Gun",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         363
       ]
@@ -64,8 +151,99 @@
       "subtypes": [
         "Stage 1"
       ],
+      "hp": "90",
+      "evolvesFrom": "Team Aqua's Spheal",
+      "evolvesTo": [
+        "Walrein"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Splatter",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "This attack does 20 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Hail Storm",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "If your opponent's Active Pokémon is a Team Magma Pokémon, this attack does 60 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         364
+      ]
+    },
+    {
+      "set": "dc1",
+      "cardNum": "8",
+      "name": "Team Aqua's Muk",
+      "artist": "Kouki Saitou",
+      "supertype": "Pokémon",
+      "flavorText": "It immobilizes its opponents by wrapping them in its huge, poisonous body. It'll smoosh you, too!",
+      "types": [
+        "Psychic"
+      ],
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "110",
+      "evolvesFrom": "Team Aqua's Grimer",
+      "rarity": "Rare Holo",
+      "abilities": [
+        {
+          "name": "Sludge Festival",
+          "text": "The Retreat Cost of each Pokémon in play (except for Team Aqua Pokémon) is Colorless more.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Pester",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, this attack does 60 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        89
       ]
     },
     {
@@ -80,6 +258,44 @@
       ],
       "subtypes": [
         "Stage 2"
+      ],
+      "hp": "140",
+      "evolvesFrom": "Team Aqua's Sealeo",
+      "rarity": "Rare Holo",
+      "attacks": [
+        {
+          "name": "Power Blow",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30×",
+          "text": "This attack does 30 damage times the amount of Energy attached to this Pokémon."
+        },
+        {
+          "name": "Dual Blizzard",
+          "cost": [
+            "Water",
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "",
+          "text": "Discard 2 Water Energy attached to this Pokémon. This attack does 80 damage to 2 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         365
@@ -98,6 +314,44 @@
         "Basic",
         "EX"
       ],
+      "hp": "190",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Ultra",
+      "abilities": [
+        {
+          "name": "Power Saver",
+          "text": "If there are 4 or fewer Team Aqua Pokémon in play, this Pokémon can't attack.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Aqua Impact",
+          "cost": [
+            "Water",
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80+",
+          "text": "This attack does 20 more damage for each Colorless in your opponent's Active Pokémon's Retreat Cost."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         382
       ]
@@ -115,25 +369,45 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "70",
+      "evolvesTo": [
+        "Muk"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Mud-Slap",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         88
-      ]
-    },
-    {
-      "set": "dc1",
-      "cardNum": "8",
-      "name": "Team Aqua's Muk",
-      "artist": "Kouki Saitou",
-      "supertype": "Pokémon",
-      "flavorText": "It immobilizes its opponents by wrapping them in its huge, poisonous body. It'll smoosh you, too!",
-      "types": [
-        "Psychic"
-      ],
-      "subtypes": [
-        "Stage 1"
-      ],
-      "pokedexNumbers": [
-        89
       ]
     },
     {
@@ -148,6 +422,38 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "90",
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Venomous Fang",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Poisoned."
+        },
+        {
+          "name": "Venom Tail",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, discard an Energy attached to that Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         336
@@ -166,6 +472,32 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "50",
+      "evolvesTo": [
+        "Claydol"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Telekinesis",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "This attack does 20 damage to 1 of your opponent's Pokémon. This attack's damage isn't affected by Weakness or Resistance."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         343
       ]
@@ -182,6 +514,39 @@
       ],
       "subtypes": [
         "Stage 1"
+      ],
+      "hp": "90",
+      "evolvesFrom": "Team Magma's Baltoy",
+      "rarity": "Rare Holo",
+      "abilities": [
+        {
+          "name": "Magma Switch",
+          "text": "Once during your turn (before your attack), you may move a basic Energy from 1 of your Pokémon to 1 of your Team Magma Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Power Beam",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         344
@@ -200,25 +565,34 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "60",
+      "evolvesTo": [
+        "Lairon"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         304
-      ]
-    },
-    {
-      "set": "dc1",
-      "cardNum": "13",
-      "name": "Team Magma's Lairon",
-      "artist": "Masakazu Fukuda",
-      "supertype": "Pokémon",
-      "flavorText": "When Lairon uses Take Down, the impact from its solid body is enough to destroy concrete!",
-      "types": [
-        "Fighting"
-      ],
-      "subtypes": [
-        "Stage 1"
-      ],
-      "pokedexNumbers": [
-        305
       ]
     },
     {
@@ -233,6 +607,45 @@
       ],
       "subtypes": [
         "Stage 2"
+      ],
+      "hp": "140",
+      "evolvesFrom": "Team Magma's Lairon",
+      "rarity": "Rare Holo",
+      "attacks": [
+        {
+          "name": "Rock Stomp",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40×",
+          "text": "Discard as many Fighting Energy attached to your Pokémon as you like. This attack does 40 damage times the amount of Fighting Energy you discarded."
+        },
+        {
+          "name": "Boulder Storm",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "120",
+          "text": "This attack does 20 damage to each of your opponent's Benched Pokémon that has any damage counters on it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         306
@@ -251,8 +664,103 @@
         "Basic",
         "EX"
       ],
+      "hp": "190",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Ultra",
+      "abilities": [
+        {
+          "name": "Power Saver",
+          "text": "If there are 4 or fewer Team Magma Pokémon in play, this Pokémon can't attack.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Magma Quake",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80+",
+          "text": "If your opponent's Active Pokémon already has any damage counters on it, this attack does 80 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         383
+      ]
+    },
+    {
+      "set": "dc1",
+      "cardNum": "13",
+      "name": "Team Magma's Lairon",
+      "artist": "Masakazu Fukuda",
+      "supertype": "Pokémon",
+      "flavorText": "When Lairon uses Take Down, the impact from its solid body is enough to destroy concrete!",
+      "types": [
+        "Fighting"
+      ],
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "90",
+      "evolvesFrom": "Team Magma's Aron",
+      "evolvesTo": [
+        "Aggron"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Take Down",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "This Pokémon does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        305
       ]
     },
     {
@@ -267,6 +775,47 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "60",
+      "evolvesTo": [
+        "Mightyena"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Roar",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent switches his or her Active Pokémon with 1 of his or her Benched Pokémon."
+        },
+        {
+          "name": "Bite",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         261
@@ -285,8 +834,91 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "60",
+      "evolvesTo": [
+        "Mightyena"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Infiltrate",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent reveals his or her hand."
+        },
+        {
+          "name": "Bite",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         261
+      ]
+    },
+    {
+      "set": "dc1",
+      "cardNum": "20",
+      "name": "Team Aqua's Carvanha",
+      "artist": "Sanosuke Sakuma",
+      "supertype": "Pokémon",
+      "flavorText": "You can't keep up with its movements underwater, can you? If you get caught in this whirlpool, there'll be no escape.",
+      "types": [
+        "Darkness"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "evolvesTo": [
+        "Sharpedo"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Fin Smack",
+          "cost": [
+            "Darkness"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        318
       ]
     },
     {
@@ -301,6 +933,47 @@
       ],
       "subtypes": [
         "Stage 1"
+      ],
+      "hp": "100",
+      "evolvesFrom": "Team Aqua's Poochyena",
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Teampact",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30×",
+          "text": "Flip a coin for each Team Aqua Pokémon you have in play. This attack does 30 damage times the number of heads."
+        },
+        {
+          "name": "Crunch",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         262
@@ -319,42 +992,49 @@
       "subtypes": [
         "Stage 1"
       ],
+      "hp": "100",
+      "evolvesFrom": "Team Magma's Poochyena",
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Hostile Fang",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "If your opponent's Active Pokémon is a Team Aqua Pokémon, this attack does 40 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         262
-      ]
-    },
-    {
-      "set": "dc1",
-      "cardNum": "20",
-      "name": "Team Aqua's Carvanha",
-      "artist": "Sanosuke Sakuma",
-      "supertype": "Pokémon",
-      "flavorText": "You can't keep up with its movements underwater, can you? If you get caught in this whirlpool, there'll be no escape.",
-      "types": [
-        "Darkness"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        318
-      ]
-    },
-    {
-      "set": "dc1",
-      "cardNum": "21",
-      "name": "Team Aqua's Sharpedo",
-      "artist": "kawayoo",
-      "supertype": "Pokémon",
-      "flavorText": "It boasts fangs so powerful that they knock opponents out in one shot! Enemies that slip up will be taken down without fail!",
-      "types": [
-        "Darkness"
-      ],
-      "subtypes": [
-        "Stage 1"
-      ],
-      "pokedexNumbers": [
-        319
       ]
     },
     {
@@ -370,6 +1050,39 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "90",
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Call for Family",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Basic Team Magma Pokémon and put them onto your Bench. Shuffle your deck afterward."
+        },
+        {
+          "name": "Team Play",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "20×",
+          "text": "This attack does 20 damage times the number of Team Magma Pokémon on your Bench."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         335
       ]
@@ -382,16 +1095,23 @@
       "supertype": "Trainer",
       "subtypes": [
         "Pokémon Tool"
-      ]
-    },
-    {
-      "set": "dc1",
-      "cardNum": "24",
-      "name": "Magma Pointer",
-      "artist": "Toyste Beach",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "The Team Aqua Pokémon this card is attached to can also use the attack on this card. (You still need the necessary Energy to use this attack.)",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Aqua Diffuser",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Confused and Poisoned."
+        }
       ]
     },
     {
@@ -402,16 +1122,84 @@
       "supertype": "Trainer",
       "subtypes": [
         "Supporter"
+      ],
+      "rules": [
+        "Attach a basic Energy card from your discard pile to your Active Team Aqua Pokémon.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
+    },
+    {
+      "set": "dc1",
+      "cardNum": "24",
+      "name": "Magma Pointer",
+      "artist": "Toyste Beach",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "The Team Magma Pokémon this card is attached to can also use the attack on this card. (You still need the necessary Energy to use this attack.)",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Magma Pointer",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "This attack does 20 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
       ]
     },
     {
       "set": "dc1",
-      "cardNum": "26",
-      "name": "Team Aqua Grunt",
-      "artist": "GAME FREAK inc.",
-      "supertype": "Trainer",
+      "cardNum": "21",
+      "name": "Team Aqua's Sharpedo",
+      "artist": "kawayoo",
+      "supertype": "Pokémon",
+      "flavorText": "It boasts fangs so powerful that they knock opponents out in one shot! Enemies that slip up will be taken down without fail!",
+      "types": [
+        "Darkness"
+      ],
       "subtypes": [
-        "Supporter"
+        "Stage 1"
+      ],
+      "hp": "90",
+      "evolvesFrom": "Team Aqua's Carvanha",
+      "rarity": "Rare Holo",
+      "abilities": [
+        {
+          "name": "Aqua Search",
+          "text": "Once during your turn (before your attack), you may search your deck for a Team Aqua Pokémon, reveal it, and put it into your hand. Shuffle your deck afterward.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Sharp Fang",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "pokedexNumbers": [
+        319
       ]
     },
     {
@@ -422,7 +1210,27 @@
       "supertype": "Trainer",
       "subtypes": [
         "Item"
-      ]
+      ],
+      "rules": [
+        "Search your deck for a Basic Team Aqua Pokémon and a basic Water Energy card, reveal them, and put them into your hand. Shuffle your deck afterward.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
+    },
+    {
+      "set": "dc1",
+      "cardNum": "26",
+      "name": "Team Aqua Grunt",
+      "artist": "GAME FREAK inc.",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard a card from your hand. (If you can't discard a card, you can't play this card.) Draw 3 cards. If you discarded a Team Aqua Pokémon, draw 1 more card.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "dc1",
@@ -432,27 +1240,12 @@
       "supertype": "Trainer",
       "subtypes": [
         "Stadium"
-      ]
-    },
-    {
-      "set": "dc1",
-      "cardNum": "29",
-      "name": "Team Magma Admin",
-      "artist": "GAME FREAK inc.",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Supporter"
-      ]
-    },
-    {
-      "set": "dc1",
-      "cardNum": "30",
-      "name": "Team Magma Grunt",
-      "artist": "GAME FREAK inc.",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Supporter"
-      ]
+      ],
+      "rules": [
+        "The Retreat Cost of each Pokémon in play (except for Team Aqua Pokémon) is Colorless more.",
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "dc1",
@@ -462,7 +1255,42 @@
       "supertype": "Trainer",
       "subtypes": [
         "Item"
-      ]
+      ],
+      "rules": [
+        "Search your deck for a Basic Team Magma Pokémon and a basic Fighting Energy card, reveal them, and put them into your hand. Shuffle your deck afterward.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
+    },
+    {
+      "set": "dc1",
+      "cardNum": "30",
+      "name": "Team Magma Grunt",
+      "artist": "GAME FREAK inc.",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard a card from your hand. (If you can't discard a card, you can't play this card.) Draw 3 cards. If you discarded a Team Magma Pokémon, draw 1 more card.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
+    },
+    {
+      "set": "dc1",
+      "cardNum": "29",
+      "name": "Team Magma Admin",
+      "artist": "GAME FREAK inc.",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Put up to 3 Team Magma Pokémon from your discard pile into your hand.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "dc1",
@@ -472,7 +1300,12 @@
       "supertype": "Trainer",
       "subtypes": [
         "Stadium"
-      ]
+      ],
+      "rules": [
+        "Whenever any player puts a Basic Pokémon (except for Team Magma Pokémon) from his or her hand onto his or her Bench, put 2 damage counters on that Pokémon.",
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "dc1",
@@ -482,7 +1315,13 @@
       "supertype": "Energy",
       "subtypes": [
         "Special"
-      ]
+      ],
+      "rules": [
+        "This card can only be attached to Team Aqua Pokémon. Discard this card at the end of the turn you attached it.",
+        "This card provides WaterWater Energy only while it is attached to a Team Aqua Pokémon.",
+        "(If this card is attached to anything other than a Team Aqua Pokémon, discard this card.)"
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "dc1",
@@ -492,7 +1331,13 @@
       "supertype": "Energy",
       "subtypes": [
         "Special"
-      ]
+      ],
+      "rules": [
+        "This card can only be attached to Team Magma Pokémon. Discard this card at the end of the turn you attached it.",
+        "This card provides FightingFighting Energy only while it is attached to a Team Magma Pokémon.",
+        "(If this card is attached to anything other than a Team Magma Pokémon, discard this card.)"
+      ],
+      "rarity": "Uncommon"
     }
   ],
   "datatype": "cards"

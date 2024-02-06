@@ -13,8 +13,92 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "80",
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Hide a Berry",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw 2 cards. Then, put a card from your hand on the bottom of your deck."
+        },
+        {
+          "name": "Wrap",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         213
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "4",
+      "name": "Mothim",
+      "artist": "MAHOU",
+      "supertype": "Pokémon",
+      "flavorText": "It flutters around at night and steals honey from the Combee hive.",
+      "types": [
+        "Grass"
+      ],
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "90",
+      "evolvesFrom": "Burmy",
+      "rarity": "Rare",
+      "abilities": [
+        {
+          "name": "Wormadam First",
+          "text": "As often as you like during your turn (before your attack), you may move 1 damage counter from 1 of your Wormadam to another of your Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Gust",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "pokedexNumbers": [
+        414
       ]
     },
     {
@@ -29,6 +113,31 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "60",
+      "evolvesTo": [
+        "Wormadam"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Hang Down",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         412
@@ -47,42 +156,43 @@
       "subtypes": [
         "Stage 1"
       ],
+      "hp": "120",
+      "evolvesFrom": "Burmy",
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Solar Ray",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Heal 20 damage from each of your Pokémon."
+        },
+        {
+          "name": "Leaf Cutter",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "Flip a coin. If heads, this attack does 30 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         413
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "4",
-      "name": "Mothim",
-      "artist": "MAHOU",
-      "supertype": "Pokémon",
-      "flavorText": "It flutters around at night and steals honey from the Combee hive.",
-      "types": [
-        "Grass"
-      ],
-      "subtypes": [
-        "Stage 1"
-      ],
-      "pokedexNumbers": [
-        414
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "5",
-      "name": "Snivy",
-      "artist": "Atsuko Nishida",
-      "supertype": "Pokémon",
-      "flavorText": "They photosynthesize by bathing their tails in sunlight. When they are not feeling well, their tails droop.",
-      "types": [
-        "Grass"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        495
       ]
     },
     {
@@ -97,6 +207,39 @@
       ],
       "subtypes": [
         "Stage 1"
+      ],
+      "hp": "70",
+      "evolvesFrom": "Snivy",
+      "evolvesTo": [
+        "Serperior"
+      ],
+      "rarity": "Uncommon",
+      "abilities": [
+        {
+          "name": "Serpentine Strangle",
+          "text": "When you play this Pokémon from your hand to evolve 1 of your Pokémon, you may flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Vine Whip",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         496
@@ -115,8 +258,125 @@
       "subtypes": [
         "Stage 2"
       ],
+      "hp": "140",
+      "evolvesFrom": "Servine",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "name": "Coil",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40",
+          "text": "During your next turn, this Pokémon's attacks do 60 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance)."
+        },
+        {
+          "name": "Slashing Strike",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "80",
+          "text": "This Pokémon can't use Slashing Strike during your next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         497
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "5",
+      "name": "Snivy",
+      "artist": "Atsuko Nishida",
+      "supertype": "Pokémon",
+      "flavorText": "They photosynthesize by bathing their tails in sunlight. When they are not feeling well, their tails droop.",
+      "types": [
+        "Grass"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "evolvesTo": [
+        "Servine"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Blot",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Heal 10 damage from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        495
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "11",
+      "name": "Fennekin",
+      "artist": "kirisAki",
+      "supertype": "Pokémon",
+      "flavorText": "As it walks, it munches on a twig in place of a snack. It intimidates opponents by puffing hot air out of its ears.",
+      "types": [
+        "Fire"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "evolvesTo": [
+        "Braixen"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Invite Out",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, switch 1 of your opponent's Benched Pokémon with his or her Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        653
       ]
     },
     {
@@ -131,6 +391,31 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "60",
+      "evolvesTo": [
+        "Sawsbuck"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Find a Friend",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Pokémon, reveal it, and put it into your hand. Shuffle your deck afterward."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         585
@@ -149,6 +434,46 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "120",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "name": "Combustion",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Flying Flare",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "80+",
+          "text": "You may do 40 more damage. If you do, this Pokémon does 20 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         146
       ]
@@ -166,22 +491,40 @@
       "subtypes": [
         "Basic"
       ],
-      "pokedexNumbers": [
-        653
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "11",
-      "name": "Fennekin",
-      "artist": "kirisAki",
-      "supertype": "Pokémon",
-      "flavorText": "As it walks, it munches on a twig in place of a snack. It intimidates opponents by puffing hot air out of its ears.",
-      "types": [
-        "Fire"
+      "hp": "60",
+      "evolvesTo": [
+        "Braixen"
       ],
-      "subtypes": [
-        "Basic"
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Will-O-Wisp",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Tail Whip",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Flip a coin. If heads, the Defending Pokémon can't attack during your opponent's next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         653
@@ -200,6 +543,42 @@
       "subtypes": [
         "Stage 1"
       ],
+      "hp": "80",
+      "evolvesFrom": "Fennekin",
+      "evolvesTo": [
+        "Delphox"
+      ],
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Destructive Flame",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pokémon."
+        },
+        {
+          "name": "Crackling Ribbon",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         654
       ]
@@ -217,21 +596,40 @@
       "subtypes": [
         "Stage 2"
       ],
-      "pokedexNumbers": [
-        655
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "14",
-      "name": "Delphox BREAK",
-      "artist": "5ban Graphics",
-      "supertype": "Pokémon",
-      "types": [
-        "Fire"
+      "hp": "140",
+      "evolvesFrom": "Braixen",
+      "rarity": "Rare Holo",
+      "attacks": [
+        {
+          "name": "Flickering Flames",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40",
+          "text": "Your opponent's Active Pokémon is now Asleep."
+        },
+        {
+          "name": "Psystorm",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "20×",
+          "text": "This attack does 20 damage times the amount of Energy attached to all Pokémon in play."
+        }
       ],
-      "subtypes": [
-        "BREAK"
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         655
@@ -250,8 +648,63 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "80",
+      "evolvesTo": [
+        "Dewgong"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Icy Snow",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         86
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "14",
+      "name": "Delphox BREAK",
+      "artist": "5ban Graphics",
+      "supertype": "Pokémon",
+      "types": [
+        "Fire"
+      ],
+      "subtypes": [
+        "BREAK"
+      ],
+      "hp": "180",
+      "rules": [
+        "BREAK Evolution Rule: Delphox BREAK retains the attacks, Abilities, Weakness, Resistance, and Retreat Cost of its previous Evolution."
+      ],
+      "evolvesFrom": "Delphox",
+      "rarity": "Rare BREAK",
+      "abilities": [
+        {
+          "name": "Flare Witch",
+          "text": "Once during your turn (before your attack), you may search your deck for a Fire Energy card and attach it to 1 of your Pokémon. Shuffle your deck afterward.",
+          "type": "Ability"
+        }
+      ],
+      "pokedexNumbers": [
+        655
       ]
     },
     {
@@ -266,6 +719,43 @@
       ],
       "subtypes": [
         "Stage 1"
+      ],
+      "hp": "120",
+      "evolvesFrom": "Seel",
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Freezing Breath",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed. If tails, your opponent's Active Pokémon is now Asleep."
+        },
+        {
+          "name": "Aurora Beam",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "100",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         87
@@ -284,8 +774,67 @@
       "subtypes": [
         "Restored"
       ],
+      "hp": "80",
+      "rules": [
+        "Put this card onto your Bench only with the effect of Helix Fossil Omanyte"
+      ],
+      "evolvesFrom": "Helix Fossil Omanyte",
+      "evolvesTo": [
+        "Omastar"
+      ],
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Water Gun",
+          "cost": [
+            "Water"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         138
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "19",
+      "name": "Omastar BREAK",
+      "artist": "5ban Graphics",
+      "supertype": "Pokémon",
+      "types": [
+        "Water"
+      ],
+      "subtypes": [
+        "BREAK"
+      ],
+      "hp": "140",
+      "rules": [
+        "BREAK Evolution Rule: Omastar BREAK retains the attacks, Abilities, Weakness, Resistance, and Retreat Cost of its previous Evolution."
+      ],
+      "evolvesFrom": "Omastar",
+      "rarity": "Rare BREAK",
+      "abilities": [
+        {
+          "name": "Dangerous Tentacle",
+          "text": "Once during your turn (before your attack), you may switch 1 of your opponent's Benched Pokémon-EX with his or her Active Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "pokedexNumbers": [
+        139
       ]
     },
     {
@@ -301,21 +850,37 @@
       "subtypes": [
         "Stage 1"
       ],
-      "pokedexNumbers": [
-        139
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "19",
-      "name": "Omastar BREAK",
-      "artist": "5ban Graphics",
-      "supertype": "Pokémon",
-      "types": [
-        "Water"
+      "hp": "120",
+      "evolvesFrom": "Omanyte",
+      "rarity": "Rare",
+      "abilities": [
+        {
+          "name": "Restoring Beam",
+          "text": "Once during your turn (before your attack), you may search your deck for a Restored Pokémon and put it onto your Bench. Shuffle your deck afterward.",
+          "type": "Ability"
+        }
       ],
-      "subtypes": [
-        "BREAK"
+      "attacks": [
+        {
+          "name": "Spinning Attack",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         139
@@ -334,25 +899,46 @@
         "Basic",
         "EX"
       ],
+      "hp": "170",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Holo EX",
+      "attacks": [
+        {
+          "name": "Second Bite",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "This attack does 10 more damage for each damage counter on your opponent's Active Pokémon."
+        },
+        {
+          "name": "Crystal Ray",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks from Evolution Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         471
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "21",
-      "name": "White Kyurem",
-      "artist": "kawayoo",
-      "supertype": "Pokémon",
-      "flavorText": "It generates a powerful, freezing energy inside itself, but its body became frozen when the energy leaked out.",
-      "types": [
-        "Water"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        646
       ]
     },
     {
@@ -367,6 +953,33 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "60",
+      "evolvesTo": [
+        "Barbaracle"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Swing Around",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "Flip 2 coins. This attack does 20 more damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         688
@@ -385,8 +998,95 @@
       "subtypes": [
         "Stage 1"
       ],
+      "hp": "100",
+      "evolvesFrom": "Binacle",
+      "rarity": "Rare",
+      "abilities": [
+        {
+          "name": "Hand Block",
+          "text": "If you have a Stadium card in play, your opponent can't attach any Special Energy cards from his or her hand to his or her Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Claw Slash",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         689
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "21",
+      "name": "White Kyurem",
+      "artist": "kawayoo",
+      "supertype": "Pokémon",
+      "flavorText": "It generates a powerful, freezing energy inside itself, but its body became frozen when the energy leaked out.",
+      "types": [
+        "Water"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "130",
+      "rarity": "Rare Holo",
+      "attacks": [
+        {
+          "name": "Burning Icicles",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": "If this Pokémon has any Fire Energy attached to it, this attack does 20 damage to 2 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Blizzard Burn",
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": "This Pokémon can't attack during your next turn."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        646
       ]
     },
     {
@@ -401,6 +1101,44 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "70",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "name": "Energy Extract",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a basic Energy card and attach it to this Pokémon. Shuffle your deck afterward."
+        },
+        {
+          "name": "Plasmagic",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Move 2 damage counters from each of your Pokémon to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         479
@@ -419,6 +1157,43 @@
         "Basic",
         "EX"
       ],
+      "hp": "160",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "evolvesTo": [
+        "M Alakazam-EX"
+      ],
+      "rarity": "Rare Holo EX",
+      "abilities": [
+        {
+          "name": "Kinesis",
+          "text": "When you play M Alakazam-EX from your hand to evolve this Pokémon, before it evolves, you may put 2 damage counters on your opponent's Active Pokémon and 3 damage counters on 1 of your opponent's Benched Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Suppression",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Put 3 damage counters on each of your opponent's Pokémon that has any Energy attached to it."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         65
       ]
@@ -435,6 +1210,34 @@
       "subtypes": [
         "MEGA",
         "EX"
+      ],
+      "hp": "210",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "evolvesFrom": "Alakazam-EX",
+      "rarity": "Rare Holo EX",
+      "attacks": [
+        {
+          "name": "Zen Force",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "This attack does 30 more damage for each damage counter on your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         65
@@ -453,6 +1256,32 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "60",
+      "evolvesTo": [
+        "Weezing"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Division",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Koffing and put them onto your Bench. Shuffle your deck afterward."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         109
       ]
@@ -469,6 +1298,43 @@
       ],
       "subtypes": [
         "Stage 1"
+      ],
+      "hp": "110",
+      "evolvesFrom": "Koffing",
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Balloon Bomb",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Flip 2 coins. For each heads, discard 2 cards from the top of your opponent's deck."
+        },
+        {
+          "name": "Thick Liquid",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Both Active Pokémon are now Confused and Poisoned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         110
@@ -487,6 +1353,32 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "50",
+      "rarity": "Rare Holo",
+      "abilities": [
+        {
+          "name": "Memories of Dawn",
+          "text": "This Pokémon can use the attacks of any of your Basic Pokémon in play. (You still need the necessary Energy to use each attack.)",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Encounter",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Pokémon, reveal it, and put it into your hand. Shuffle your deck afterward."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
       "pokedexNumbers": [
         151
       ]
@@ -503,6 +1395,31 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "60",
+      "evolvesTo": [
+        "Grumpig"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Rocket Jump",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         325
@@ -521,6 +1438,40 @@
       "subtypes": [
         "Stage 1"
       ],
+      "hp": "100",
+      "evolvesFrom": "Spoink",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "name": "Head Walking",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Put a Basic Pokémon from your opponent's discard pile onto his or her Bench. Then, put 3 damage counters on that Pokémon."
+        },
+        {
+          "name": "Knock Back",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": "Your opponent switches his or her Active Pokémon with 1 of his or her Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         326
       ]
@@ -537,6 +1488,32 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "60",
+      "evolvesTo": [
+        "Gothorita"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Psybeam",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Your opponent's Active Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         574
@@ -555,8 +1532,73 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "30",
+      "evolvesTo": [
+        "Duosion"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Mini Link",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "If Solosis is on your Bench, this attack does 30 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         577
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "36",
+      "name": "Diglett",
+      "artist": "TOKIYA",
+      "supertype": "Pokémon",
+      "flavorText": "Its skin is very thin. If it is exposed to light, its blood heats up, causing it to grow weak.",
+      "types": [
+        "Fighting"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "40",
+      "evolvesTo": [
+        "Dugtrio"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Ram",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "pokedexNumbers": [
+        50
       ]
     },
     {
@@ -571,6 +1613,33 @@
       ],
       "subtypes": [
         "Stage 1"
+      ],
+      "hp": "60",
+      "evolvesFrom": "Solosis",
+      "evolvesTo": [
+        "Reuniclus"
+      ],
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Double Link",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "If Solosis is on your Bench, this attack does 30 more damage. If Duosion is on your Bench, this attack does 60 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         578
@@ -589,42 +1658,32 @@
       "subtypes": [
         "Stage 2"
       ],
+      "hp": "90",
+      "evolvesFrom": "Duosion",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "name": "Link Fusion",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "If Solosis is on your Bench, this attack does 30 more damage. If Duosion is on your Bench, this attack does 60 more damage. If Reuniclus is on your Bench, this attack does 90 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         579
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "36",
-      "name": "Diglett",
-      "artist": "TOKIYA",
-      "supertype": "Pokémon",
-      "flavorText": "Its skin is very thin. If it is exposed to light, its blood heats up, causing it to grow weak.",
-      "types": [
-        "Fighting"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        50
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "37",
-      "name": "Marowak",
-      "artist": "Shin Nagasawa",
-      "supertype": "Pokémon",
-      "flavorText": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.",
-      "types": [
-        "Fighting"
-      ],
-      "subtypes": [
-        "Stage 1"
-      ],
-      "pokedexNumbers": [
-        105
       ]
     },
     {
@@ -640,8 +1699,86 @@
       "subtypes": [
         "Restored"
       ],
+      "hp": "80",
+      "rules": [
+        "Put this card onto your Bench only with the effect of Dome Fossil Kabuto"
+      ],
+      "evolvesFrom": "Dome Fossil Kabuto",
+      "evolvesTo": [
+        "Kabutops"
+      ],
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Mud Shot",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         140
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "37",
+      "name": "Marowak",
+      "artist": "Shin Nagasawa",
+      "supertype": "Pokémon",
+      "flavorText": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.",
+      "types": [
+        "Fighting"
+      ],
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "100",
+      "evolvesFrom": "Cubone",
+      "rarity": "Rare",
+      "abilities": [
+        {
+          "name": "Bodyguard",
+          "text": "Prevent all effects of attacks done to you or your hand by your opponent's Pokémon. Remove any existing effects.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Bonemerang",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60×",
+          "text": "Flip 2 coins. This attack does 60 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        105
       ]
     },
     {
@@ -656,6 +1793,42 @@
       ],
       "subtypes": [
         "Stage 1"
+      ],
+      "hp": "150",
+      "evolvesFrom": "Kabuto",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "name": "Cling",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": "Heal from this Pokémon the same amount of damage you did to your opponent's Active Pokémon."
+        },
+        {
+          "name": "X-Scissor",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80+",
+          "text": "Flip a coin. If heads, this attack does 60 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         141
@@ -674,6 +1847,31 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "60",
+      "evolvesTo": [
+        "Pupitar"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Reckless Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "This Pokémon does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         246
       ]
@@ -691,25 +1889,43 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "50",
+      "evolvesTo": [
+        "Pupitar"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Mountain Munch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Discard the top card of your opponent's deck."
+        },
+        {
+          "name": "Corkscrew Punch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         246
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "42",
-      "name": "Pupitar",
-      "artist": "match",
-      "supertype": "Pokémon",
-      "flavorText": "Its shell is as hard as sheet rock, and it is also very strong. Its thrashing can topple a mountain.",
-      "types": [
-        "Fighting"
-      ],
-      "subtypes": [
-        "Stage 1"
-      ],
-      "pokedexNumbers": [
-        247
       ]
     },
     {
@@ -725,8 +1941,87 @@
         "Basic",
         "EX"
       ],
+      "hp": "180",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Holo EX",
+      "abilities": [
+        {
+          "name": "Regi Power",
+          "text": "The attacks of your Fighting Pokémon (excluding Regirock-EX) do 10 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Bedrock Press",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         377
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "42",
+      "name": "Pupitar",
+      "artist": "match",
+      "supertype": "Pokémon",
+      "flavorText": "Its shell is as hard as sheet rock, and it is also very strong. Its thrashing can topple a mountain.",
+      "types": [
+        "Fighting"
+      ],
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "80",
+      "evolvesFrom": "Larvitar",
+      "evolvesTo": [
+        "Tyranitar"
+      ],
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Thrash",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20+",
+          "text": "Flip a coin. If heads, this attack does 20 more damage. If tails, this Pokémon does 20 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        247
       ]
     },
     {
@@ -742,25 +2037,44 @@
         "Basic",
         "EX"
       ],
+      "hp": "180",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Ultra",
+      "abilities": [
+        {
+          "name": "Regi Power",
+          "text": "The attacks of your Fighting Pokémon (excluding Regirock-EX) do 10 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Bedrock Press",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         377
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "44",
-      "name": "Wormadam",
-      "artist": "Hajime Kusajima",
-      "supertype": "Pokémon",
-      "flavorText": "When Burmy evolved, its cloak became a part of this Pokémon's body. The cloak is never shed.",
-      "types": [
-        "Fighting"
-      ],
-      "subtypes": [
-        "Stage 1"
-      ],
-      "pokedexNumbers": [
-        413
       ]
     },
     {
@@ -775,6 +2089,31 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "70",
+      "evolvesTo": [
+        "Lucario"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Double Smash",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         447
@@ -793,8 +2132,85 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "60",
+      "evolvesTo": [
+        "Lucario"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Smash Punch",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         447
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "44",
+      "name": "Wormadam",
+      "artist": "Hajime Kusajima",
+      "supertype": "Pokémon",
+      "flavorText": "When Burmy evolved, its cloak became a part of this Pokémon's body. The cloak is never shed.",
+      "types": [
+        "Fighting"
+      ],
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "110",
+      "evolvesFrom": "Burmy",
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Sand Spray",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Twin Bursts",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "If Mothim is on your Bench, this attack does 60 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        413
       ]
     },
     {
@@ -809,6 +2225,40 @@
       ],
       "subtypes": [
         "Stage 1"
+      ],
+      "hp": "110",
+      "evolvesFrom": "Riolu",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "name": "Beatdown",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40",
+          "text": ""
+        },
+        {
+          "name": "Magnum Kick",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         448
@@ -827,6 +2277,44 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "70",
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Backflip",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Wicked Jab",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         701
       ]
@@ -843,6 +2331,37 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "80",
+      "rarity": "Rare",
+      "abilities": [
+        {
+          "name": "Energy Keeper",
+          "text": "Basic Energy attached to your Basic Pokémon can't be discarded by effects of your opponent's attacks, Abilities, or Trainer cards.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Stone Edge",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "Flip a coin. If heads, this attack does 30 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         703
@@ -861,6 +2380,36 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "90",
+      "rarity": "Common",
+      "abilities": [
+        {
+          "name": "Safeguard",
+          "text": "Prevent all effects of attacks, including damage, done to this Pokémon by your opponent's Pokémon-EX.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Power Gem",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         703
       ]
@@ -876,6 +2425,23 @@
       ],
       "subtypes": [
         "BREAK"
+      ],
+      "hp": "110",
+      "rules": [
+        "BREAK Evolution Rule: Carbink BREAK retains the attacks, Abilities, Weakness, Resistance, and Retreat Cost of its previous Evolution."
+      ],
+      "evolvesFrom": "Carbink",
+      "rarity": "Rare BREAK",
+      "attacks": [
+        {
+          "name": "Diamond Gift",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Attach 2 Energy cards from your discard pile to 1 of your Fighting Pokémon."
+        }
       ],
       "pokedexNumbers": [
         703
@@ -894,22 +2460,38 @@
       "subtypes": [
         "Basic"
       ],
-      "pokedexNumbers": [
-        718
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "53",
-      "name": "Zygarde",
-      "artist": "5ban Graphics",
-      "supertype": "Pokémon",
-      "flavorText": "It's hypothesized that it's monitoring those who destroy the ecosystem from deep in the cave where it lives.",
-      "types": [
-        "Fighting"
+      "hp": "90",
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Lookout",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Switch 1 of your opponent's Benched Pokémon with his or her Active Pokémon."
+        },
+        {
+          "name": "Aura Break",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "If the Defending Pokémon is a Darkness or Fairy Pokémon, it can't attack during your opponent's next turn."
+        }
       ],
-      "subtypes": [
-        "Basic"
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         718
@@ -928,22 +2510,105 @@
         "Basic",
         "EX"
       ],
+      "hp": "190",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Holo EX",
+      "attacks": [
+        {
+          "name": "Land's Pulse",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20+",
+          "text": "If there is any Stadium card in play, this attack does 20 more damage."
+        },
+        {
+          "name": "Cell Storm",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60",
+          "text": "Heal 30 damage from this Pokémon."
+        },
+        {
+          "name": "Land's Wrath",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         718
       ]
     },
     {
       "set": "xy10",
-      "cardNum": "54a",
-      "name": "Zygarde-EX",
+      "cardNum": "53",
+      "name": "Zygarde",
       "artist": "5ban Graphics",
       "supertype": "Pokémon",
+      "flavorText": "It's hypothesized that it's monitoring those who destroy the ecosystem from deep in the cave where it lives.",
       "types": [
         "Fighting"
       ],
       "subtypes": [
-        "Basic",
-        "EX"
+        "Basic"
+      ],
+      "hp": "120",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "name": "Rumble",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+        },
+        {
+          "name": "Geostrike",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "120",
+          "text": "This attack does 10 damage to each of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         718
@@ -962,25 +2627,50 @@
         "Basic",
         "EX"
       ],
+      "hp": "170",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Holo EX",
+      "attacks": [
+        {
+          "name": "Veil of Darkness",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Discard as many cards as you like from your hand. Then, draw that many cards."
+        },
+        {
+          "name": "Endgame",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "If your opponent's Mega Evolution Pokémon is Knocked Out by damage from this attack, take 2 more Prize cards."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         197
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "56",
-      "name": "Tyranitar",
-      "artist": "Satoshi Shirai",
-      "supertype": "Pokémon",
-      "flavorText": "If it rampages, it knocks down mountains and buries rivers. Maps must be redrawn afterward.",
-      "types": [
-        "Darkness"
-      ],
-      "subtypes": [
-        "Stage 2"
-      ],
-      "pokedexNumbers": [
-        248
       ]
     },
     {
@@ -996,8 +2686,175 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "60",
+      "evolvesTo": [
+        "Mandibuzz"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Leer",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        },
+        {
+          "name": "Cutting Wind",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         629
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "54a",
+      "name": "Zygarde-EX",
+      "artist": "5ban Graphics",
+      "supertype": "Pokémon",
+      "types": [
+        "Fighting"
+      ],
+      "subtypes": [
+        "Basic",
+        "EX"
+      ],
+      "hp": "190",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Ultra",
+      "attacks": [
+        {
+          "name": "Land's Pulse",
+          "cost": [
+            "Fighting"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20+",
+          "text": "If there is any Stadium card in play, this attack does 20 more damage."
+        },
+        {
+          "name": "Cell Storm",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60",
+          "text": "Heal 30 damage from this Pokémon."
+        },
+        {
+          "name": "Land's Wrath",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        718
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "56",
+      "name": "Tyranitar",
+      "artist": "Satoshi Shirai",
+      "supertype": "Pokémon",
+      "flavorText": "If it rampages, it knocks down mountains and buries rivers. Maps must be redrawn afterward.",
+      "types": [
+        "Darkness"
+      ],
+      "subtypes": [
+        "Stage 2"
+      ],
+      "hp": "160",
+      "evolvesFrom": "Pupitar",
+      "rarity": "Rare Holo",
+      "abilities": [
+        {
+          "name": "Raging Roar",
+          "text": "When you play this Pokémon from your hand to evolve 1 of your Pokémon, you may attach 1 Darkness Energy from your discard pile to this Pokémon for each Prize card your opponent has taken.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Dark Mountain",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Darkness",
+            "Darkness",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 5,
+          "damage": "150+",
+          "text": "Discard the top 2 cards of your deck. This attack does 50 more damage for each Supporter card discarded in this way."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        248
       ]
     },
     {
@@ -1012,6 +2869,46 @@
       ],
       "subtypes": [
         "Stage 1"
+      ],
+      "hp": "110",
+      "evolvesFrom": "Vullaby",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "name": "Bone Drop",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "This attack does 60 damage to 1 of your opponent's Pokémon that has an Ability. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Cutting Wind",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         630
@@ -1030,25 +2927,49 @@
       "subtypes": [
         "Stage 1"
       ],
+      "hp": "100",
+      "evolvesFrom": "Burmy",
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Strike Back",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20×",
+          "text": "This attack does 20 damage times the number of damage counters on this Pokémon."
+        },
+        {
+          "name": "Iron Head",
+          "cost": [
+            "Metal",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "Flip a coin until you get tails. This attack does 20 more damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         413
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "60",
-      "name": "Bronzor",
-      "artist": "Hajime Kusajima",
-      "supertype": "Pokémon",
-      "flavorText": "Implements shaped like it were discovered in ancient tombs. It is unknown if they are related.",
-      "types": [
-        "Metal"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        436
       ]
     },
     {
@@ -1064,8 +2985,107 @@
       "subtypes": [
         "Stage 1"
       ],
+      "hp": "100",
+      "evolvesFrom": "Bronzor",
+      "rarity": "Rare",
+      "abilities": [
+        {
+          "name": "Metal Fortress",
+          "text": "Prevent all effects of your opponent's attacks, including damage, done to your Benched Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Guard Press",
+          "cost": [
+            "Metal",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60",
+          "text": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         437
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "60",
+      "name": "Bronzor",
+      "artist": "Hajime Kusajima",
+      "supertype": "Pokémon",
+      "flavorText": "Implements shaped like it were discovered in ancient tombs. It is unknown if they are related.",
+      "types": [
+        "Metal"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "evolvesTo": [
+        "Bronzong"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Iron Defense",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Flip a coin. If heads, prevent all effects of attacks, including damage, done to this Pokémon during your opponent's next turn."
+        },
+        {
+          "name": "Hammer In",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        436
       ]
     },
     {
@@ -1079,6 +3099,24 @@
       ],
       "subtypes": [
         "BREAK"
+      ],
+      "hp": "130",
+      "rules": [
+        "BREAK Evolution Rule: Bronzong BREAK retains the attacks, Abilities, Weakness, Resistance, and Retreat Cost of its previous Evolution."
+      ],
+      "evolvesFrom": "Bronzong",
+      "rarity": "Rare BREAK",
+      "attacks": [
+        {
+          "name": "Metal Rain",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Discard as many Metal Energy attached to this Pokémon as you like. For each Energy card discarded in this way, choose 1 of your opponent's Pokémon and do 30 damage to it. Don't apply Weakness and Resistance. (You may choose the same Pokémon more than once.)"
+        }
       ],
       "pokedexNumbers": [
         437
@@ -1097,6 +3135,46 @@
       "subtypes": [
         "Stage 1"
       ],
+      "hp": "110",
+      "evolvesFrom": "Riolu",
+      "rarity": "Rare Holo",
+      "attacks": [
+        {
+          "name": "Vacuum Wave",
+          "cost": [
+            "Metal"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "50",
+          "text": "This attack's damage isn't affected by Weakness or Resistance."
+        },
+        {
+          "name": "Fight Alone",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30+",
+          "text": "If you have fewer Pokémon in play than your opponent, this attack does 60 more damage for each Pokémon fewer you have in play."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         448
       ]
@@ -1114,25 +3192,49 @@
         "Basic",
         "EX"
       ],
+      "hp": "180",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Holo EX",
+      "abilities": [
+        {
+          "name": "Drive Change",
+          "text": "Once during your turn (before your attack), you may put a Pokémon Tool card attached to this Pokémon into your hand.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Rapid Blaster",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Metal"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100+",
+          "text": "Discard as many Metal Energy attached to this Pokémon as you like. This attack does 20 more damage for each Energy card discarded in this way."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         649
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "65",
-      "name": "Jigglypuff",
-      "artist": "Midori Harada",
-      "supertype": "Pokémon",
-      "flavorText": "If it inflates to sing a lullaby, it can perform longer and cause sure drowsiness in its audience.",
-      "types": [
-        "Fairy"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        39
       ]
     },
     {
@@ -1147,6 +3249,48 @@
       ],
       "subtypes": [
         "Stage 1"
+      ],
+      "hp": "100",
+      "evolvesFrom": "Jigglypuff",
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Expand",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "During your opponent's next turn, any damage done to this Pokémon by attacks is reduced by 30 (after applying Weakness and Resistance)."
+        },
+        {
+          "name": "Double Slap",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60×",
+          "text": "Flip 2 coins. This attack does 60 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         40
@@ -1165,8 +3309,105 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "80",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "name": "Mimic",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Shuffle your hand into your deck. Then, draw a number of cards equal to the number of cards in your opponent's hand."
+        },
+        {
+          "name": "Juggling",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "Flip 4 coins. This attack does 20 damage times the number of heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         122
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "65",
+      "name": "Jigglypuff",
+      "artist": "Midori Harada",
+      "supertype": "Pokémon",
+      "flavorText": "If it inflates to sing a lullaby, it can perform longer and cause sure drowsiness in its audience.",
+      "types": [
+        "Fairy"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "evolvesTo": [
+        "Wigglytuff"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Rollout",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        39
       ]
     },
     {
@@ -1181,6 +3422,39 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "70",
+      "evolvesTo": [
+        "Granbull"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Ruckus",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         209
@@ -1199,6 +3473,42 @@
         "MEGA",
         "EX"
       ],
+      "hp": "220",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "evolvesFrom": "Altaria-EX",
+      "rarity": "Rare Holo EX",
+      "attacks": [
+        {
+          "name": "Mist Purge",
+          "cost": [
+            "Fairy",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100+",
+          "text": "If this Pokémon has any Special Energy attached to it, this attack does 30 more damage and heal 30 damage from each of your Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         334
       ]
@@ -1215,6 +3525,37 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "50",
+      "evolvesTo": [
+        "Whimsicott"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Fairy Wind",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         546
@@ -1233,25 +3574,34 @@
       "subtypes": [
         "Stage 1"
       ],
+      "hp": "90",
+      "evolvesFrom": "Cottonee",
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Light Steps",
+          "cost": [
+            "Fairy"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40",
+          "text": "Move an Energy from this Pokémon to 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
       "pokedexNumbers": [
         547
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "72",
-      "name": "Diancie-EX",
-      "artist": "Eske Yoshinob",
-      "supertype": "Pokémon",
-      "types": [
-        "Fairy"
-      ],
-      "subtypes": [
-        "Basic",
-        "EX"
-      ],
-      "pokedexNumbers": [
-        719
       ]
     },
     {
@@ -1266,6 +3616,43 @@
       "subtypes": [
         "Basic",
         "EX"
+      ],
+      "hp": "170",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Holo EX",
+      "attacks": [
+        {
+          "name": "Big Storm",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Discard any Stadium card in play."
+        },
+        {
+          "name": "Dragon Trail",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "60+",
+          "text": "This attack does 30 more damage for each basic Lightning Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         230
@@ -1284,25 +3671,95 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "70",
+      "evolvesTo": [
+        "Persian"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Turmoil Strike",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "This attack does 50 damage to 1 of your opponent's Pokémon that has any damage counters on it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         52
       ]
     },
     {
       "set": "xy10",
-      "cardNum": "75",
-      "name": "Kangaskhan",
-      "artist": "Masakazu Fukuda",
+      "cardNum": "72",
+      "name": "Diancie-EX",
+      "artist": "Eske Yoshinob",
       "supertype": "Pokémon",
-      "flavorText": "If it is safe, the young gets out of the belly pouch to play. The adult keeps a close eye on the youngster.",
       "types": [
-        "Colorless"
+        "Fairy"
       ],
       "subtypes": [
-        "Basic"
+        "Basic",
+        "EX"
+      ],
+      "hp": "150",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "evolvesTo": [
+        "M Diancie-EX"
+      ],
+      "rarity": "Rare Holo EX",
+      "abilities": [
+        {
+          "name": "Sparkle Veil",
+          "text": "As long as this Pokémon is your Active Pokémon, any damage done to your Pokémon by an opponent's attack is reduced by 30 (after applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Wonder Stage",
+          "cost": [
+            "Fairy",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "If there is any Stadium card in play, this attack does 50 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
-        115
+        719
       ]
     },
     {
@@ -1317,6 +3774,45 @@
       ],
       "subtypes": [
         "Restored"
+      ],
+      "hp": "120",
+      "rules": [
+        "Put this card onto your Bench only with the effect of Old Amber Aerodactyl"
+      ],
+      "evolvesFrom": "Old Amber Aerodactyl",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        },
+        {
+          "name": "Jet Draft",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "120",
+          "text": "Discard a Special Energy attached to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
       ],
       "pokedexNumbers": [
         142
@@ -1335,8 +3831,101 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "140",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "name": "Toss and Turn",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30+",
+          "text": "This attack can be used even if this Pokémon is Asleep. If it is, this attack does 90 more damage."
+        },
+        {
+          "name": "Swallow",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "50",
+          "text": "Heal from this Pokémon the same amount of damage you did to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         143
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "75",
+      "name": "Kangaskhan",
+      "artist": "Masakazu Fukuda",
+      "supertype": "Pokémon",
+      "flavorText": "If it is safe, the young gets out of the belly pouch to play. The adult keeps a close eye on the youngster.",
+      "types": [
+        "Colorless"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "120",
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Tiny Punch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": ""
+        },
+        {
+          "name": "Mega Punch",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "100",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        115
       ]
     },
     {
@@ -1351,6 +3940,44 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "120",
+      "rarity": "Rare",
+      "abilities": [
+        {
+          "name": "Pressure",
+          "text": "As long as this Pokémon is your Active Pokémon, any damage done by attacks from your opponent's Active Pokémon is reduced by 20 (before applying Weakness and Resistance).",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Intensifying Burn",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "If your opponent's Active Pokémon is a Pokémon-EX, this attack does 60 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         249
@@ -1367,6 +3994,26 @@
       ],
       "subtypes": [
         "BREAK"
+      ],
+      "hp": "150",
+      "rules": [
+        "BREAK Evolution Rule: Lugia BREAK retains the attacks, Abilities, Weakness, Resistance, and Retreat Cost of its previous Evolution."
+      ],
+      "evolvesFrom": "Lugia",
+      "rarity": "Rare BREAK",
+      "attacks": [
+        {
+          "name": "Flash of Destruction",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "150",
+          "text": "Discard 2 Energy attached to this Pokémon."
+        }
       ],
       "pokedexNumbers": [
         249
@@ -1385,6 +4032,42 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "60",
+      "evolvesTo": [
+        "Loudred"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Round",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10×",
+          "text": "This attack does 10 damage times the number of your Pokémon that have the Round attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         293
       ]
@@ -1401,6 +4084,44 @@
       ],
       "subtypes": [
         "Stage 1"
+      ],
+      "hp": "90",
+      "evolvesFrom": "Whismur",
+      "evolvesTo": [
+        "Exploud"
+      ],
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Smash Kick",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Stomp",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "40+",
+          "text": "Flip a coin. If heads, this attack does 40 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         294
@@ -1419,6 +4140,44 @@
       "subtypes": [
         "Stage 2"
       ],
+      "hp": "140",
+      "evolvesFrom": "Loudred",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "name": "Ambush",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80+",
+          "text": "Flip a coin. If heads, this attack does 40 more damage."
+        },
+        {
+          "name": "Cacophony",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "At the end of your opponent's next turn, discard the Defending Pokémon and all cards attached to it."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         295
       ]
@@ -1436,25 +4195,54 @@
         "Basic",
         "EX"
       ],
-      "pokedexNumbers": [
-        334
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "84",
-      "name": "Audino-EX",
-      "artist": "Ayaka Yoshida",
-      "supertype": "Pokémon",
-      "types": [
+      "hp": "170",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "evolvesTo": [
+        "M Altaria-EX"
+      ],
+      "rarity": "Rare Holo EX",
+      "attacks": [
+        {
+          "name": "Powerful Gain",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30+",
+          "text": "If this Pokémon was healed during this turn, this attack does 60 more damage and heal 30 damage from this Pokémon."
+        },
+        {
+          "name": "Shining Wind",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "During your opponent's next turn, this Pokémon has no Weakness."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
         "Colorless"
       ],
-      "subtypes": [
-        "Basic",
-        "EX"
-      ],
       "pokedexNumbers": [
-        531
+        334
       ]
     },
     {
@@ -1469,6 +4257,37 @@
       "subtypes": [
         "MEGA",
         "EX"
+      ],
+      "hp": "220",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "evolvesFrom": "Audino-EX",
+      "rarity": "Rare Holo EX",
+      "attacks": [
+        {
+          "name": "Magical Symphony",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "110",
+          "text": "If you played a Supporter card from your hand during this turn, this attack does 50 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         531
@@ -1487,25 +4306,91 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "60",
+      "evolvesTo": [
+        "Cinccino"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Cleaning Up",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Discard a Pokémon Tool card attached to 1 of your opponent's Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         572
       ]
     },
     {
       "set": "xy10",
-      "cardNum": "87",
-      "name": "Minccino",
-      "artist": "Mizue",
+      "cardNum": "84",
+      "name": "Audino-EX",
+      "artist": "Ayaka Yoshida",
       "supertype": "Pokémon",
-      "flavorText": "These Pokémon prefer a tidy habitat. They are always sweeping and dusting, using their tails as brooms.",
       "types": [
         "Colorless"
       ],
       "subtypes": [
-        "Basic"
+        "Basic",
+        "EX"
+      ],
+      "hp": "180",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "evolvesTo": [
+        "M Audino-EX"
+      ],
+      "rarity": "Rare Holo EX",
+      "attacks": [
+        {
+          "name": "Drain Slap",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Heal 20 damage from this Pokémon."
+        },
+        {
+          "name": "Do the Wave",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "60+",
+          "text": "This attack does 10 more damage for each of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
-        572
+        531
       ]
     },
     {
@@ -1521,9 +4406,115 @@
       "subtypes": [
         "Stage 1"
       ],
+      "hp": "90",
+      "evolvesFrom": "Minccino",
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Covet",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Your opponent reveals his or her hand. Choose a card you find there and put it on the bottom of your opponent's deck."
+        },
+        {
+          "name": "Last Resort",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "60",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         573
       ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "87",
+      "name": "Minccino",
+      "artist": "Mizue",
+      "supertype": "Pokémon",
+      "flavorText": "These Pokémon prefer a tidy habitat. They are always sweeping and dusting, using their tails as brooms.",
+      "types": [
+        "Colorless"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "evolvesTo": [
+        "Cinccino"
+      ],
+      "rarity": "Common",
+      "attacks": [
+        {
+          "name": "Tail Smack",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        572
+      ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "91",
+      "name": "Altaria Spirit Link",
+      "artist": "5ban Graphics",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "Your turn does not end if the Pokémon this card is attached to becomes M Altaria-EX.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
+    },
+    {
+      "set": "xy10",
+      "cardNum": "94",
+      "name": "Chaos Tower",
+      "artist": "5ban Graphics",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Choose which way this card faces before you play it. This ↓ player's Pokémon can't be Confused or Poisoned. (If those Pokémon are already Confused or Poisoned, remove those Special Conditions.)",
+        "Choose which way this card faces before you play it. This ↓ player's Pokémon can't be Asleep or Paralyzed. (If those Pokémon are already Asleep or Paralyzed, remove those Special Conditions.)",
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1538,6 +4529,39 @@
       "subtypes": [
         "Stage 1"
       ],
+      "hp": "90",
+      "evolvesFrom": "Minccino",
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "Sweeping Cure",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Heal 90 damage from 1 of your Benched Pokémon."
+        },
+        {
+          "name": "Knock Away",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30+",
+          "text": "Flip a coin. If heads, this attack does 30 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         573
       ]
@@ -1550,17 +4574,13 @@
       "supertype": "Trainer",
       "subtypes": [
         "Pokémon Tool"
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "91",
-      "name": "Altaria Spirit Link",
-      "artist": "5ban Graphics",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Pokémon Tool"
-      ]
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "Your turn does not end if the Pokémon this card is attached to becomes M Alakazam-EX.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1570,7 +4590,13 @@
       "supertype": "Trainer",
       "subtypes": [
         "Pokémon Tool"
-      ]
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "Your turn does not end if the Pokémon this card is attached to becomes M Audino-EX.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1580,17 +4606,13 @@
       "supertype": "Trainer",
       "subtypes": [
         "Pokémon Tool"
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "94",
-      "name": "Chaos Tower",
-      "artist": "5ban Graphics",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Stadium"
-      ]
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "Prevent all effects of your opponent's attacks, except damage, done to the Pokémon this card is attached to. (Existing effects are not removed.)",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1600,17 +4622,12 @@
       "supertype": "Trainer",
       "subtypes": [
         "Item"
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "96",
-      "name": "Dome Fossil Kabuto",
-      "artist": "Toyste Beach",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Item"
-      ]
+      ],
+      "rules": [
+        "Devolve 1 of your evolved Pokémon and put the highest Stage Evolution card on it into your hand. (That Pokémon can't evolve this turn.)",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1620,7 +4637,28 @@
       "supertype": "Trainer",
       "subtypes": [
         "Pokémon Tool"
-      ]
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "If the Pokémon this card is attached to is Knocked Out by damage from an opponent's attack, put all basic Energy attached to that Pokémon into your hand.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
+    },
+    {
+      "set": "xy10",
+      "cardNum": "96",
+      "name": "Dome Fossil Kabuto",
+      "artist": "Toyste Beach",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Look at the bottom 7 cards of your deck. You may reveal a Kabuto you find there and put it onto your Bench. Shuffle the other cards back into your deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1630,7 +4668,12 @@
       "supertype": "Trainer",
       "subtypes": [
         "Item"
-      ]
+      ],
+      "rules": [
+        "Put as many Energy attached to your Pokémon as you like into your hand.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1640,7 +4683,12 @@
       "supertype": "Trainer",
       "subtypes": [
         "Item"
-      ]
+      ],
+      "rules": [
+        "Heal 50 damage from 1 of your Pokémon that has any Fairy Energy attached to it.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1650,17 +4698,12 @@
       "supertype": "Trainer",
       "subtypes": [
         "Stadium"
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "101",
-      "name": "Fossil Excavation Kit",
-      "artist": "Toyste Beach",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Item"
-      ]
+      ],
+      "rules": [
+        "Each Pokémon that has any Fairy Energy attached to it (both yours and your opponent's) has no Retreat Cost.",
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1670,17 +4713,27 @@
       "supertype": "Trainer",
       "subtypes": [
         "Item"
-      ]
+      ],
+      "rules": [
+        "Look at the bottom 7 cards of your deck. You may reveal an Omanyte you find there and put it onto your Bench. Shuffle the other cards back into your deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
-      "cardNum": "103",
-      "name": "Lass's Special",
-      "artist": "Yusuke Ohmura",
+      "cardNum": "101",
+      "name": "Fossil Excavation Kit",
+      "artist": "Toyste Beach",
       "supertype": "Trainer",
       "subtypes": [
-        "Supporter"
-      ]
+        "Item"
+      ],
+      "rules": [
+        "Put 2 in any combination of Helix Fossil Omanyte, Dome Fossil Kabuto, or Old Amber Aerodactyl cards from your discard pile into your hand.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1690,7 +4743,27 @@
       "supertype": "Trainer",
       "subtypes": [
         "Item"
-      ]
+      ],
+      "rules": [
+        "Switch 1 of your opponent's Benched Mega Evolution Pokémon with his or her Active Pokémon.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
+    },
+    {
+      "set": "xy10",
+      "cardNum": "103",
+      "name": "Lass's Special",
+      "artist": "Yusuke Ohmura",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Draw a card for each of your opponent's Benched Basic Pokémon.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1700,7 +4773,12 @@
       "supertype": "Trainer",
       "subtypes": [
         "Supporter"
-      ]
+      ],
+      "rules": [
+        "Each player shuffles his or her hand into his or her deck. Then, each player draws a card for each of his or her remaining Prize cards.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1710,7 +4788,12 @@
       "supertype": "Trainer",
       "subtypes": [
         "Supporter"
-      ]
+      ],
+      "rules": [
+        "Each player shuffles his or her hand into his or her deck. Then, each player draws a card for each of his or her remaining Prize cards.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "rarity": "Rare Ultra"
     },
     {
       "set": "xy10",
@@ -1720,7 +4803,12 @@
       "supertype": "Trainer",
       "subtypes": [
         "Item"
-      ]
+      ],
+      "rules": [
+        "Look at the bottom 7 cards of your deck. You may reveal an Aerodactyl you find there and put it onto your Bench. Shuffle the other cards back into your deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1730,7 +4818,12 @@
       "supertype": "Trainer",
       "subtypes": [
         "Supporter"
-      ]
+      ],
+      "rules": [
+        "Search your deck for up to 2 Basic Pokémon, reveal them, and put them into your hand. Shuffle your deck afterward.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1740,6 +4833,25 @@
       "supertype": "Trainer",
       "subtypes": [
         "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "The Zygarde-EX this card is attached to can also use the attack on this card. (You still need the necessary Energy to use this attack.)",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon",
+      "attacks": [
+        {
+          "name": "All Cells Burn",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "200",
+          "text": "Discard 3 Energy attached to this Pokémon."
+        }
       ]
     },
     {
@@ -1750,7 +4862,12 @@
       "supertype": "Trainer",
       "subtypes": [
         "Item"
-      ]
+      ],
+      "rules": [
+        "Reveal cards from the top of your deck until you reveal a Supporter card. Put it into your hand. Shuffle the other cards back into your deck.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1760,7 +4877,12 @@
       "supertype": "Trainer",
       "subtypes": [
         "Stadium"
-      ]
+      ],
+      "rules": [
+        "Once during each player's turn, that player may discard a Fire or Fighting Energy card from his or her hand. If that player does so, he or she draws 2 cards.",
+        "This card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1770,17 +4892,12 @@
       "supertype": "Trainer",
       "subtypes": [
         "Supporter"
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "111a",
-      "name": "Shauna",
-      "artist": "Ken Sugimori",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Supporter"
-      ]
+      ],
+      "rules": [
+        "Shuffle your hand into your deck. Then, draw 5 cards.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1790,7 +4907,27 @@
       "supertype": "Trainer",
       "subtypes": [
         "Supporter"
-      ]
+      ],
+      "rules": [
+        "Flip 2 coins. For each heads, discard 2 cards from the top of your opponent's deck.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
+    },
+    {
+      "set": "xy10",
+      "cardNum": "111a",
+      "name": "Shauna",
+      "artist": "Ken Sugimori",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Shuffle your hand into your deck. Then, draw 5 cards.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "rarity": "Rare Ultra"
     },
     {
       "set": "xy10",
@@ -1800,17 +4937,12 @@
       "supertype": "Trainer",
       "subtypes": [
         "Item"
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "114",
-      "name": "Double Colorless Energy",
-      "artist": "5ban Graphics",
-      "supertype": "Energy",
-      "subtypes": [
-        "Special"
-      ]
+      ],
+      "rules": [
+        "Discard 2 cards from your hand. (If you can't discard 2 cards, you can't play this card.) Search your deck for a Pokémon, reveal it, and put it into your hand. Shuffle your deck afterward.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1820,7 +4952,27 @@
       "supertype": "Energy",
       "subtypes": [
         "Special"
-      ]
+      ],
+      "rules": [
+        "This card can only be attached to Fighting Pokémon. This card provides Fighting Energy only while this card is attached to a Fighting Pokémon.",
+        "The attacks of the Fighting Pokémon this card is attached to do 20 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+        "(If this card is attached to anything other than a Fighting Pokémon, discard this card.)"
+      ],
+      "rarity": "Uncommon"
+    },
+    {
+      "set": "xy10",
+      "cardNum": "114",
+      "name": "Double Colorless Energy",
+      "artist": "5ban Graphics",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "Double Colorless Energy provides ColorlessColorless Energy."
+      ],
+      "rarity": "Uncommon"
     },
     {
       "set": "xy10",
@@ -1834,6 +4986,44 @@
       "subtypes": [
         "Basic",
         "EX"
+      ],
+      "hp": "170",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Ultra",
+      "attacks": [
+        {
+          "name": "Second Bite",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "This attack does 10 more damage for each damage counter on your opponent's Active Pokémon."
+        },
+        {
+          "name": "Crystal Ray",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks from Evolution Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         471
@@ -1852,6 +5042,43 @@
         "Basic",
         "EX"
       ],
+      "hp": "160",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "evolvesTo": [
+        "M Alakazam-EX"
+      ],
+      "rarity": "Rare Ultra",
+      "abilities": [
+        {
+          "name": "Kinesis",
+          "text": "When you play M Alakazam-EX from your hand to evolve this Pokémon, before it evolves, you may put 2 damage counters on your opponent's Active Pokémon and 3 damage counters on 1 of your opponent's Benched Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Suppression",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Put 3 damage counters on each of your opponent's Pokémon that has any Energy attached to it."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         65
       ]
@@ -1868,6 +5095,34 @@
       "subtypes": [
         "MEGA",
         "EX"
+      ],
+      "hp": "210",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "evolvesFrom": "Alakazam-EX",
+      "rarity": "Rare Ultra",
+      "attacks": [
+        {
+          "name": "Zen Force",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "This attack does 30 more damage for each damage counter on your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         65
@@ -1886,6 +5141,48 @@
         "Basic",
         "EX"
       ],
+      "hp": "170",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Ultra",
+      "attacks": [
+        {
+          "name": "Veil of Darkness",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Discard as many cards as you like from your hand. Then, draw that many cards."
+        },
+        {
+          "name": "Endgame",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70",
+          "text": "If your opponent's Mega Evolution Pokémon is Knocked Out by damage from this attack, take 2 more Prize cards."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         197
       ]
@@ -1902,6 +5199,47 @@
       "subtypes": [
         "Basic",
         "EX"
+      ],
+      "hp": "180",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Ultra",
+      "abilities": [
+        {
+          "name": "Drive Change",
+          "text": "Once during your turn (before your attack), you may put a Pokémon Tool card attached to this Pokémon into your hand.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Rapid Blaster",
+          "cost": [
+            "Metal",
+            "Metal",
+            "Metal"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100+",
+          "text": "Discard as many Metal Energy attached to this Pokémon as you like. This attack does 20 more damage for each Metal Energy you discarded."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         649
@@ -1920,6 +5258,42 @@
         "MEGA",
         "EX"
       ],
+      "hp": "220",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "evolvesFrom": "Altaria-EX",
+      "rarity": "Rare Ultra",
+      "attacks": [
+        {
+          "name": "Mist Purge",
+          "cost": [
+            "Fairy",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100+",
+          "text": "If this Pokémon has any Special Energy attached to it, this attack does 30 more damage and heal 30 damage from each of your Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         334
       ]
@@ -1937,9 +5311,61 @@
         "Basic",
         "EX"
       ],
+      "hp": "170",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Ultra",
+      "attacks": [
+        {
+          "name": "Big Storm",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Discard any Stadium card in play."
+        },
+        {
+          "name": "Dragon Trail",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "60+",
+          "text": "This attack does 30 more damage for each basic Lightning Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         230
       ]
+    },
+    {
+      "set": "xy10",
+      "cardNum": "124",
+      "name": "Team Rocket's Handiwork",
+      "artist": "Hitoshi Ariga",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Flip 2 coins. For each heads, discard 2 cards from the top of your opponent's deck.",
+        "You may play only 1 Supporter card during your turn (before your attack)."
+      ],
+      "rarity": "Rare Ultra"
     },
     {
       "set": "xy10",
@@ -1954,18 +5380,54 @@
         "Basic",
         "EX"
       ],
+      "hp": "170",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "evolvesTo": [
+        "M Altaria-EX"
+      ],
+      "rarity": "Rare Ultra",
+      "attacks": [
+        {
+          "name": "Powerful Gain",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30+",
+          "text": "If this Pokémon was healed during this turn, this attack does 60 more damage and heal 30 damage from this Pokémon."
+        },
+        {
+          "name": "Shining Wind",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "During your opponent's next turn, this Pokémon has no Weakness."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         334
-      ]
-    },
-    {
-      "set": "xy10",
-      "cardNum": "124",
-      "name": "Team Rocket's Handiwork",
-      "artist": "Hitoshi Ariga",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Supporter"
       ]
     },
     {
@@ -1980,6 +5442,43 @@
       "subtypes": [
         "Basic",
         "EX"
+      ],
+      "hp": "160",
+      "rules": [
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "evolvesTo": [
+        "M Alakazam-EX"
+      ],
+      "rarity": "Rare Secret",
+      "abilities": [
+        {
+          "name": "Kinesis",
+          "text": "When you play M Alakazam-EX from your hand to evolve this Pokémon, before it evolves, you may put 2 damage counters on your opponent's Active Pokémon and 3 damage counters on 1 of your opponent's Benched Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Suppression",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Put 3 damage counters on each of your opponent's Pokémon that has any Energy attached to it."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         65

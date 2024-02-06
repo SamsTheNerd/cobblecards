@@ -36,6 +36,10 @@ public class DataFetcher {
 
     public static final Gson GSON_WRITER = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create(); 
 
+    static final List<String> fieldsToCopy = List.of("name", "artist", "supertype", "flavorText", "types", "subtypes",
+                    "hp", "rules", "level", "evolvesFrom", "evolvesTo", "rules", "ancientTrait", "rarity", "abilities", "attacks", 
+                    "weaknesses", "resistances", "retreatCost");
+
     // give it your api key if you want it to go at a reasonable speed
     public static File fetchCardData(String key, MinecraftServer server){
         try{
@@ -93,14 +97,14 @@ public class DataFetcher {
 
                 cardOutput.addProperty("set", setId);
                 cardOutput.addProperty("cardNum", cardNum);
-                // very silly, just picking specific fields to copy over
-                cardOutput.add("name", rawCard.get("name"));
-                cardOutput.add("artist", rawCard.get("artist"));
-                cardOutput.add("supertype", rawCard.get("supertype"));
-                cardOutput.add("flavorText", rawCard.get("flavorText"));
 
-                cardOutput.add("types", rawCard.get("types"));
-                cardOutput.add("subtypes", rawCard.get("subtypes"));
+                // very silly, just picking specific fields to copy over
+                for(String field : fieldsToCopy){
+                    if(rawCard.has(field)){
+                        cardOutput.add(field, rawCard.get(field));
+                    }
+                }
+
                 cardOutput.add("pokedexNumbers", rawCard.get("nationalPokedexNumbers"));
 
                 cardOutputJsons.add(cardOutput);

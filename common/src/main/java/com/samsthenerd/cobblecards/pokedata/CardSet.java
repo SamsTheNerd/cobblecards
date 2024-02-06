@@ -3,11 +3,15 @@ package com.samsthenerd.cobblecards.pokedata;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
 import com.google.gson.JsonObject;
 import com.samsthenerd.cobblecards.pokedata.datagenish.DataFetcher;
+import com.samsthenerd.cobblecards.utils.WHTexture;
+
+import net.minecraft.util.Identifier;
 
 // read in from a json file usually
 public class CardSet {
@@ -17,6 +21,7 @@ public class CardSet {
     public final int cardCount;
     public final int printedCardCount;
     public final Date releaseDate;
+    private Set<CardSet> connectedSets = null;
 
     private CardSet(String id, String name, String seriesName, int cardCount, int printedCardCount, Date releaseDate){
         this.id = id;
@@ -60,11 +65,33 @@ public class CardSet {
     }
 
     public Set<Card> getCards(){
-        return CardHolder.PRIMARY.getCards(CardHolder.SET_INDEXER, id);
+        return new HashSet<>(CardHolder.PRIMARY.getCards(CardHolder.SET_INDEXER, id));
     }
 
-    public String getLogoUrl(){
-        return String.format("https://images.pokemontcg.io/%s/logo.png", id);
+    public WHTexture getLogo(){
+        return WHTexture.fromUrl(String.format("https://images.pokemontcg.io/%s/logo.png", id), new Identifier("cobblecards", "setlogo/" + id.toLowerCase()));
+    }
+
+    public WHTexture getSymbol(){
+        return WHTexture.fromUrl(String.format("https://images.pokemontcg.io/%s/symbol.png", id), new Identifier("cobblecards", "setsymbol/" + id.toLowerCase()));
+    }
+
+    // sets like trainer galleries or shiny vaults or whatever where they're clearly the same set but separated for whatever reason
+    public Set<CardSet> findConnectedSets(){
+        if(connectedSets != null){
+            return new HashSet<>(connectedSets);
+        }
+        connectedSets = new HashSet<>();
+        String nameMatcher = "^" + name + ".*";
+        for(CardSet otherSet : CARD_SET_HOLDER.values()){
+            if(otherSet.id.equals(id)){
+                continue;
+            }
+            if(otherSet.releaseDate.equals(releaseDate) && otherSet.name.matches(nameMatcher)){
+                connectedSets.add(otherSet);
+            }
+        }
+        return connectedSets;
     }
 
     public JsonObject toJson(){

@@ -2,40 +2,6 @@
   "data": [
     {
       "set": "cel25",
-      "cardNum": "1",
-      "name": "Ho-Oh",
-      "artist": "Kouki Saitou",
-      "supertype": "Pokémon",
-      "flavorText": "It will reveal itself before a pure-hearted Trainer by shining its bright, rainbow-colored wings.",
-      "types": [
-        "Fire"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        250
-      ]
-    },
-    {
-      "set": "cel25",
-      "cardNum": "4",
-      "name": "Palkia",
-      "artist": "5ban Graphics",
-      "supertype": "Pokémon",
-      "flavorText": "It has the ability to distort space. It is described as a deity in Sinnoh-region mythology.",
-      "types": [
-        "Water"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        484
-      ]
-    },
-    {
-      "set": "cel25",
       "cardNum": "2",
       "name": "Reshiram",
       "artist": "Aya Kusube",
@@ -47,108 +13,44 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "130",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Scorching Wind",
+          "damage": "",
+          "text": "This attack does 20 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+          "convertedEnergyCost": 2
+        },
+        {
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "name": "Black Flame",
+          "damage": "80+",
+          "text": "If Zekrom is on your Bench, this attack does 80 more damage.",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         643
-      ]
-    },
-    {
-      "set": "cel25",
-      "cardNum": "7",
-      "name": "Flying Pikachu VMAX",
-      "artist": "aky CG Works",
-      "supertype": "Pokémon",
-      "types": [
-        "Lightning"
-      ],
-      "subtypes": [
-        "VMAX"
-      ],
-      "pokedexNumbers": [
-        25
-      ]
-    },
-    {
-      "set": "cel25",
-      "cardNum": "3",
-      "name": "Kyogre",
-      "artist": "Ryuta Fuse",
-      "supertype": "Pokémon",
-      "flavorText": "It is said to have widened the seas by causing downpours. It had been asleep in a marine trench.",
-      "types": [
-        "Water"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        382
-      ]
-    },
-    {
-      "set": "cel25",
-      "cardNum": "12",
-      "name": "Xerneas",
-      "artist": "AKIRA EGAWA",
-      "supertype": "Pokémon",
-      "flavorText": "When the horns on its head shine in seven colors, it is said to be sharing everlasting life.",
-      "types": [
-        "Psychic"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        716
-      ]
-    },
-    {
-      "set": "cel25",
-      "cardNum": "8",
-      "name": "Surfing Pikachu V",
-      "artist": "aky CG Works",
-      "supertype": "Pokémon",
-      "types": [
-        "Lightning"
-      ],
-      "subtypes": [
-        "Basic",
-        "V"
-      ],
-      "pokedexNumbers": [
-        25
-      ]
-    },
-    {
-      "set": "cel25",
-      "cardNum": "14",
-      "name": "Cosmoem",
-      "artist": "kirisAki",
-      "supertype": "Pokémon",
-      "flavorText": "As it absorbs light, Cosmoem continues to grow. Its golden shell is surprisingly solid.",
-      "types": [
-        "Psychic"
-      ],
-      "subtypes": [
-        "Stage 1"
-      ],
-      "pokedexNumbers": [
-        790
-      ]
-    },
-    {
-      "set": "cel25",
-      "cardNum": "9",
-      "name": "Surfing Pikachu VMAX",
-      "artist": "aky CG Works",
-      "supertype": "Pokémon",
-      "types": [
-        "Lightning"
-      ],
-      "subtypes": [
-        "VMAX"
-      ],
-      "pokedexNumbers": [
-        25
       ]
     },
     {
@@ -164,25 +66,50 @@
       "subtypes": [
         "Stage 2"
       ],
+      "hp": "160",
+      "evolvesFrom": "Cosmoem",
+      "rarity": "Rare Holo",
+      "attacks": [
+        {
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Lunar Pain",
+          "damage": "",
+          "text": "Double the number of damage counters on each of your opponent's Pokémon.",
+          "convertedEnergyCost": 2
+        },
+        {
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Psychic Shot",
+          "damage": "130",
+          "text": "This attack also does 30 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         792
-      ]
-    },
-    {
-      "set": "cel25",
-      "cardNum": "10",
-      "name": "Zekrom",
-      "artist": "Aya Kusube",
-      "supertype": "Pokémon",
-      "flavorText": "Concealing itself in lightning clouds, it flies throughout the Unova region. It creates electricity in its tail.",
-      "types": [
-        "Lightning"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        644
       ]
     },
     {
@@ -198,18 +125,46 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "130",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "name": "Magma Volcano",
+          "damage": "80×",
+          "text": "Discard the top 5 cards of your deck. This attack does 80 damage for each Energy card you discarded in this way.",
+          "convertedEnergyCost": 3
+        },
+        {
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Massive Rend",
+          "damage": "120",
+          "text": "",
+          "convertedEnergyCost": 4
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         383
-      ]
-    },
-    {
-      "set": "cel25",
-      "cardNum": "23",
-      "name": "Professor's Research (Professor Oak)",
-      "artist": "KIYOTAKA OSHIYAMA",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Supporter"
       ]
     },
     {
@@ -224,6 +179,44 @@
       ],
       "subtypes": [
         "Stage 2"
+      ],
+      "hp": "170",
+      "evolvesFrom": "Cosmoem",
+      "rarity": "Rare Holo",
+      "abilities": [
+        {
+          "type": "Ability",
+          "name": "Rush In",
+          "text": "Once during your turn, if this Pokémon is on your Bench, you may switch it with your Active Pokémon."
+        }
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Solar Geyser",
+          "damage": "100",
+          "text": "Attach up to 2 basic Energy cards from your discard pile to 1 of your Benched Pokémon.",
+          "convertedEnergyCost": 2
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         791
@@ -242,25 +235,39 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "60",
+      "evolvesTo": [
+        "Cosmoem"
+      ],
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "cost": [
+            "Colorless"
+          ],
+          "name": "Star Protection",
+          "damage": "",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all damage done to this Pokémon by attacks.",
+          "convertedEnergyCost": 1
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         789
-      ]
-    },
-    {
-      "set": "cel25",
-      "cardNum": "5",
-      "name": "Pikachu",
-      "artist": "Mitsuhiro Arita",
-      "supertype": "Pokémon",
-      "flavorText": "It has small electric sacs on both its cheeks. If threatened, it looses electric charges from the sacs.",
-      "types": [
-        "Lightning"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        25
       ]
     },
     {
@@ -276,8 +283,118 @@
         "Basic",
         "V"
       ],
+      "hp": "190",
+      "rules": [
+        "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "rarity": "Rare Holo V",
+      "attacks": [
+        {
+          "cost": [
+            "Lightning"
+          ],
+          "name": "Thunder Shock",
+          "damage": "20",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed.",
+          "convertedEnergyCost": 1
+        },
+        {
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Fly",
+          "damage": "120",
+          "text": "Flip a coin. If tails, this attack does nothing. If heads, during your opponent's next turn, prevent all damage from and effects of attacks done to this Pokémon.",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
       "pokedexNumbers": [
         25
+      ]
+    },
+    {
+      "set": "cel25",
+      "cardNum": "24",
+      "name": "Professor's Research (Professor Oak)",
+      "artist": "Ken Sugimori",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard your hand and draw 7 cards.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "rarity": "Rare Ultra"
+    },
+    {
+      "set": "cel25",
+      "cardNum": "10",
+      "name": "Zekrom",
+      "artist": "Aya Kusube",
+      "supertype": "Pokémon",
+      "flavorText": "Concealing itself in lightning clouds, it flies throughout the Unova region. It creates electricity in its tail.",
+      "types": [
+        "Lightning"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "130",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Field Crush",
+          "damage": "30",
+          "text": "If your opponent has a Stadium in play, discard it.",
+          "convertedEnergyCost": 2
+        },
+        {
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "name": "White Thunder",
+          "damage": "80+",
+          "text": "If Reshiram is on your Bench, this attack does 80 more damage.",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        644
       ]
     },
     {
@@ -293,8 +410,736 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "60",
+      "rarity": "Rare Holo",
+      "abilities": [
+        {
+          "type": "Ability",
+          "name": "Mysterious Tail",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may look at the top 6 cards of your deck, reveal an Item card you find there, and put it into your hand. Shuffle the other cards back into your deck."
+        }
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "name": "Psyshot",
+          "damage": "30",
+          "text": "",
+          "convertedEnergyCost": 2
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         151
+      ]
+    },
+    {
+      "set": "cel25",
+      "cardNum": "18",
+      "name": "Zamazenta V",
+      "artist": "Mitsuhiro Arita",
+      "supertype": "Pokémon",
+      "types": [
+        "Fighting"
+      ],
+      "subtypes": [
+        "Basic",
+        "V"
+      ],
+      "hp": "220",
+      "rules": [
+        "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Holo V",
+      "abilities": [
+        {
+          "type": "Ability",
+          "name": "Growl of the Shield",
+          "text": "All of your Fighting Pokémon take 20 less damage from attacks from your opponent's Pokémon VMAX (after applying Weakness and Resistance). You can't apply more than 1 Growl of the Shield Ability at a time."
+        }
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "name": "Heavy Impact",
+          "damage": "150",
+          "text": "",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        889
+      ]
+    },
+    {
+      "set": "cel25",
+      "cardNum": "25",
+      "name": "Mew",
+      "artist": "Saki Hayashiro",
+      "supertype": "Pokémon",
+      "flavorText": "Its DNA is said to contain the genetic codes of all Pokémon, so it can use all kinds of techniques.",
+      "types": [
+        "Psychic"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "rarity": "Rare Holo",
+      "abilities": [
+        {
+          "type": "Ability",
+          "name": "Mysterious Tail",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may look at the top 6 cards of your deck, reveal an Item card you find there, and put it into your hand. Shuffle the other cards back into your deck."
+        }
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "name": "Psyshot",
+          "damage": "30",
+          "text": "",
+          "convertedEnergyCost": 2
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        151
+      ]
+    },
+    {
+      "set": "cel25",
+      "cardNum": "4",
+      "name": "Palkia",
+      "artist": "5ban Graphics",
+      "supertype": "Pokémon",
+      "flavorText": "It has the ability to distort space. It is described as a deity in Sinnoh-region mythology.",
+      "types": [
+        "Water"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "130",
+      "rarity": "Rare",
+      "abilities": [
+        {
+          "type": "Ability",
+          "name": "Absolute Space",
+          "text": "As long as this Pokémon is in the Active Spot, your opponent can't play any Stadium cards from their hand."
+        }
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Overdrive Smash",
+          "damage": "80+",
+          "text": "During your next turn, this Pokémon's Overdrive Smash attack does 80 more damage (before applying Weakness and Resistance).",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        484
+      ]
+    },
+    {
+      "set": "cel25",
+      "cardNum": "3",
+      "name": "Kyogre",
+      "artist": "Ryuta Fuse",
+      "supertype": "Pokémon",
+      "flavorText": "It is said to have widened the seas by causing downpours. It had been asleep in a marine trench.",
+      "types": [
+        "Water"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "130",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless"
+          ],
+          "name": "Aqua Storm",
+          "damage": "",
+          "text": "Discard the top 5 cards of your deck, and then choose 2 of your opponent's Benched Pokémon. This attack does 50 damage for each Energy card you discarded in this way to each of those Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+          "convertedEnergyCost": 3
+        },
+        {
+          "cost": [
+            "Water",
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Surf",
+          "damage": "120",
+          "text": "",
+          "convertedEnergyCost": 4
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        382
+      ]
+    },
+    {
+      "set": "cel25",
+      "cardNum": "9",
+      "name": "Surfing Pikachu VMAX",
+      "artist": "aky CG Works",
+      "supertype": "Pokémon",
+      "types": [
+        "Lightning"
+      ],
+      "subtypes": [
+        "VMAX"
+      ],
+      "hp": "310",
+      "rules": [
+        "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "evolvesFrom": "Surfing Pikachu V",
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "rarity": "Rare Holo VMAX",
+      "attacks": [
+        {
+          "cost": [
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "name": "Max Surfer",
+          "damage": "160",
+          "text": "This attack also does 30 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        25
+      ]
+    },
+    {
+      "set": "cel25",
+      "cardNum": "23",
+      "name": "Professor's Research (Professor Oak)",
+      "artist": "KIYOTAKA OSHIYAMA",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard your hand and draw 7 cards.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "rarity": "Rare Holo"
+    },
+    {
+      "set": "cel25",
+      "cardNum": "16",
+      "name": "Zacian V",
+      "artist": "Mitsuhiro Arita",
+      "supertype": "Pokémon",
+      "types": [
+        "Psychic"
+      ],
+      "subtypes": [
+        "Basic",
+        "V"
+      ],
+      "hp": "220",
+      "rules": [
+        "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Holo V",
+      "abilities": [
+        {
+          "type": "Ability",
+          "name": "Roar of the Sword",
+          "text": "Once during your turn, you may search your deck for a Psychic Energy card and attach it to 1 of your Pokémon. Then, shuffle your deck. If you use this Ability, your turn ends."
+        }
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Storm Slash",
+          "damage": "60+",
+          "text": "This attack does 30 more damage for each Psychic Energy attached to this Pokémon.",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        888
+      ]
+    },
+    {
+      "set": "cel25",
+      "cardNum": "19",
+      "name": "Yveltal",
+      "artist": "AKIRA EGAWA",
+      "supertype": "Pokémon",
+      "flavorText": "When its life comes to an end, it absorbs the life energy of every living thing and turns into a cocoon once more.",
+      "types": [
+        "Darkness"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "120",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Cry of Destruction",
+          "damage": "",
+          "text": "Discard up to 3 Special Energy from your opponent's Pokémon.",
+          "convertedEnergyCost": 2
+        },
+        {
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Dark Feather",
+          "damage": "100",
+          "text": "",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        717
+      ]
+    },
+    {
+      "set": "cel25",
+      "cardNum": "1",
+      "name": "Ho-Oh",
+      "artist": "Kouki Saitou",
+      "supertype": "Pokémon",
+      "flavorText": "It will reveal itself before a pure-hearted Trainer by shining its bright, rainbow-colored wings.",
+      "types": [
+        "Fire"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "130",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "name": "Sacred Fire",
+          "damage": "",
+          "text": "This attack does 50 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+          "convertedEnergyCost": 2
+        },
+        {
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "name": "Fire Blast",
+          "damage": "120",
+          "text": "Discard an Energy from this Pokémon.",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        250
+      ]
+    },
+    {
+      "set": "cel25",
+      "cardNum": "7",
+      "name": "Flying Pikachu VMAX",
+      "artist": "aky CG Works",
+      "supertype": "Pokémon",
+      "types": [
+        "Lightning"
+      ],
+      "subtypes": [
+        "VMAX"
+      ],
+      "hp": "310",
+      "rules": [
+        "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "evolvesFrom": "Flying Pikachu V",
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "rarity": "Rare Holo VMAX",
+      "attacks": [
+        {
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Max Balloon",
+          "damage": "160",
+          "text": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks from Basic Pokémon.",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "pokedexNumbers": [
+        25
+      ]
+    },
+    {
+      "set": "cel25",
+      "cardNum": "12",
+      "name": "Xerneas",
+      "artist": "AKIRA EGAWA",
+      "supertype": "Pokémon",
+      "flavorText": "When the horns on its head shine in seven colors, it is said to be sharing everlasting life.",
+      "types": [
+        "Psychic"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "120",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Breath of Life",
+          "damage": "",
+          "text": "Search your deck for up to 3 basic Energy cards of different types and attach them to your Pokémon in any way you like. Then, shuffle your deck.",
+          "convertedEnergyCost": 2
+        },
+        {
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Aurora Horns",
+          "damage": "100",
+          "text": "",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        716
+      ]
+    },
+    {
+      "set": "cel25",
+      "cardNum": "8",
+      "name": "Surfing Pikachu V",
+      "artist": "aky CG Works",
+      "supertype": "Pokémon",
+      "types": [
+        "Lightning"
+      ],
+      "subtypes": [
+        "Basic",
+        "V"
+      ],
+      "hp": "200",
+      "rules": [
+        "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "rarity": "Rare Holo V",
+      "attacks": [
+        {
+          "cost": [
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "name": "Surf",
+          "damage": "150",
+          "text": "",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        25
+      ]
+    },
+    {
+      "set": "cel25",
+      "cardNum": "14",
+      "name": "Cosmoem",
+      "artist": "kirisAki",
+      "supertype": "Pokémon",
+      "flavorText": "As it absorbs light, Cosmoem continues to grow. Its golden shell is surprisingly solid.",
+      "types": [
+        "Psychic"
+      ],
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "90",
+      "evolvesFrom": "Cosmog",
+      "evolvesTo": [
+        "Solgaleo",
+        "Lunala"
+      ],
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "cost": [
+            "Colorless"
+          ],
+          "name": "Star Protection",
+          "damage": "",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all damage done to this Pokémon by attacks.",
+          "convertedEnergyCost": 1
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        790
+      ]
+    },
+    {
+      "set": "cel25",
+      "cardNum": "5",
+      "name": "Pikachu",
+      "artist": "Mitsuhiro Arita",
+      "supertype": "Pokémon",
+      "flavorText": "It has small electric sacs on both its cheeks. If threatened, it looses electric charges from the sacs.",
+      "types": [
+        "Lightning"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "rarity": "Rare Holo",
+      "attacks": [
+        {
+          "cost": [
+            "Colorless"
+          ],
+          "name": "Gnaw",
+          "damage": "10",
+          "text": "",
+          "convertedEnergyCost": 1
+        },
+        {
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "name": "Thunder Jolt",
+          "damage": "30",
+          "text": "Flip a coin. If tails, this Pokémon also does 10 damage to itself.",
+          "convertedEnergyCost": 2
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        25
       ]
     },
     {
@@ -309,6 +1154,46 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "130",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "cost": [
+            "Metal"
+          ],
+          "name": "Temporal Backflow",
+          "damage": "",
+          "text": "Put a card from your discard pile into your hand.",
+          "convertedEnergyCost": 1
+        },
+        {
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Metal Blast",
+          "damage": "60+",
+          "text": "This attack does 20 more damage for each Metal Energy attached to this Pokémon.",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         483
@@ -327,86 +1212,50 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "130",
+      "rarity": "Rare",
+      "attacks": [
+        {
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Aero Ball",
+          "damage": "20×",
+          "text": "This attack does 20 damage for each Energy attached to both Active Pokémon.",
+          "convertedEnergyCost": 2
+        },
+        {
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Deep Crush",
+          "damage": "160",
+          "text": "During your next turn, this Pokémon can't attack.",
+          "convertedEnergyCost": 4
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         249
-      ]
-    },
-    {
-      "set": "cel25",
-      "cardNum": "24",
-      "name": "Professor's Research (Professor Oak)",
-      "artist": "Ken Sugimori",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Supporter"
-      ]
-    },
-    {
-      "set": "cel25",
-      "cardNum": "16",
-      "name": "Zacian V",
-      "artist": "Mitsuhiro Arita",
-      "supertype": "Pokémon",
-      "types": [
-        "Psychic"
-      ],
-      "subtypes": [
-        "Basic",
-        "V"
-      ],
-      "pokedexNumbers": [
-        888
-      ]
-    },
-    {
-      "set": "cel25",
-      "cardNum": "18",
-      "name": "Zamazenta V",
-      "artist": "Mitsuhiro Arita",
-      "supertype": "Pokémon",
-      "types": [
-        "Fighting"
-      ],
-      "subtypes": [
-        "Basic",
-        "V"
-      ],
-      "pokedexNumbers": [
-        889
-      ]
-    },
-    {
-      "set": "cel25",
-      "cardNum": "19",
-      "name": "Yveltal",
-      "artist": "AKIRA EGAWA",
-      "supertype": "Pokémon",
-      "flavorText": "When its life comes to an end, it absorbs the life energy of every living thing and turns into a cocoon once more.",
-      "types": [
-        "Darkness"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        717
-      ]
-    },
-    {
-      "set": "cel25",
-      "cardNum": "25",
-      "name": "Mew",
-      "artist": "Saki Hayashiro",
-      "supertype": "Pokémon",
-      "flavorText": "Its DNA is said to contain the genetic codes of all Pokémon, so it can use all kinds of techniques.",
-      "types": [
-        "Psychic"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        151
       ]
     }
   ],

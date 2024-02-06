@@ -2,23 +2,6 @@
   "data": [
     {
       "set": "mcd22",
-      "cardNum": "1",
-      "name": "Ledyba",
-      "artist": "Naoyo Kimura",
-      "supertype": "Pokémon",
-      "flavorText": "These very cowardly Pokémon join together and use Reflect to protect their nest.",
-      "types": [
-        "Grass"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        165
-      ]
-    },
-    {
-      "set": "mcd22",
       "cardNum": "2",
       "name": "Rowlet",
       "artist": "HYOGONOSUKE",
@@ -30,25 +13,41 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "50",
+      "evolvesTo": [
+        "Dartrix"
+      ],
+      "abilities": [
+        {
+          "name": "Sky Circus",
+          "text": "If you played Bird Keeper from your hand during this turn, ignore all Energy in this Pokémon's attack costs.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Wind Shard",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "This attack does 60 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         722
-      ]
-    },
-    {
-      "set": "mcd22",
-      "cardNum": "3",
-      "name": "Gossifleur",
-      "artist": "Mizue",
-      "supertype": "Pokémon",
-      "flavorText": "It whirls around in the wind while singing a joyous song. This delightful display has charmed many into raising this Pokémon.",
-      "types": [
-        "Grass"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        829
       ]
     },
     {
@@ -64,25 +63,44 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "80",
+      "evolvesTo": [
+        "Arcanine"
+      ],
+      "attacks": [
+        {
+          "name": "Warm Up",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Fire Energy card and attach it to 1 of your Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Combustion",
+          "cost": [
+            "Fire",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         58
-      ]
-    },
-    {
-      "set": "mcd22",
-      "cardNum": "5",
-      "name": "Victini",
-      "artist": "Teeziro",
-      "supertype": "Pokémon",
-      "flavorText": "When it shares the infinite energy it creates, that being's entire body will be overflowing with power.",
-      "types": [
-        "Fire"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        494
       ]
     },
     {
@@ -98,8 +116,304 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "110",
+      "attacks": [
+        {
+          "name": "Wintry Call",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Melony cards, reveal them, and put them into your hand. Then, shuffle your deck."
+        },
+        {
+          "name": "Icy Wind",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": "Your opponent's Active Pokémon is now Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         131
+      ]
+    },
+    {
+      "set": "mcd22",
+      "cardNum": "11",
+      "name": "Cutiefly",
+      "artist": "Yukiko Baba",
+      "supertype": "Pokémon",
+      "flavorText": "An opponent's aura can tell Cutiefly what that opponent's next move will be. Then Cutiefly can glide around the attack and strike back.",
+      "types": [
+        "Psychic"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "30",
+      "evolvesTo": [
+        "Ribombee"
+      ],
+      "attacks": [
+        {
+          "name": "Flap",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "pokedexNumbers": [
+        742
+      ]
+    },
+    {
+      "set": "mcd22",
+      "cardNum": "14",
+      "name": "Drampa",
+      "artist": "Tomokazu Komiya",
+      "supertype": "Pokémon",
+      "flavorText": "Drampa is a kind and friendly Pokémon—up until it's angered. When that happens, it stirs up a gale and flattens everything around.",
+      "types": [
+        "Dragon"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "120",
+      "attacks": [
+        {
+          "name": "Corkscrew Punch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Berserk",
+          "cost": [
+            "Water",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "70+",
+          "text": "If your Benched Pokémon have any damage counters on them, this attack does 90 more damage."
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        780
+      ]
+    },
+    {
+      "set": "mcd22",
+      "cardNum": "12",
+      "name": "Bewear",
+      "artist": "Shigenori Negishi",
+      "supertype": "Pokémon",
+      "flavorText": "The moves it uses to take down its prey would make a martial artist jealous. It tucks subdued prey under its arms to carry them to its nest.",
+      "types": [
+        "Fighting"
+      ],
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "130",
+      "evolvesFrom": "Stufful",
+      "attacks": [
+        {
+          "name": "Split Spiral Punch",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40",
+          "text": "Your opponent's Active Pokémon is now Confused."
+        },
+        {
+          "name": "Strength",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        760
+      ]
+    },
+    {
+      "set": "mcd22",
+      "cardNum": "1",
+      "name": "Ledyba",
+      "artist": "Naoyo Kimura",
+      "supertype": "Pokémon",
+      "flavorText": "These very cowardly Pokémon join together and use Reflect to protect their nest.",
+      "types": [
+        "Grass"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "evolvesTo": [
+        "Ledian"
+      ],
+      "attacks": [
+        {
+          "name": "Collect",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Punch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        165
+      ]
+    },
+    {
+      "set": "mcd22",
+      "cardNum": "3",
+      "name": "Gossifleur",
+      "artist": "Mizue",
+      "supertype": "Pokémon",
+      "flavorText": "It whirls around in the wind while singing a joyous song. This delightful display has charmed many into raising this Pokémon.",
+      "types": [
+        "Grass"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "evolvesTo": [
+        "Eldegoss"
+      ],
+      "attacks": [
+        {
+          "name": "Blot",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Heal 10 damage from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        829
+      ]
+    },
+    {
+      "set": "mcd22",
+      "cardNum": "5",
+      "name": "Victini",
+      "artist": "Teeziro",
+      "supertype": "Pokémon",
+      "flavorText": "When it shares the infinite energy it creates, that being's entire body will be overflowing with power.",
+      "types": [
+        "Fire"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Victory Dive",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "You may search your deck for up to 2 cards and put them into your hand. Then, shuffle your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        494
       ]
     },
     {
@@ -115,25 +429,43 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "60",
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "attacks": [
+        {
+          "name": "Energize",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Attach a Lightning Energy card from your discard pile to this Pokémon."
+        },
+        {
+          "name": "Electro Ball",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         25
-      ]
-    },
-    {
-      "set": "mcd22",
-      "cardNum": "8",
-      "name": "Chinchou",
-      "artist": "sowsow",
-      "supertype": "Pokémon",
-      "flavorText": "On the dark ocean floor, its only means of communication is its constantly flashing lights.",
-      "types": [
-        "Lightning"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        170
       ]
     },
     {
@@ -148,6 +480,33 @@
       ],
       "subtypes": [
         "Stage 1"
+      ],
+      "hp": "100",
+      "evolvesFrom": "Mareep",
+      "evolvesTo": [
+        "Ampharos"
+      ],
+      "attacks": [
+        {
+          "name": "Electro Ball",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         180
@@ -166,76 +525,39 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "40",
+      "evolvesTo": [
+        "Eelektrik"
+      ],
+      "abilities": [
+        {
+          "name": "Levitate",
+          "text": "If this Pokémon has any Energy attached, it has no Retreat Cost.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Tiny Charge",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         602
-      ]
-    },
-    {
-      "set": "mcd22",
-      "cardNum": "11",
-      "name": "Cutiefly",
-      "artist": "Yukiko Baba",
-      "supertype": "Pokémon",
-      "flavorText": "An opponent's aura can tell Cutiefly what that opponent's next move will be. Then Cutiefly can glide around the attack and strike back.",
-      "types": [
-        "Psychic"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        742
-      ]
-    },
-    {
-      "set": "mcd22",
-      "cardNum": "12",
-      "name": "Bewear",
-      "artist": "Shigenori Negishi",
-      "supertype": "Pokémon",
-      "flavorText": "The moves it uses to take down its prey would make a martial artist jealous. It tucks subdued prey under its arms to carry them to its nest.",
-      "types": [
-        "Fighting"
-      ],
-      "subtypes": [
-        "Stage 1"
-      ],
-      "pokedexNumbers": [
-        760
-      ]
-    },
-    {
-      "set": "mcd22",
-      "cardNum": "13",
-      "name": "Pangoro",
-      "artist": "HYOGONOSUKE",
-      "supertype": "Pokémon",
-      "flavorText": "Using its leaf, Pangoro can predict the moves of its opponents. It strikes with punches that can turn a dump truck into scrap with just one hit.",
-      "types": [
-        "Darkness"
-      ],
-      "subtypes": [
-        "Stage 1"
-      ],
-      "pokedexNumbers": [
-        675
-      ]
-    },
-    {
-      "set": "mcd22",
-      "cardNum": "14",
-      "name": "Drampa",
-      "artist": "Tomokazu Komiya",
-      "supertype": "Pokémon",
-      "flavorText": "Drampa is a kind and friendly Pokémon—up until it's angered. When that happens, it stirs up a gale and flattens everything around.",
-      "types": [
-        "Dragon"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        780
       ]
     },
     {
@@ -251,8 +573,127 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Live Painting",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30+",
+          "text": "Reveal any number of basic Energy cards from your hand. This attack does 30 more damage for each type of basic Energy you revealed in this way."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         235
+      ]
+    },
+    {
+      "set": "mcd22",
+      "cardNum": "8",
+      "name": "Chinchou",
+      "artist": "sowsow",
+      "supertype": "Pokémon",
+      "flavorText": "On the dark ocean floor, its only means of communication is its constantly flashing lights.",
+      "types": [
+        "Lightning"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "evolvesTo": [
+        "Lanturn"
+      ],
+      "attacks": [
+        {
+          "name": "Electro Ball",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        170
+      ]
+    },
+    {
+      "set": "mcd22",
+      "cardNum": "13",
+      "name": "Pangoro",
+      "artist": "HYOGONOSUKE",
+      "supertype": "Pokémon",
+      "flavorText": "Using its leaf, Pangoro can predict the moves of its opponents. It strikes with punches that can turn a dump truck into scrap with just one hit.",
+      "types": [
+        "Darkness"
+      ],
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "140",
+      "evolvesFrom": "Pancham",
+      "attacks": [
+        {
+          "name": "Knocking Hammer",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90",
+          "text": "Discard the top card of your opponent's deck."
+        },
+        {
+          "name": "Shakedown",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "150",
+          "text": "Discard a random card from your opponent's hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        675
       ]
     }
   ],

@@ -3,7 +3,7 @@ package com.samsthenerd.cobblecards.registry;
 import java.util.function.Supplier;
 
 import com.samsthenerd.cobblecards.CobbleCards;
-import com.samsthenerd.cobblecards.items.ItemCardSetPack;
+import com.samsthenerd.cobblecards.items.ItemCardPack;
 import com.samsthenerd.cobblecards.items.ItemPokemonCard;
 
 import dev.architectury.registry.CreativeTabRegistry;
@@ -22,7 +22,7 @@ public class CobbleCardsItems {
 
     public static final RegistrySupplier<ItemPokemonCard> POKEMON_CARD_ITEM = item("pokemon_card", () -> new ItemPokemonCard(defItemSettings()));
 
-    public static final RegistrySupplier<ItemCardSetPack> CARD_SET_PACK_ITEM = item("card_set_pack", () -> new ItemCardSetPack(defItemSettings()));
+    public static final RegistrySupplier<ItemCardPack> CARD_PACK_ITEM = item("card_pack", () -> new ItemCardPack(defItemSettings()));
 
     public static final RegistrySupplier<ItemGroup> COBBLE_CARDS_GROUP = TABS.register("cobblecards_tab", () ->
             CreativeTabRegistry.create(Text.translatable("itemgroup.cobblecards.general"),

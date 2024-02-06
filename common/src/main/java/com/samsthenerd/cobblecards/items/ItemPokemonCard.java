@@ -11,9 +11,13 @@ import org.jetbrains.annotations.NotNull;
 import com.samsthenerd.cobblecards.CobbleCards;
 import com.samsthenerd.cobblecards.pokedata.Card;
 import com.samsthenerd.cobblecards.pokedata.CardHolder;
-import com.samsthenerd.cobblecards.tooltips.data.PokemonCardTooltipData;
+import com.samsthenerd.cobblecards.tooltips.data.WHTextureTooltipData;
 import com.samsthenerd.cobblecards.utils.CardNewnessTracker;
+import com.samsthenerd.cobblecards.utils.WHTexture;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.client.item.TooltipData;
 import net.minecraft.entity.Entity;
@@ -28,7 +32,7 @@ import net.minecraft.util.ClickType;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
-public class ItemPokemonCard extends Item {
+public class ItemPokemonCard extends Item implements IDetailTexture{
     public static Identifier NEW_CARD_PREDICATE = new Identifier(CobbleCards.MOD_ID, "new_card");
 
     public ItemPokemonCard(Settings settings) {
@@ -39,7 +43,9 @@ public class ItemPokemonCard extends Item {
     public Optional<TooltipData> getTooltipData(ItemStack stack) {
         Card card = getCard(stack);
         if(card != null){
-            return Optional.of(new PokemonCardTooltipData(card));
+            return Optional.of(
+                new WHTextureTooltipData(card.getTexture(), (w, h) -> 96)
+            );
         }
         return Optional.empty();
     }
@@ -52,6 +58,16 @@ public class ItemPokemonCard extends Item {
             stack.getOrCreateNbt().putUuid("newCard", newCardUUID);
         }
         return stack;
+    }
+
+    @Environment(EnvType.CLIENT)
+    public DetailTexture getDetailTexture(ItemStack stack){
+        Card card = getCard(stack);
+        if(card != null && Screen.hasShiftDown() && !isNewCard(stack)){
+            WHTexture texture = card.getTexture(false);
+            return new DetailTexture(texture).withWidth(0.5f).fromLeft(0f).fromBottom(0f);
+        }
+        return null; 
     }
 
     @Nullable

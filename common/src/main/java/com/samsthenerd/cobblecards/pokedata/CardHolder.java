@@ -21,7 +21,7 @@ public class CardHolder {
     public static final CardIndexer<String> SUPER_TYPE_INDEXER = addIndexer(new SimpleCardIndexer<String>("supertype", card -> Set.of(card.superType)));
     public static final CardIndexer<Integer> DEX_NUM_INDEXER = addIndexer(new SimpleCardIndexer<Integer>("dexNum", Card::getPokedexNumbers));
     public static final CardIndexer<String> SUB_TYPES_INDEXER = addIndexer(new SimpleCardIndexer<String>("subtypes", Card::getSubTypes));
-    public static final CardIndexer<String> TYPES_INDEXER = addIndexer(new SimpleCardIndexer<String>("types", Card::getTypes));
+    public static final CardIndexer<String> TYPES_INDEXER = addIndexer(new SimpleCardIndexer<String>("types", Card::getStringyTypes));
 
     // used to hold all our cards. arguably this class should just be a singleton only but whatever, if you want to use it for something else that's fine i guess
     public static CardHolder PRIMARY = new CardHolder();
@@ -73,17 +73,18 @@ public class CardHolder {
         return foundCards;
     }
     
-    // ( not supporting String input since return generic becomes unknown )
     // returns all keys for a given indexer. for example, all artist names for the artist indexer
     @SuppressWarnings("unchecked") // it's fine,,,,
     public <T> Set<T> getKeys(CardIndexer<T> indexer){
-        if(!INDICES.containsKey(indexer.getFieldKey())){
+        if(indexer != null && !INDICES.containsKey(indexer.getFieldKey())){
             return new HashSet<>();
         }
         return (Set<T>)(INDICES.get(indexer.getFieldKey()).keySet());
     }
 
-
+    public Set<?> getKeys(String fieldKey){
+        return getKeys(INDEXERS.get(fieldKey));
+    }
 
     public static <T> CardIndexer<T> addIndexer(CardIndexer<T> indexer){
         INDEXERS.put(indexer.getFieldKey(), indexer);

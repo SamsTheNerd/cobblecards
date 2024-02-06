@@ -2,23 +2,6 @@
   "data": [
     {
       "set": "swsh11tg",
-      "cardNum": "TG01",
-      "name": "Parasect",
-      "artist": "Oswaldo KATO",
-      "supertype": "Pokémon",
-      "flavorText": "Mushroom-lacking specimens of this Pokémon lie unmoving in the forest, lending credence to the hypothesis that the large mushroom is in control of Parasect's actions.",
-      "types": [
-        "Grass"
-      ],
-      "subtypes": [
-        "Stage 1"
-      ],
-      "pokedexNumbers": [
-        47
-      ]
-    },
-    {
-      "set": "swsh11tg",
       "cardNum": "TG02",
       "name": "Roserade",
       "artist": "saino misaki",
@@ -30,25 +13,41 @@
       "subtypes": [
         "Stage 1"
       ],
+      "hp": "120",
+      "evolvesFrom": "Roselia",
+      "rarity": "Trainer Gallery Rare Holo",
+      "attacks": [
+        {
+          "name": "Poisonous Whip",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Your opponent's Active Pokémon is now Poisoned."
+        },
+        {
+          "name": "Assassin's Rose",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, this attack also does 60 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         407
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG03",
-      "name": "Charizard",
-      "artist": "GIDORA",
-      "supertype": "Pokémon",
-      "flavorText": "It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.",
-      "types": [
-        "Fire"
-      ],
-      "subtypes": [
-        "Stage 2"
-      ],
-      "pokedexNumbers": [
-        6
       ]
     },
     {
@@ -64,60 +63,40 @@
       "subtypes": [
         "Stage 2"
       ],
+      "hp": "150",
+      "evolvesFrom": "Lampent",
+      "rarity": "Trainer Gallery Rare Holo",
+      "abilities": [
+        {
+          "name": "Mountain Roasting",
+          "text": "When you play this Pokémon from your hand to evolve 1 of your Pokémon during your turn, you may discard the top 3 cards of your opponent's deck.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Heat Blast",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "90",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         609
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG05",
-      "name": "Pikachu",
-      "artist": "Atsushi Furusawa",
-      "supertype": "Pokémon",
-      "flavorText": "Possesses cheek sacs in which it stores electricity. This clever forest-dweller roasts tough berries with an electric shock before consuming them.",
-      "types": [
-        "Lightning"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        25
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG06",
-      "name": "Gengar",
-      "artist": "Akira Komayama",
-      "supertype": "Pokémon",
-      "flavorText": "Possesses potential victims' shadows in an effort to steal away the victims' lives. If your shadow begins to laugh, you must take hold of a protective charm posthaste!",
-      "types": [
-        "Psychic"
-      ],
-      "subtypes": [
-        "Stage 2"
-      ],
-      "pokedexNumbers": [
-        94
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG07",
-      "name": "Banette",
-      "artist": "Tomomi Kaneko",
-      "supertype": "Pokémon",
-      "flavorText": "Resentment at being cast off made it spring into being. Some say that treating it well will satisfy it, and it will once more become a stuffed toy.",
-      "types": [
-        "Psychic"
-      ],
-      "subtypes": [
-        "Stage 1",
-        "Single Strike"
-      ],
-      "pokedexNumbers": [
-        354
       ]
     },
     {
@@ -133,42 +112,41 @@
       "subtypes": [
         "Stage 1"
       ],
-      "pokedexNumbers": [
-        59
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG09",
-      "name": "Spiritomb",
-      "artist": "Hitoshi Ariga",
-      "supertype": "Pokémon",
-      "flavorText": "It lays curses by thinking wicked thoughts. Writings tell that this Pokémon was born out of the assembly of five score and eight malevolent spirits.",
-      "types": [
-        "Darkness"
+      "hp": "130",
+      "evolvesFrom": "Hisuian Growlithe",
+      "rarity": "Trainer Gallery Rare Holo",
+      "attacks": [
+        {
+          "name": "Very Vulnerable",
+          "cost": [],
+          "convertedEnergyCost": 0,
+          "damage": "10+",
+          "text": "If you have no cards in your hand, this attack does 150 more damage."
+        },
+        {
+          "name": "Sharp Fang",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": ""
+        }
       ],
-      "subtypes": [
-        "Basic"
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
       ],
-      "pokedexNumbers": [
-        442
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG10",
-      "name": "Snorlax",
-      "artist": "Kouki Saitou",
-      "supertype": "Pokémon",
-      "flavorText": "This glutton appears in villages without warning and devours the entirety of their rice granaries—such occurrences have long been counted among the gravest of disasters.",
-      "types": [
+      "retreatCost": [
+        "Colorless",
         "Colorless"
       ],
-      "subtypes": [
-        "Basic"
-      ],
       "pokedexNumbers": [
-        143
+        59
       ]
     },
     {
@@ -183,6 +161,34 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "70",
+      "rarity": "Trainer Gallery Rare Holo",
+      "abilities": [
+        {
+          "name": "Weather Reading",
+          "text": "If you have 8 or more Stadium cards in your discard pile, ignore all Energy in this Pokémon's attack costs.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Weather Force",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80",
+          "text": "Draw cards until you have 6 cards in your hand."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
       ],
       "pokedexNumbers": [
         351
@@ -201,41 +207,43 @@
         "Basic",
         "V"
       ],
+      "hp": "180",
+      "rules": [
+        "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Holo V",
+      "attacks": [
+        {
+          "name": "Strafe",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "You may switch this Pokémon with 1 of your Benched Pokémon."
+        },
+        {
+          "name": "Mysterious Wave",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50+",
+          "text": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         826
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG13",
-      "name": "Orbeetle VMAX",
-      "artist": "Teeziro",
-      "supertype": "Pokémon",
-      "types": [
-        "Grass"
-      ],
-      "subtypes": [
-        "VMAX"
-      ],
-      "pokedexNumbers": [
-        826
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG14",
-      "name": "Centiskorch V",
-      "artist": "Yuya Oka",
-      "supertype": "Pokémon",
-      "types": [
-        "Fire"
-      ],
-      "subtypes": [
-        "Basic",
-        "V"
-      ],
-      "pokedexNumbers": [
-        851
       ]
     },
     {
@@ -250,25 +258,37 @@
       "subtypes": [
         "VMAX"
       ],
+      "hp": "320",
+      "rules": [
+        "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "evolvesFrom": "Centiskorch V",
+      "rarity": "Rare Holo VMAX",
+      "attacks": [
+        {
+          "name": "G-Max Centiferno",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "40+",
+          "text": "This attack does 40 more damage for each Fire Energy attached to this Pokémon. If you did any damage with this attack, you may attach a Fire Energy card from your discard pile to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         851
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG16",
-      "name": "Pikachu V",
-      "artist": "Ryota Murayama",
-      "supertype": "Pokémon",
-      "types": [
-        "Lightning"
-      ],
-      "subtypes": [
-        "Basic",
-        "V"
-      ],
-      "pokedexNumbers": [
-        25
       ]
     },
     {
@@ -283,25 +303,40 @@
       "subtypes": [
         "VMAX"
       ],
+      "hp": "310",
+      "rules": [
+        "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "evolvesFrom": "Pikachu V",
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "rarity": "Rare Holo VMAX",
+      "attacks": [
+        {
+          "name": "G-Max Volt Tackle",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "120+",
+          "text": "You may discard all Energy from this Pokémon. If you do, this attack does 150 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         25
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG18",
-      "name": "Enamorus V",
-      "artist": "AKIRA EGAWA",
-      "supertype": "Pokémon",
-      "types": [
-        "Psychic"
-      ],
-      "subtypes": [
-        "Basic",
-        "V"
-      ],
-      "pokedexNumbers": [
-        905
       ]
     },
     {
@@ -316,6 +351,44 @@
       "subtypes": [
         "Basic",
         "V"
+      ],
+      "hp": "220",
+      "rules": [
+        "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Holo V",
+      "attacks": [
+        {
+          "name": "Rising Sword",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20+",
+          "text": "This attack does 50 more damage for each Prize card you have taken."
+        },
+        {
+          "name": "Buster Swing",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": "This attack's damage isn't affected by Resistance."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         475
@@ -334,8 +407,237 @@
         "Basic",
         "V"
       ],
+      "hp": "180",
+      "rules": [
+        "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Holo V",
+      "abilities": [
+        {
+          "name": "Dark Asset",
+          "text": "When you play this Pokémon from your hand onto your Bench during your turn, you may draw cards until you have 6 cards in your hand. You can't use more than 1 Dark Asset Ability each turn.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Venomous Fang",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "70",
+          "text": "Your opponent's Active Pokémon is now Poisoned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         169
+      ]
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG24",
+      "name": "Boss's Orders",
+      "artist": "NC Empire",
+      "supertype": "Trainer",
+      "flavorText": "Lysandre",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Switch 1 of your opponent's Benched Pokémon with their Active Pokémon.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "rarity": "Rare Ultra"
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG27",
+      "name": "Nessa",
+      "artist": "saino misaki",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Put up to 4 in any combination of Water Pokémon and Water Energy cards from your discard pile into your hand.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "rarity": "Rare Ultra"
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG30",
+      "name": "Mew VMAX",
+      "artist": "5ban Graphics",
+      "supertype": "Pokémon",
+      "types": [
+        "Psychic"
+      ],
+      "subtypes": [
+        "VMAX",
+        "Fusion Strike"
+      ],
+      "hp": "310",
+      "rules": [
+        "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "evolvesFrom": "Mew V",
+      "rarity": "Rare Secret",
+      "attacks": [
+        {
+          "name": "Cross Fusion Strike",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Choose 1 of your Benched Fusion Strike Pokémon's attacks and use it as this attack."
+        },
+        {
+          "name": "Max Miracle",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "130",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "pokedexNumbers": [
+        151
+      ]
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG07",
+      "name": "Banette",
+      "artist": "Tomomi Kaneko",
+      "supertype": "Pokémon",
+      "flavorText": "Resentment at being cast off made it spring into being. Some say that treating it well will satisfy it, and it will once more become a stuffed toy.",
+      "types": [
+        "Psychic"
+      ],
+      "subtypes": [
+        "Stage 1",
+        "Single Strike"
+      ],
+      "hp": "80",
+      "evolvesFrom": "Shuppet",
+      "rarity": "Trainer Gallery Rare Holo",
+      "attacks": [
+        {
+          "name": "Resolute Spite",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20×",
+          "text": "Put up to 7 damage counters on this Pokémon. This attack does 20 damage for each damage counter you placed in this way."
+        },
+        {
+          "name": "Eerie Light",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50",
+          "text": "Your opponent's Active Pokémon is now Confused."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        354
+      ]
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG10",
+      "name": "Snorlax",
+      "artist": "Kouki Saitou",
+      "supertype": "Pokémon",
+      "flavorText": "This glutton appears in villages without warning and devours the entirety of their rice granaries—such occurrences have long been counted among the gravest of disasters.",
+      "types": [
+        "Colorless"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "150",
+      "rarity": "Trainer Gallery Rare Holo",
+      "abilities": [
+        {
+          "name": "Unfazed Fat",
+          "text": "Prevent all effects of attacks from your opponent's Pokémon done to this Pokémon. (Damage is not an effect.)",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Thumping Snore",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "180",
+          "text": "This Pokémon is now Asleep. During Pokémon Checkup, flip 2 coins instead of 1. If either of them is tails, this Pokémon is still Asleep."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        143
       ]
     },
     {
@@ -351,8 +653,605 @@
         "Basic",
         "V"
       ],
+      "hp": "220",
+      "rules": [
+        "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Holo V",
+      "attacks": [
+        {
+          "name": "Power Accelerator",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "You may attach a Darkness Energy card from your hand to 1 of your Benched Pokémon."
+        },
+        {
+          "name": "Dynamax Cannon",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "120+",
+          "text": "If your opponent's Active Pokémon is a Pokémon VMAX, this attack does 120 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         890
+      ]
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG28",
+      "name": "Opal",
+      "artist": "Taira Akitsu",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Flip 2 coins. Search your deck for a number of cards up to the number of heads, put them into your hand, and shuffle your deck.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "rarity": "Rare Ultra"
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG03",
+      "name": "Charizard",
+      "artist": "GIDORA",
+      "supertype": "Pokémon",
+      "flavorText": "It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.",
+      "types": [
+        "Fire"
+      ],
+      "subtypes": [
+        "Stage 2"
+      ],
+      "hp": "170",
+      "evolvesFrom": "Charmeleon",
+      "rarity": "Trainer Gallery Rare Holo",
+      "abilities": [
+        {
+          "name": "Battle Sense",
+          "text": "Once during your turn, you may look at the top 3 cards of your deck and put 1 of them into your hand. Discard the other cards.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Royal Blaze",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "100+",
+          "text": "This attack does 50 more damage for each Leon card in your discard pile."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        6
+      ]
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG09",
+      "name": "Spiritomb",
+      "artist": "Hitoshi Ariga",
+      "supertype": "Pokémon",
+      "flavorText": "It lays curses by thinking wicked thoughts. Writings tell that this Pokémon was born out of the assembly of five score and eight malevolent spirits.",
+      "types": [
+        "Darkness"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "rarity": "Trainer Gallery Rare Holo",
+      "abilities": [
+        {
+          "name": "Cursed Message",
+          "text": "If this Pokémon is Knocked Out by damage from an attack from your opponent's Pokémon, search your deck for a card and put it into your hand. Then, shuffle your deck.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Chain of Spirits",
+          "cost": [
+            "Darkness",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "This attack does 60 more damage for each Spiritomb in your discard pile."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        442
+      ]
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG13",
+      "name": "Orbeetle VMAX",
+      "artist": "Teeziro",
+      "supertype": "Pokémon",
+      "types": [
+        "Grass"
+      ],
+      "subtypes": [
+        "VMAX"
+      ],
+      "hp": "310",
+      "rules": [
+        "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "evolvesFrom": "Orbeetle V",
+      "rarity": "Rare Holo VMAX",
+      "abilities": [
+        {
+          "name": "Eerie Beam",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may put 1 damage counter on each of your opponent's Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "G-Max Wave",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50+",
+          "text": "This attack does 50 more damage for each Energy attached to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        826
+      ]
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG16",
+      "name": "Pikachu V",
+      "artist": "Ryota Murayama",
+      "supertype": "Pokémon",
+      "types": [
+        "Lightning"
+      ],
+      "subtypes": [
+        "Basic",
+        "V"
+      ],
+      "hp": "190",
+      "rules": [
+        "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "rarity": "Rare Holo V",
+      "attacks": [
+        {
+          "name": "Charge",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 2 Lightning Energy cards and attach them to this Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Thunderbolt",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "200",
+          "text": "Discard all Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        25
+      ]
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG18",
+      "name": "Enamorus V",
+      "artist": "AKIRA EGAWA",
+      "supertype": "Pokémon",
+      "types": [
+        "Psychic"
+      ],
+      "subtypes": [
+        "Basic",
+        "V"
+      ],
+      "hp": "210",
+      "rules": [
+        "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Holo V",
+      "abilities": [
+        {
+          "name": "Guardian of Love",
+          "text": "Prevent all effects of your opponent's Pokémon's Abilities done to each of your Pokémon that has any Psychic Energy attached, except any Enamorus V.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Blossom Tail",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": "Attach up to 2 basic Energy cards from your discard pile to your Benched Pokémon in any way you like."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        905
+      ]
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG25",
+      "name": "Cook",
+      "artist": "Sanosuke Sakuma",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Heal 70 damage from your Active Pokémon.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "rarity": "Rare Ultra"
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG26",
+      "name": "Kabu",
+      "artist": "Hideki Ishikawa",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Shuffle your hand into your deck. Then, draw 4 cards. If your Active Pokémon is your only Pokémon in play, draw 8 cards instead.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "rarity": "Rare Ultra"
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG29",
+      "name": "Pikachu VMAX",
+      "artist": "aky CG Works",
+      "supertype": "Pokémon",
+      "types": [
+        "Lightning"
+      ],
+      "subtypes": [
+        "VMAX"
+      ],
+      "hp": "310",
+      "rules": [
+        "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "evolvesFrom": "Pikachu V",
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "rarity": "Rare Secret",
+      "attacks": [
+        {
+          "name": "G-Max Volt Tackle",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "120+",
+          "text": "You may discard all Energy from this Pokémon. If you do, this attack does 150 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        25
+      ]
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG01",
+      "name": "Parasect",
+      "artist": "Oswaldo KATO",
+      "supertype": "Pokémon",
+      "flavorText": "Mushroom-lacking specimens of this Pokémon lie unmoving in the forest, lending credence to the hypothesis that the large mushroom is in control of Parasect's actions.",
+      "types": [
+        "Grass"
+      ],
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "120",
+      "evolvesFrom": "Paras",
+      "rarity": "Trainer Gallery Rare Holo",
+      "abilities": [
+        {
+          "name": "Lethargy Spores",
+          "text": "When you play this Pokémon from your hand to evolve 1 of your Pokémon during your turn, you may make both Active Pokémon Asleep and Poisoned.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "X-Scissor",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50+",
+          "text": "Flip a coin. If heads, this attack does 50 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        47
+      ]
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG05",
+      "name": "Pikachu",
+      "artist": "Atsushi Furusawa",
+      "supertype": "Pokémon",
+      "flavorText": "Possesses cheek sacs in which it stores electricity. This clever forest-dweller roasts tough berries with an electric shock before consuming them.",
+      "types": [
+        "Lightning"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "rarity": "Trainer Gallery Rare Holo",
+      "abilities": [
+        {
+          "name": "Pika Dash",
+          "text": "If this Pokémon has any Energy attached, it has no Retreat Cost.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Whimsy Tackle",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "50",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        25
+      ]
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG06",
+      "name": "Gengar",
+      "artist": "Akira Komayama",
+      "supertype": "Pokémon",
+      "flavorText": "Possesses potential victims' shadows in an effort to steal away the victims' lives. If your shadow begins to laugh, you must take hold of a protective charm posthaste!",
+      "types": [
+        "Psychic"
+      ],
+      "subtypes": [
+        "Stage 2"
+      ],
+      "hp": "120",
+      "evolvesFrom": "Haunter",
+      "rarity": "Trainer Gallery Rare Holo",
+      "abilities": [
+        {
+          "name": "Netherworld Gate",
+          "text": "Once during your turn, if this Pokémon is in your discard pile, you may put it onto your Bench. If you do, put 3 damage counters on this Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Screaming Circle",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Put 2 damage counters on your opponent's Active Pokémon for each of your opponent's Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        94
+      ]
+    },
+    {
+      "set": "swsh11tg",
+      "cardNum": "TG14",
+      "name": "Centiskorch V",
+      "artist": "Yuya Oka",
+      "supertype": "Pokémon",
+      "types": [
+        "Fire"
+      ],
+      "subtypes": [
+        "Basic",
+        "V"
+      ],
+      "hp": "210",
+      "rules": [
+        "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "rarity": "Rare Holo V",
+      "attacks": [
+        {
+          "name": "Radiating Heat",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "You may discard an Energy from this Pokémon. If you do, discard an Energy from your opponent's Active Pokémon."
+        },
+        {
+          "name": "Burning Train",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "180",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        851
       ]
     },
     {
@@ -368,6 +1267,42 @@
         "VMAX",
         "Eternamax"
       ],
+      "hp": "340",
+      "rules": [
+        "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "evolvesFrom": "Eternatus V",
+      "rarity": "Rare Holo VMAX",
+      "abilities": [
+        {
+          "name": "Eternal Zone",
+          "text": "If all of your Pokémon in play are Darkness type, you can have up to 8 Pokémon on your Bench, and you can't put non-Darkness Pokémon into play. (If this Ability stops working, discard Pokémon from your Bench until you have 5.)",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Dread End",
+          "cost": [
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30×",
+          "text": "This attack does 30 damage for each of your Darkness Pokémon in play."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         890
       ]
@@ -380,91 +1315,12 @@
       "supertype": "Trainer",
       "subtypes": [
         "Supporter"
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG24",
-      "name": "Boss's Orders",
-      "artist": "NC Empire",
-      "supertype": "Trainer",
-      "flavorText": "Lysandre",
-      "subtypes": [
-        "Supporter"
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG25",
-      "name": "Cook",
-      "artist": "Sanosuke Sakuma",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Supporter"
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG26",
-      "name": "Kabu",
-      "artist": "Hideki Ishikawa",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Supporter"
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG27",
-      "name": "Nessa",
-      "artist": "saino misaki",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Supporter"
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG28",
-      "name": "Opal",
-      "artist": "Taira Akitsu",
-      "supertype": "Trainer",
-      "subtypes": [
-        "Supporter"
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG29",
-      "name": "Pikachu VMAX",
-      "artist": "aky CG Works",
-      "supertype": "Pokémon",
-      "types": [
-        "Lightning"
       ],
-      "subtypes": [
-        "VMAX"
+      "rules": [
+        "Search your deck for up to 3 Pokémon V, reveal them, and put them into your hand. Then, shuffle your deck.",
+        "You may play only 1 Supporter card during your turn."
       ],
-      "pokedexNumbers": [
-        25
-      ]
-    },
-    {
-      "set": "swsh11tg",
-      "cardNum": "TG30",
-      "name": "Mew VMAX",
-      "artist": "5ban Graphics",
-      "supertype": "Pokémon",
-      "types": [
-        "Psychic"
-      ],
-      "subtypes": [
-        "VMAX",
-        "Fusion Strike"
-      ],
-      "pokedexNumbers": [
-        151
-      ]
+      "rarity": "Rare Ultra"
     }
   ],
   "datatype": "cards"

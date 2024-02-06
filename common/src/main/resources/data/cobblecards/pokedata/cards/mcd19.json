@@ -13,6 +13,30 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "50",
+      "evolvesTo": [
+        "Metapod"
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Grass"
+          ],
+          "name": "Surprise Attack",
+          "text": "Flip a coin. If tails, this attack does nothing.",
+          "damage": "20",
+          "convertedEnergyCost": 1
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         10
       ]
@@ -29,6 +53,30 @@
       ],
       "subtypes": [
         "Stage 1"
+      ],
+      "hp": "160",
+      "evolvesFrom": "Exeggcute",
+      "attacks": [
+        {
+          "cost": [
+            "Grass"
+          ],
+          "name": "Tropical Shake",
+          "text": "This attack does 20 more damage for each type of basic Energy card in your discard pile. You can't add more than 100 damage in this way.",
+          "damage": "20+",
+          "convertedEnergyCost": 1
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         103
@@ -47,6 +95,42 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "80",
+      "evolvesTo": [
+        "Magmortar"
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Fire"
+          ],
+          "name": "Controlled Burn",
+          "text": "Discard the top card of your opponent's deck.",
+          "damage": "",
+          "convertedEnergyCost": 1
+        },
+        {
+          "cost": [
+            "Fire",
+            "Fire",
+            "Colorless"
+          ],
+          "name": "Flamethrower",
+          "text": "Discard an Energy from this Pokémon.",
+          "damage": "80",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
       "pokedexNumbers": [
         126
       ]
@@ -64,8 +148,77 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "60",
+      "evolvesTo": [
+        "Sandslash"
+      ],
+      "attacks": [
+        {
+          "cost": [],
+          "name": "Fury Swipes",
+          "text": "Flip 3 coins. This attack does 10 damage for each heads.",
+          "damage": "10",
+          "convertedEnergyCost": 0
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         27
+      ]
+    },
+    {
+      "set": "mcd19",
+      "cardNum": "7",
+      "name": "Gastly",
+      "artist": "Shibuzoh.",
+      "supertype": "Pokémon",
+      "flavorText": "Should a strange light be seen flickering in an abandoned building, Gastly is lurking there.",
+      "types": [
+        "Psychic"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "evolvesTo": [
+        "Haunter"
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Psychic"
+          ],
+          "name": "Ominous Eyes",
+          "text": "Put 1 damage counter on 1 of your opponent's Pokémon.",
+          "damage": "",
+          "convertedEnergyCost": 1
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        92
       ]
     },
     {
@@ -80,6 +233,39 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "120",
+      "attacks": [
+        {
+          "cost": [
+            "Water"
+          ],
+          "name": "Aqua Bullet",
+          "text": "This attack does 20 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+          "damage": "20",
+          "convertedEnergyCost": 1
+        },
+        {
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Hydro Pump",
+          "text": "This attack does 10 more damage times the amount of Water Energy attached to this Pokémon.",
+          "damage": "70+",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
       ],
       "pokedexNumbers": [
         131
@@ -98,25 +284,38 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "60",
+      "evolvesTo": [
+        "Raichu"
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Lightning"
+          ],
+          "name": "Iron Tail",
+          "text": "Flip a coin until you get tails. This attack does 20 damage for each heads.",
+          "damage": "20",
+          "convertedEnergyCost": 1
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         25
-      ]
-    },
-    {
-      "set": "mcd19",
-      "cardNum": "7",
-      "name": "Gastly",
-      "artist": "Shibuzoh.",
-      "supertype": "Pokémon",
-      "flavorText": "Should a strange light be seen flickering in an abandoned building, Gastly is lurking there.",
-      "types": [
-        "Psychic"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        92
       ]
     },
     {
@@ -132,25 +331,32 @@
       "subtypes": [
         "Basic"
       ],
+      "hp": "60",
+      "evolvesTo": [
+        "Primeape"
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Fighting"
+          ],
+          "name": "Three-Step Strike",
+          "text": "Flip 3 coins. This attack does 10 damage for each heads.",
+          "damage": "10",
+          "convertedEnergyCost": 1
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         56
-      ]
-    },
-    {
-      "set": "mcd19",
-      "cardNum": "9",
-      "name": "Onix",
-      "artist": "Mitsuhiro Arita",
-      "supertype": "Pokémon",
-      "flavorText": "It usually lives underground. It searches for food while boring its way through the ground at 50 miles per hour.",
-      "types": [
-        "Fighting"
-      ],
-      "subtypes": [
-        "Basic"
-      ],
-      "pokedexNumbers": [
-        95
       ]
     },
     {
@@ -165,6 +371,34 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "60",
+      "evolvesTo": [
+        "Persian"
+      ],
+      "attacks": [
+        {
+          "cost": [],
+          "name": "Spoil the Fun",
+          "text": "If you go second, this attack does 60 more damage during your first turn.",
+          "damage": "10+",
+          "convertedEnergyCost": 0
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         52
@@ -183,8 +417,86 @@
       "subtypes": [
         "Stage 1"
       ],
+      "hp": "60",
+      "evolvesFrom": "Alolan Diglett",
+      "attacks": [
+        {
+          "cost": [],
+          "name": "Gold Rush",
+          "text": "Discard any number of Metal Energy cards from your hand. This attack does 30 damage for each card you discarded in this way.",
+          "damage": "30",
+          "convertedEnergyCost": 0
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
       "pokedexNumbers": [
         51
+      ]
+    },
+    {
+      "set": "mcd19",
+      "cardNum": "9",
+      "name": "Onix",
+      "artist": "Mitsuhiro Arita",
+      "supertype": "Pokémon",
+      "flavorText": "It usually lives underground. It searches for food while boring its way through the ground at 50 miles per hour.",
+      "types": [
+        "Fighting"
+      ],
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "100",
+      "evolvesTo": [
+        "Steelix"
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Colorless"
+          ],
+          "name": "Screech",
+          "text": "During your next turn, the Defending Pokémon takes 20 more damage from attacks (after applying Weakness and Resistance).",
+          "damage": "",
+          "convertedEnergyCost": 1
+        },
+        {
+          "cost": [
+            "Fighting",
+            "Fighting"
+          ],
+          "name": "Rage",
+          "text": "This attack does 10 more damage for each damage counter on this Pokémon.",
+          "damage": "10+",
+          "convertedEnergyCost": 2
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "pokedexNumbers": [
+        95
       ]
     },
     {
@@ -199,6 +511,37 @@
       ],
       "subtypes": [
         "Basic"
+      ],
+      "hp": "60",
+      "evolvesTo": [
+        "Vaporeon",
+        "Jolteon",
+        "Flareon",
+        "Sylveon",
+        "Espeon",
+        "Umbreon",
+        "Leafeon",
+        "Glaceon"
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Colorless"
+          ],
+          "name": "Gnaw",
+          "text": "",
+          "damage": "20",
+          "convertedEnergyCost": 1
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
       ],
       "pokedexNumbers": [
         133
