@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.google.common.base.Suppliers;
+import com.samsthenerd.cobblecards.inlinecards.InlineCards;
 import com.samsthenerd.cobblecards.network.CobbleCardsNetwork;
 import com.samsthenerd.cobblecards.pokedata.PokeDataLoader;
 import com.samsthenerd.cobblecards.registry.CobbleCardsCommands;
@@ -54,7 +55,7 @@ public class CobbleCards{
 	public static final DeferredRegister<ScreenHandlerType<?> > screenHandlers = DeferredRegister.create(MOD_ID, RegistryKeys.SCREEN_HANDLER);
 	
 
-	
+ 
 
 	public static void onInitialize() {
 		PokeDataLoader.init();
@@ -65,6 +66,7 @@ public class CobbleCards{
 		});
 		CobbleCardsItems.register();
 		CobbleCardsNetwork.init();
+        InlineCards.init();
 
 		blockEntities.register();
 		entities.register();

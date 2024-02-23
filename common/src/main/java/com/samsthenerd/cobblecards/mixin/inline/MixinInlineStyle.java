@@ -1,9 +1,15 @@
 package com.samsthenerd.cobblecards.mixin.inline;
 
+import java.util.Objects;
+
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
+import com.samsthenerd.cobblecards.inline.InlineData;
+import com.samsthenerd.cobblecards.inline.InlineStyle;
 
 import net.minecraft.text.ClickEvent;
 import net.minecraft.text.HoverEvent;
@@ -13,7 +19,25 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 
 @Mixin(Style.class)
-public class MixinInlineStyle {// implements InlineStyle{
+public class MixinInlineStyle implements InlineStyle {
+
+    private InlineData data = null;
+
+    @Override
+    public InlineData getInlineData(){
+        return data;
+    }
+
+    @Override
+    public Style withInlineData(InlineData data){
+        return ((InlineStyle)((Style)(Object)this).withBold(null)).setData(data);
+    }
+
+    @Override
+    public Style setData(InlineData data){
+        this.data = data;
+        return (Style)(Object)this;
+    }
 
     // @Override
     // public Style setPattern(HexPattern pattern) {
@@ -68,64 +92,51 @@ public class MixinInlineStyle {// implements InlineStyle{
     //     return ((Style)(Object)this).withParent(((PatternStyle)Style.EMPTY.withBold(null)).setHidden(hidden));
     // }
 
-    // @Inject(at=@At("TAIL"), method="<init>(Lnet/minecraft/text/TextColor;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lnet/minecraft/text/ClickEvent;Lnet/minecraft/text/HoverEvent;Ljava/lang/String;Lnet/minecraft/util/Identifier;)V")
-    // private void HexPatDefaultStyleConstructor(@Nullable TextColor color, @Nullable Boolean bold, @Nullable Boolean italic, @Nullable Boolean underlined, @Nullable Boolean strikethrough, @Nullable Boolean obfuscated, @Nullable ClickEvent clickEvent, @Nullable HoverEvent hoverEvent, @Nullable String insertion, @Nullable Identifier font, CallbackInfo cinfo){
-    //     this.pattern = null;
-    //     this.zappyPoints = null;
-    //     this.pathfinderDots = null;
-    //     this._isHidden = false;
-    //     this.patScale = 1f;
-    // }
+    @ModifyReturnValue(method = "withParent", at = @At("RETURN"))
+	private Style InlineStyWithParent(Style original, Style parent) {
+        if(this.getInlineData() != null){
+            original = ((InlineStyle) original).withInlineData(this.getInlineData());
+        } else { // no data on this style, try falling back to inherit parent
+            InlineData parentData = ((InlineStyle) parent).getInlineData();
+            if(parentData != null){
+                original = ((InlineStyle) original).withInlineData(parentData);
+            }
+        }
+        // if(this.isHidden() || ((PatternStyle) parent).isHidden()){
+        //     ((PatternStyle) original).setHidden(true);
+        // }
+		return original;
+	}
 
-    // @Inject(method = "withParent", at = @At("RETURN"), cancellable = true)
-	// private void HexPatStyWithParent(Style parent, CallbackInfoReturnable<Style> cir) {
-    //     Style rstyle = cir.getReturnValue();
-    //     if(this.getPattern() != null){
-    //         ((PatternStyle) rstyle).setPattern(this.getPattern());
-    //     } else { // no pattern on this style, try falling back to inherit parent
-    //         HexPattern parentPattern = ((PatternStyle) parent).getPattern();
-    //         if(parentPattern != null){
-    //             ((PatternStyle) rstyle).setPattern(parentPattern);
-    //         }
-    //     }
-    //     // i guess?
-    //     if(this.isHidden() || ((PatternStyle) parent).isHidden()){
-    //         ((PatternStyle) rstyle).setHidden(true);
-    //     }
-	// 	cir.setReturnValue(rstyle);
-	// }
+	@Inject(method = "equals", at = @At("HEAD"), cancellable = true)
+	private void InlineStyEquals(Object obj, CallbackInfoReturnable<Boolean> cir) {
+		if (this != obj && (obj instanceof InlineStyle style)) {
+			if (!Objects.equals(this.getInlineData(), style.getInlineData())) {
+				cir.setReturnValue(false);
+			}
+            // if(this.isHidden() != style.isHidden()){
+            //     cir.setReturnValue(false);
+            // }
+		}
+	}
 
-	// @Inject(method = "equals", at = @At("HEAD"), cancellable = true)
-	// private void HexPatStyEquals(Object obj, CallbackInfoReturnable<Boolean> cir) {
-	// 	if (this != obj && (obj instanceof PatternStyle style)) {
-	// 		if (!Objects.equals(this.getPattern(), style.getPattern())) {
-	// 			cir.setReturnValue(false);
-	// 		}
-    //         if(this.isHidden() != style.isHidden()){
-    //             cir.setReturnValue(false);
-    //         }
-	// 	}
-	// }
+    private static final String DATA_KEY = "inlineData";
+    private static final String HIDDEN_KEY = "isHidden";
 
 	// @Mixin(Style.Serializer.class)
 	// public static class MixinPatternStyleSerializer {
 	// 	@ModifyReturnValue(method = "deserialize", at = @At("RETURN"))
-	// 	private Style HexPatStyDeserialize(Style initialStyle, JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) {
+	// 	private Style InlineStyDeserialize(Style initialStyle, JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) {
 	// 		if (!jsonElement.isJsonObject() || initialStyle == null) {
 	// 			return initialStyle;
 	// 		}
 	// 		JsonObject json = jsonElement.getAsJsonObject();
-	// 		if (!json.has("hexPatternStyle")) {
+	// 		if (!json.has(DATA_KEY)) {
 	// 			return initialStyle;
 	// 		}
-    //         Boolean hiddenFromJson = JsonHelper.hasBoolean(json, PATTERN_HIDDEN_KEY) ? JsonHelper.getBoolean(json, PATTERN_HIDDEN_KEY) : false;
-            
-    //         JsonObject patternObj = JsonHelper.getObject(json, PATTERN_KEY);
-            
-    //         String startDirString = JsonHelper.hasString(patternObj, PATTERN_START_DIR_KEY) ? JsonHelper.getString(patternObj, PATTERN_START_DIR_KEY) : null;
-    //         String angleSigString = JsonHelper.hasString(patternObj, PATTERN_ANGLE_SIG_KEY) ? JsonHelper.getString(patternObj, PATTERN_ANGLE_SIG_KEY) : null;
+    //         Boolean hiddenFromJson = JsonHelper.hasBoolean(json, HIDDEN_KEY) ? JsonHelper.getBoolean(json, HIDDEN_KEY) : false;
+    //         InlineData data = InlineData.fromJson(json.get(DATA_KEY));
 
-    //         if(startDirString == null || angleSigString == null) return initialStyle;
 
     //         HexDir startDir = HexDir.fromString(startDirString);
     //         HexPattern pattern = HexPattern.fromAngles(angleSigString, startDir);
@@ -160,9 +171,11 @@ public class MixinInlineStyle {// implements InlineStyle{
     //     return returnedStyle;
     // }
 
-    // TOOD: make this actually work
     private Style keepData(Style newStyle){
-        return newStyle; // for now
+        if(this.getInlineData() != null){
+            ((InlineStyle) newStyle).setData(this.getInlineData());
+        }
+        return newStyle;
     }
 
     @ModifyReturnValue(method = "withColor(Lnet/minecraft/text/TextColor;)Lnet/minecraft/text/Style;",
@@ -236,6 +249,5 @@ public class MixinInlineStyle {// implements InlineStyle{
 	private Style fixWithExclusiveFormatting(Style newStyle, Formatting formatting){
 		return keepData(newStyle);
 	}
-
 }
 

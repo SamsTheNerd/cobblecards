@@ -1,13 +1,20 @@
 package com.samsthenerd.cobblecards.inline;
 
-import java.util.Map;
-
-import net.minecraft.util.Identifier;
+import net.minecraft.text.Style;
 
 // duck interface to carry added style data
 public interface InlineStyle {
-    // hm - actually not sure that there's a case where we get multiple data in a single style ? 
-    public Map<Identifier, InlineData> getInlineData();
+    public InlineData getInlineData();
 
-    public void putInlineData(Identifier id, InlineData data);
+    public Style withInlineData(InlineData data);
+
+    public static Style fromInlineData(InlineData data){
+        if(((Object)Style.EMPTY) instanceof InlineStyle){
+            return ((InlineStyle)Style.EMPTY).withInlineData(data);
+        } else {
+            return Style.EMPTY;
+        }
+    }
+
+    public Style setData(InlineData data);
 }

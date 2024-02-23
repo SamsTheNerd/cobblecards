@@ -55,6 +55,32 @@ public class WHTexture {
         return null;
     }
 
+    public JsonObject serialize(){
+        JsonObject json = new JsonObject();
+        if(isLocal){
+            json.addProperty("texture", textureId.toString());
+            json.addProperty("width", width);
+            json.addProperty("height", height);
+        } else {
+            json.addProperty("url", url);
+            json.addProperty("id", id.toString());
+        }
+        return json;
+    }
+
+    public static WHTexture deserialize(JsonObject json){
+        if(json.has("texture")){
+            Identifier textureId = new Identifier(json.get("texture").getAsString());
+            int width = json.get("width").getAsInt();
+            int height = json.get("height").getAsInt();
+            return fromLocal(textureId, width, height);
+        } else if(json.has("url")){
+            Identifier id = new Identifier(json.get("id").getAsString());
+            return fromUrl(json.get("url").getAsString(), id);
+        }
+        return null;
+    }
+
     public Identifier getTextureId(){
         if(isLocal){
             return textureId;
