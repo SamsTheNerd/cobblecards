@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
-import com.samsthenerd.cobblecards.tooltips.components.WHTextureTooltipComponent;
-import com.samsthenerd.cobblecards.tooltips.data.WHTextureTooltipData;
+import com.samsthenerd.cobblecards.tooltips.components.SpriteTooltipComponent;
+import com.samsthenerd.cobblecards.tooltips.data.SpriteTooltipData;
 
 import net.minecraft.client.gui.tooltip.TooltipComponent;
 import net.minecraft.client.item.TooltipData;
@@ -31,6 +31,6 @@ public class CobbleCardsTooltips {
 
     // should be called sided in tooltip registration stuff
     public static void init(){
-        tooltipDataToComponent.put(WHTextureTooltipData.class, convertTooltip(WHTextureTooltipData.class, WHTextureTooltipComponent::new));
+        tooltipDataToComponent.put(SpriteTooltipData.class, convertTooltip(SpriteTooltipData.class, SpriteTooltipComponent::new));
     }
 }

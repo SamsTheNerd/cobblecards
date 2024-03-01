@@ -9,7 +9,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Pair;
 
 // specifies some texture and a width/height. can be either from a URL or a local texture. Mostly used for in tooltips
-public class WHTexture {
+public class WHTexture{
     private Identifier id;
     private Identifier textureId;
     private boolean isLocal;

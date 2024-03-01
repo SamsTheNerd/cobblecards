@@ -10,7 +10,7 @@ import com.samsthenerd.cobblecards.pokedata.Card;
 import com.samsthenerd.cobblecards.pokedata.CardPack;
 import com.samsthenerd.cobblecards.pokedata.CardQuery.NumberIndexerQuery;
 import com.samsthenerd.cobblecards.pokedata.PullSlot;
-import com.samsthenerd.cobblecards.utils.WHTexture;
+import com.samsthenerd.cobblecards.utils.Spritelike;
 
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.Text;
@@ -49,12 +49,12 @@ public class PokedexPack extends CardPack {
     }
 
     @Nullable
-    public WHTexture getLogo(){
+    public Spritelike getLogo(){
         return null;
     }
 
     @Nullable
-    public WHTexture getSymbol(){
+    public Spritelike getSymbol(){
         return null;
     }
 

@@ -11,9 +11,9 @@ import org.jetbrains.annotations.NotNull;
 import com.samsthenerd.cobblecards.CobbleCards;
 import com.samsthenerd.cobblecards.pokedata.Card;
 import com.samsthenerd.cobblecards.pokedata.CardHolder;
-import com.samsthenerd.cobblecards.tooltips.data.WHTextureTooltipData;
+import com.samsthenerd.cobblecards.tooltips.data.SpriteTooltipData;
 import com.samsthenerd.cobblecards.utils.CardNewnessTracker;
-import com.samsthenerd.cobblecards.utils.WHTexture;
+import com.samsthenerd.cobblecards.utils.Spritelike;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -44,7 +44,7 @@ public class ItemPokemonCard extends Item implements IDetailTexture{
         Card card = getCard(stack);
         if(card != null){
             return Optional.of(
-                new WHTextureTooltipData(card.getTexture(), (w, h) -> 96)
+                new SpriteTooltipData(card.getTexture(), (w, h) -> 96)
             );
         }
         return Optional.empty();
@@ -64,7 +64,7 @@ public class ItemPokemonCard extends Item implements IDetailTexture{
     public DetailTexture getDetailTexture(ItemStack stack){
         Card card = getCard(stack);
         if(card != null && Screen.hasShiftDown() && !isNewCard(stack)){
-            WHTexture texture = card.getTexture(false);
+            Spritelike texture = card.getTexture(false);
             return new DetailTexture(texture).withWidth(0.5f).fromLeft(0f).fromBottom(0f);
         }
         return null; 

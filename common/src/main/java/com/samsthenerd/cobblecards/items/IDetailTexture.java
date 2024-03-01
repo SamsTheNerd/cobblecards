@@ -1,6 +1,6 @@
 package com.samsthenerd.cobblecards.items;
 
-import com.samsthenerd.cobblecards.utils.WHTexture;
+import com.samsthenerd.cobblecards.utils.Spritelike;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -14,7 +14,7 @@ public interface IDetailTexture {
 
     // just do all these 0-1
     public class DetailTexture{
-        public WHTexture texture;
+        public Spritelike sprite;
 
         private float wh = 0.5f;
         private boolean lockedWidth = true; // true if wh is width, false if it's the height
@@ -27,8 +27,8 @@ public interface IDetailTexture {
 
         private boolean overItem = true;
 
-        public DetailTexture(WHTexture texture){
-            this.texture = texture;
+        public DetailTexture(Spritelike sprite){
+            this.sprite = sprite;
         }
 
         // many silly methods for building this but would be a pain without them
@@ -98,13 +98,13 @@ public interface IDetailTexture {
             if(lockedWidth){
                 return wh;
             } else {
-                return wh * texture.getWidth() / texture.getHeight();
+                return wh * sprite.getSpriteWidth() / sprite.getSpriteHeight();
             }
         }
 
         public float getHeight(){
             if(lockedWidth){
-                return wh * texture.getHeight() / texture.getWidth();
+                return wh * sprite.getSpriteWidth() / sprite.getSpriteHeight();
             } else {
                 return wh;
             }

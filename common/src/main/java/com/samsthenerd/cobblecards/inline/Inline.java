@@ -14,6 +14,7 @@ import com.samsthenerd.cobblecards.inline.data.ItemInlineData;
 import com.samsthenerd.cobblecards.inline.matchers.RegexMatcher;
 import com.samsthenerd.cobblecards.inline.renderers.InlineEntityRenderer;
 import com.samsthenerd.cobblecards.inline.renderers.InlineItemRenderer;
+import com.samsthenerd.cobblecards.inline.renderers.SpriteInlineRenderer;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.Entity;
@@ -63,8 +64,18 @@ public class Inline {
             return new TextMatch(linkText);
         }));
 
+
+        addMatcher(new Identifier(MOD_ID, "bolditalic"), new RegexMatcher.Simple("(?<ast>\\*{1,3})\\b([^*]+)(\\k<ast>)", (MatchResult mr) ->{
+            String text = mr.group(2);
+            int astCount = mr.group(1).length();
+            MutableText linkText = Text.literal(text);
+            linkText.setStyle(Style.EMPTY.withBold(astCount >= 2).withItalic(astCount % 2 == 1));
+            return new TextMatch(linkText);
+        }));
+
         addRenderer(InlineItemRenderer.INSTANCE);
         addRenderer(InlineEntityRenderer.INSTANCE);
+        addRenderer(SpriteInlineRenderer.INSTANCE);
     }
 
     public static void addMatcher(Identifier id, InlineMatcher matcher){

@@ -38,6 +38,7 @@ public class InlineMatchResult {
     }
 
     public static interface Match {
+        // TODO: let this modify the current style
         // returns the number of characters consumed
         public int accept(CharacterVisitor visitor, int index, Style currentStyle);
 

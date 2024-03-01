@@ -38,7 +38,7 @@ public class RenderDetailTexture {
             // render the detail texture
             DetailTexture detail = detailTextureItem.getDetailTexture(stack);
             if(detail == null) return;
-            Identifier textureId = detail.texture.getTextureId();
+            Identifier textureId = detail.sprite.getTextureId();
             if(textureId == null || textureId.equals(new Identifier(""))){
                 return;
             }

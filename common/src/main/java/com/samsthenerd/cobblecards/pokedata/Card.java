@@ -8,7 +8,8 @@ import java.util.Set;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.samsthenerd.cobblecards.CobbleCards;
-import com.samsthenerd.cobblecards.utils.WHTexture;
+import com.samsthenerd.cobblecards.utils.Spritelike;
+import com.samsthenerd.cobblecards.utils.URLSprite;
 
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Pair;
@@ -191,16 +192,15 @@ public class Card {
         return CardSet.get(setId);
     }
 
-    // private-ing these for now. WHTexture should probably be prefered for most cases
     private String getImageUrl(boolean hires){
         return "https://images.pokemontcg.io/" + setId + "/" + cardNum + (hires ? "_hires" : "") + ".png";
     }
 
-    public WHTexture getTexture(boolean hires){
-        return WHTexture.fromUrl(getImageUrl(hires), new Identifier("cobblecards", "pokecard/" + fullId().toLowerCase() + (hires ? "_hires" : "")));
+    public Spritelike getTexture(boolean hires){
+        return new URLSprite(getImageUrl(hires), new Identifier("cobblecards", "pokecard/" + fullId().toLowerCase() + (hires ? "_hires" : "")));
     }
 
-    public WHTexture getTexture(){
+    public Spritelike getTexture(){
         return getTexture(true);
     }
 

@@ -12,7 +12,7 @@ import com.samsthenerd.cobblecards.pokedata.Card;
 import com.samsthenerd.cobblecards.pokedata.CardPack;
 import com.samsthenerd.cobblecards.pokedata.CardQuery;
 import com.samsthenerd.cobblecards.pokedata.PullSlot;
-import com.samsthenerd.cobblecards.utils.WHTexture;
+import com.samsthenerd.cobblecards.utils.Spritelike;
 
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.Text;
@@ -22,8 +22,8 @@ public class QueryPack extends CardPack {
     private String name = "Query";
     private String series = "Query";
     private List<PullSlot> pullSlots = new ArrayList<>();
-    private WHTexture logo = null;
-    private WHTexture symbol = null;
+    private Spritelike logo = null;
+    private Spritelike symbol = null;
 
     public QueryPack(CardQuery query){
         this.query = query;
@@ -57,12 +57,12 @@ public class QueryPack extends CardPack {
     }
 
     @Nullable
-    public WHTexture getLogo(){
+    public Spritelike getLogo(){
         return logo;
     }
 
     @Nullable
-    public WHTexture getSymbol(){
+    public Spritelike getSymbol(){
         return symbol;
     }
 
@@ -81,10 +81,10 @@ public class QueryPack extends CardPack {
             pack.series = json.get("series").getAsString();
         }
         if(json.has("logo")){
-            pack.logo = WHTexture.fromJson(json.get("logo"));
+            pack.logo = Spritelike.fromJson(json.get("logo"));
         }
         if(json.has("symbol")){
-            pack.symbol = WHTexture.fromJson(json.get("symbol"));
+            pack.symbol = Spritelike.fromJson(json.get("symbol"));
         }
         if(json.has("slots")){
             for(JsonElement slotElem : json.getAsJsonArray("slots")){

@@ -12,7 +12,7 @@ import com.samsthenerd.cobblecards.pokedata.Card;
 import com.samsthenerd.cobblecards.pokedata.CardPack;
 import com.samsthenerd.cobblecards.pokedata.CardSet;
 import com.samsthenerd.cobblecards.pokedata.PullSlot;
-import com.samsthenerd.cobblecards.utils.WHTexture;
+import com.samsthenerd.cobblecards.utils.Spritelike;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
@@ -105,12 +105,12 @@ public class SetPack extends CardPack {
     }
 
     @Nullable
-    public WHTexture getLogo(){
+    public Spritelike getLogo(){
         return set.getLogo();
     }
 
     @Nullable
-    public WHTexture getSymbol(){
+    public Spritelike getSymbol(){
         return set.getSymbol();
     }
 

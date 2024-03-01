@@ -9,7 +9,8 @@ import java.util.Set;
 
 import com.google.gson.JsonObject;
 import com.samsthenerd.cobblecards.pokedata.datagenish.DataFetcher;
-import com.samsthenerd.cobblecards.utils.WHTexture;
+import com.samsthenerd.cobblecards.utils.Spritelike;
+import com.samsthenerd.cobblecards.utils.URLSprite;
 
 import net.minecraft.util.Identifier;
 
@@ -68,12 +69,12 @@ public class CardSet {
         return new HashSet<>(CardHolder.PRIMARY.getCards(CardHolder.SET_INDEXER, id));
     }
 
-    public WHTexture getLogo(){
-        return WHTexture.fromUrl(String.format("https://images.pokemontcg.io/%s/logo.png", id), new Identifier("cobblecards", "setlogo/" + id.toLowerCase()));
+    public Spritelike getLogo(){
+        return new URLSprite(String.format("https://images.pokemontcg.io/%s/logo.png", id), new Identifier("cobblecards", "setlogo/" + id.toLowerCase()));
     }
 
-    public WHTexture getSymbol(){
-        return WHTexture.fromUrl(String.format("https://images.pokemontcg.io/%s/symbol.png", id), new Identifier("cobblecards", "setsymbol/" + id.toLowerCase()));
+    public Spritelike getSymbol(){
+        return new URLSprite(String.format("https://images.pokemontcg.io/%s/symbol.png", id), new Identifier("cobblecards", "setsymbol/" + id.toLowerCase()));
     }
 
     // sets like trainer galleries or shiny vaults or whatever where they're clearly the same set but separated for whatever reason

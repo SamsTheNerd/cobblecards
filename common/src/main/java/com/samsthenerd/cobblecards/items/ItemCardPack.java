@@ -12,7 +12,7 @@ import com.samsthenerd.cobblecards.pokedata.CardSet;
 import com.samsthenerd.cobblecards.pokedata.PullManager;
 import com.samsthenerd.cobblecards.pokedata.packs.SetPack;
 import com.samsthenerd.cobblecards.registry.CobbleCardsItems;
-import com.samsthenerd.cobblecards.utils.WHTexture;
+import com.samsthenerd.cobblecards.utils.Spritelike;
 
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
@@ -87,7 +87,7 @@ public class ItemCardPack extends Item implements IDynamicModelItem, IDetailText
     public DetailTexture getDetailTexture(ItemStack stack){
         CardPack pack = getPack(stack);
         if(pack != null && pack.getSymbol() != null && Screen.hasShiftDown()){
-            WHTexture symbolTexture = pack.getSymbol();
+            Spritelike symbolTexture = pack.getSymbol();
             return new DetailTexture(symbolTexture).withWidth(0.5f).fromLeft(0f).fromBottom(0f);
         }
         return null;

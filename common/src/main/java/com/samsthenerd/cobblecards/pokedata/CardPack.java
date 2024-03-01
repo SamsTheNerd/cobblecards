@@ -13,8 +13,8 @@ import com.google.gson.JsonObject;
 import com.samsthenerd.cobblecards.clientmisc.DynamicModelOverride;
 import com.samsthenerd.cobblecards.pokedata.packs.PokedexPack;
 import com.samsthenerd.cobblecards.pokedata.packs.SetPack;
-import com.samsthenerd.cobblecards.tooltips.data.WHTextureTooltipData;
-import com.samsthenerd.cobblecards.utils.WHTexture;
+import com.samsthenerd.cobblecards.tooltips.data.SpriteTooltipData;
+import com.samsthenerd.cobblecards.utils.Spritelike;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -64,16 +64,16 @@ public abstract class CardPack {
     public abstract Set<Card> getPossibleCards();
 
     @Nullable
-    public abstract WHTexture getLogo();
+    public abstract Spritelike getLogo();
 
     @Nullable
-    public abstract WHTexture getSymbol();
+    public abstract Spritelike getSymbol();
 
     // expose tooltip stuff here since it's nice to have
     public Optional<TooltipData> getTooltipData(ItemStack stack){
-        WHTexture logo = getLogo();
+        Spritelike logo = getLogo();
         if(logo != null){
-            return Optional.of(new WHTextureTooltipData(logo, (w,h) -> 96));
+            return Optional.of(new SpriteTooltipData(logo, (w,h) -> 96));
         }
         return Optional.empty();
     }

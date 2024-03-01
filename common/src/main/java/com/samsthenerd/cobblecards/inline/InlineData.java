@@ -1,5 +1,6 @@
 package com.samsthenerd.cobblecards.inline;
 
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 import net.minecraft.util.Identifier;
@@ -18,7 +19,7 @@ public interface InlineData {
 
         public D deserialize(JsonObject json);
 
-        public JsonObject serializeData(D data);
+        public JsonElement serializeData(D data);
 
         public default JsonObject serialize(D data){
             JsonObject json = new JsonObject();
