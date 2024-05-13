@@ -75,6 +75,7 @@ public class MixinInlineParsing {
                     
                     if(matchedChars.nextSetBit(start) != -1 && matchedChars.nextSetBit(start) < end){
                         // conflict, choose to just ignore it
+                        // CobbleCards.logPrint("Conflict in inline matchers: " + matcher.getClass().getName() + " at position [" + start + ", " + end + "]");
                         continue;
                     }
 
@@ -83,11 +84,12 @@ public class MixinInlineParsing {
                     matches.put(sequenceOffset + start, matchData);
                 }
                 
+                // split this segment into remaining unmatched segments
                 String currentMatch = "";
                 for(int j = 0; j < sequenceText.length(); j++){
                     if(matchedChars.get(j)){
                         if(currentMatch.length() > 0){
-                            newUnmatchedTexts.add(new Pair<>(sequenceOffset + j, currentMatch));
+                            newUnmatchedTexts.add(new Pair<>(sequenceOffset + j - currentMatch.length(), currentMatch));
                             currentMatch = "";
                         }
                     } else {

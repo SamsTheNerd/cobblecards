@@ -1,7 +1,7 @@
 package com.samsthenerd.cobblecards.inline.renderers;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import com.samsthenerd.cobblecards.CobbleCards;
+import com.samsthenerd.cobblecards.inline.Inline;
 import com.samsthenerd.cobblecards.inline.InlineRenderer;
 import com.samsthenerd.cobblecards.inline.data.SpriteInlineData;
 
@@ -9,30 +9,31 @@ import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.Style;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.ColorHelper.Argb;
 
 public class SpriteInlineRenderer implements InlineRenderer<SpriteInlineData>{
 
     public static final SpriteInlineRenderer INSTANCE = new SpriteInlineRenderer();
 
     public Identifier getId(){
-        return new Identifier(CobbleCards.MOD_ID, "whtexture");
+        return new Identifier(Inline.MOD_ID, "spritelike");
     
     }
 
     public int render(SpriteInlineData data, DrawContext context, int index, Style style, int codepoint, TextRenderingContext trContext){
-        int height = data.sprite.getSpriteHeight();
+        float height = data.sprite.getSpriteHeight();
         if(height == 0){
             return 0;
         }
-        int width = data.sprite.getSpriteWidth();
+        float width = data.sprite.getSpriteWidth();
         float whRatio = (width / (float)height);
-        float scale = (float)(8.0 / height);
         MatrixStack matrices = context.getMatrices();
-        matrices.scale(scale, scale, 1);
+        // matrices.scale(scale, scale, 1);
         matrices.translate(0, 0, 1);
         RenderSystem.enableDepthTest();
         // context.drawTexture(data.sprite.getTextureId(), 0, 0 , 0, 0, 0, width, height, width, height);
-        data.sprite.drawSprite(context, 0, 0, 0, 1, 1);
+        int argb = Argb.getArgb((int)(trContext.alpha * 255), (int)(trContext.red * 255), (int)(trContext.green * 255), (int)(trContext.blue * 255));
+        data.sprite.drawSpriteWithLight(context, 0, 0, 0, 8 * width / height,8, trContext.light, 0xFFFFFFFF);
         return (int)Math.ceil(whRatio * 8);
     }
 

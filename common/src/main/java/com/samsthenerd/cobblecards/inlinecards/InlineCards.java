@@ -22,6 +22,9 @@ public class InlineCards {
             mr -> {
                 String fullId = mr.group(1) + "-" + mr.group(2);
                 Card card = Card.get(fullId);
+                if(card == null){
+                    return null;
+                }
                 HoverEvent he = new HoverEvent(HoverEvent.Action.SHOW_ITEM, new ItemStackContent(CobbleCardsItems.POKEMON_CARD_ITEM.get().fromCard(card, false)));
                 return new DataMatch(new SpriteInlineData(card.getTexture(false)), Style.EMPTY.withHoverEvent(he));
             }));

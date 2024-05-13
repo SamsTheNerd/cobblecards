@@ -59,6 +59,8 @@ public class InlineItemRenderer implements InlineRenderer<ItemInlineData>{
             if (bl) {
                 DiffuseLighting.disableGuiDepthLighting();
             }
+            RenderSystem.enableDepthTest();
+            RenderSystem.enableCull();
             client.getItemRenderer().renderItem(stack, ModelTransformationMode.GUI, false, matrices, context.getVertexConsumers(), trContext.light, OverlayTexture.DEFAULT_UV, bakedModel);
             context.draw();
             if (bl) {

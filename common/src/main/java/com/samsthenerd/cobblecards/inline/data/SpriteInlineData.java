@@ -22,7 +22,7 @@ public class SpriteInlineData implements InlineData{
 
     public Spritelike sprite;
 
-    public SpriteInlineData(Spritelike texture){
+    public SpriteInlineData(Spritelike sprite){
         this.sprite = sprite;
     }
 

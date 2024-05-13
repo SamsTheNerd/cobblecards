@@ -10,6 +10,7 @@ import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import com.samsthenerd.cobblecards.inline.Inline;
 import com.samsthenerd.cobblecards.inline.InlineData;
+import com.samsthenerd.cobblecards.inline.InlineRenderer;
 import com.samsthenerd.cobblecards.inline.InlineStyle;
 
 import net.minecraft.client.font.Glyph;
@@ -29,8 +30,11 @@ public class MixinTextWiden {
         if(inlData == null){
             return;
         }
-        int cWidth = Inline.getRenderer(inlData.getRendererId()).charWidth(inlData, style, codepoint);
-        cir.setReturnValue((float)cWidth);
+        InlineRenderer ilRenderer = Inline.getRenderer(inlData.getRendererId());
+        if(ilRenderer != null){
+            int cWidth = ilRenderer.charWidth(inlData, style, codepoint);
+            cir.setReturnValue((float)cWidth);
+        }
     }
 
 
@@ -42,8 +46,12 @@ public class MixinTextWiden {
         if(inlData == null){
             return original.call(glyph, bold);
         }
-        int cWidth = Inline.getRenderer(inlData.getRendererId()).charWidth(inlData, style, codepoint);
-        return cWidth;
+        InlineRenderer ilRenderer = Inline.getRenderer(inlData.getRendererId());
+        if(ilRenderer != null){
+            int cWidth = ilRenderer.charWidth(inlData, style, codepoint);
+            return cWidth;
+        }
+        return original.call(glyph, bold);
     }
 
     // TODO: mixin to the drawer accept call right after this ^ and stick a marker on the style 

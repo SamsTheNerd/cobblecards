@@ -35,8 +35,10 @@ public class SpriteTooltipComponent implements TooltipComponent {
         ps.translate(mouseX, mouseY, 500);
         RenderSystem.setShaderColor(1f, 1f, 1f, 1f);
         
-        sprite.drawSprite(context, 0, 0, 0, 1, 1);
-        // float scale = ((float)getWidth(font)) / texture.getWidth();
+        sprite.drawSprite(context, 0, 0, 0, getWidth(font), getHeight());
+
+
+        // float scale = ((float)getWidth(font)) / sprite.getSpriteWidth();
         // ps.scale(scale, scale, 1f);
         // context.drawTexture(textureId, 0, 0, 0, 0, 0, texture.getWidth(), texture.getHeight(), texture.getWidth(), texture.getHeight());
 

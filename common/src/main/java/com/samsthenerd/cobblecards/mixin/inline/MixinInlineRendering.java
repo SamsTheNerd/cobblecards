@@ -73,7 +73,9 @@ public class MixinInlineRendering {
             return;
         }
         InlineRenderer renderer = Inline.getRenderer(inlData.getRendererId());
-
+        if(renderer == null){
+            return;
+        }
         // for now just try to get an item renderer set up here
 
         Tessellator heldTess = Tessellator.getInstance();

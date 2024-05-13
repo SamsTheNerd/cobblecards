@@ -104,7 +104,7 @@ public interface IDetailTexture {
 
         public float getHeight(){
             if(lockedWidth){
-                return wh * sprite.getSpriteWidth() / sprite.getSpriteHeight();
+                return wh * sprite.getSpriteHeight() / sprite.getSpriteWidth();
             } else {
                 return wh;
             }
