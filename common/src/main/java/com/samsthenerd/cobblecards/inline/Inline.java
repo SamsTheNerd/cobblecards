@@ -11,11 +11,14 @@ import com.samsthenerd.cobblecards.inline.InlineMatchResult.DataMatch;
 import com.samsthenerd.cobblecards.inline.InlineMatchResult.TextMatch;
 import com.samsthenerd.cobblecards.inline.data.EntityInlineData;
 import com.samsthenerd.cobblecards.inline.data.ItemInlineData;
+import com.samsthenerd.cobblecards.inline.data.ModIconData;
 import com.samsthenerd.cobblecards.inline.matchers.RegexMatcher;
 import com.samsthenerd.cobblecards.inline.renderers.InlineEntityRenderer;
 import com.samsthenerd.cobblecards.inline.renderers.InlineItemRenderer;
 import com.samsthenerd.cobblecards.inline.renderers.SpriteInlineRenderer;
 
+import dev.architectury.platform.Mod;
+import dev.architectury.platform.Platform;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -71,6 +74,17 @@ public class Inline {
             MutableText linkText = Text.literal(text);
             linkText.setStyle(Style.EMPTY.withBold(astCount >= 2).withItalic(astCount % 2 == 1));
             return new TextMatch(linkText);
+        }));
+
+        addMatcher(new Identifier(MOD_ID, "modicon"), new RegexMatcher.Simple("<mod:([a-z:\\/_-]+)>", (MatchResult mr) -> {
+            String modid = mr.group(1);
+            try{
+                Mod mod = Platform.getMod(modid);
+                return new DataMatch(new ModIconData(modid), ModIconData.getTooltipStyle(modid));
+            } catch (Exception e){
+                CobbleCards.LOGGER.error("error parsing modicon: " + modid);
+                return null;
+            }
         }));
 
         addRenderer(InlineItemRenderer.INSTANCE);
