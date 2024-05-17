@@ -17,4 +17,10 @@ public interface InlineStyle {
     }
 
     public Style setData(InlineData data);
+
+    public Style withGlowyMarker(boolean glowy);
+
+    public Style setGlowyMarker(boolean glowy);
+
+    public boolean hasGlowyMarker();
 }

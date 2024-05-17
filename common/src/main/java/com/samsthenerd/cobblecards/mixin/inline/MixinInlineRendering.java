@@ -89,10 +89,28 @@ public class MixinInlineRendering {
         matrices.push();
 
         matrices.multiplyPositionMatrix(matrix);
-        matrices.translate(x, y, 0);
+        matrices.scale(1,1,(float)0.001);
+        matrices.translate(x, y, inlStyle.hasGlowyMarker() ? 0 : 100);
+
+
+        if(inlStyle.hasGlowyMarker()){
+            // RenderSystem.disableDepthTest();
+            // RenderSystem.blendFunc(SrcFactor.ONE_MINUS_SRC_ALPHA, DstFactor.DST_ALPHA);
+            // drawContext.fill(-4, -4, 12, 12, style.getColor().getRgb());
+            // RenderSystem.colorMask(false, false, false, true);
+            // RenderSystem.blendFunc(SrcFactor.SRC_ALPHA, DstFactor.DST_ALPHA);
+        }
 
         TextRenderingContext trContext = new InlineRenderer.TextRenderingContext(light, shadow, brightnessMultiplier, red, green, blue, alpha, layerType, vertexConsumers);
         x += renderer.render(inlData, drawContext, index, style, codepoint, trContext);
+
+        if(inlStyle.hasGlowyMarker()){
+            // RenderSystem.colorMask(true, true, true, false);
+            // drawContext.fill(-4, -4, 12, 12, style.getColor().getRgb());
+            // RenderSystem.defaultBlendFunc();
+            // RenderSystem.colorMask(true, true, true, true);
+        }
+
 
         matrices.pop();
 

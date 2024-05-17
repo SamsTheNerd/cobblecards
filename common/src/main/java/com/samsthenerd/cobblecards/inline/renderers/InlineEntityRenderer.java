@@ -11,7 +11,6 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;
 import net.minecraft.text.Style;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Util;
 import net.minecraft.util.math.RotationAxis;
 
 public class InlineEntityRenderer implements InlineRenderer<EntityInlineData>{
@@ -39,8 +38,8 @@ public class InlineEntityRenderer implements InlineRenderer<EntityInlineData>{
         MinecraftClient.getInstance().getTickDelta();
         MinecraftClient client = MinecraftClient.getInstance();
         float tickDelta = client.getTickDelta();
-        float rotation = 90f * (Util.getMeasuringTimeMs() / 1000f + data.getUniqueOffset());
-        matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(rotation));
+        // float rotation = 90f * (Util.getMeasuringTimeMs() / 1000f + data.getUniqueOffset());
+        matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(45f));
         renderer.render(ent, 0, 0, matrices, trContext.vertexConsumers, trContext.light);
         return cDist;
     }

@@ -22,6 +22,7 @@ import net.minecraft.util.Identifier;
 public class MixinInlineStyle implements InlineStyle {
 
     private InlineData data = null;
+    private boolean _isGlowy = false; // this is purely client so doesn't need to be 
 
     @Override
     public InlineData getInlineData(){
@@ -38,6 +39,24 @@ public class MixinInlineStyle implements InlineStyle {
         this.data = data;
         return (Style)(Object)this;
     }
+
+    @Override
+    public Style setGlowyMarker(boolean glowy){
+        this._isGlowy = glowy;
+        return (Style)(Object)this;
+    }
+
+    @Override
+    public Style withGlowyMarker(boolean glowy){
+        return ((InlineStyle)((Style)(Object)this).withBold(null)).setGlowyMarker(glowy);
+    }
+
+    @Override
+    public boolean hasGlowyMarker(){
+        return this._isGlowy;
+    }
+
+
 
     // @Override
     // public Style setPattern(HexPattern pattern) {
@@ -174,6 +193,7 @@ public class MixinInlineStyle implements InlineStyle {
     private Style keepData(Style newStyle){
         if(this.getInlineData() != null){
             ((InlineStyle) newStyle).setData(this.getInlineData());
+            ((InlineStyle) newStyle).setGlowyMarker((this.hasGlowyMarker()));
         }
         return newStyle;
     }

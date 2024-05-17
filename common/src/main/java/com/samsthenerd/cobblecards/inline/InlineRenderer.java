@@ -14,6 +14,11 @@ public interface InlineRenderer<D extends InlineData> {
 
     public int charWidth(D data, Style style, int codepoint);
 
+    // Inline will try to handle outlines such as on signs and whatnot for you. return true here if you want to handle that yourself
+    default public boolean canBeTrustedWithOutlines() {
+        return false;
+    }
+
     /*
      * Text by default is 7px tall, and then 1px of shadow
      */
