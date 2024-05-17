@@ -37,7 +37,7 @@ public class InlineItemRenderer implements InlineRenderer<ItemInlineData>{
         }
         MatrixStack matrices = context.getMatrices();
         matrices.push();
-        matrices.scale(0.5f, 0.5f, 0);
+        matrices.scale(0.5f, 0.5f,0.5f);
         // context.drawItem(data.getStack(), 0, 0);
         // matrices.pop();
         ItemStack stack = data.getStack();
@@ -49,21 +49,20 @@ public class InlineItemRenderer implements InlineRenderer<ItemInlineData>{
         }
         BakedModel bakedModel = client.getItemRenderer().getModel(stack, world, null, 0);
         matrices.push();
-        matrices.translate(8, 8, 150 + (bakedModel.hasDepth() ? 0 : 0));
+        matrices.translate(8, 8, 0);
         RenderSystem.enableDepthTest();
         try {
-            boolean bl;
+            boolean flat = !bakedModel.isSideLit();
             matrices.multiplyPositionMatrix(new Matrix4f().scaling(1.0f, -1.0f, 1.0f));
-            matrices.scale(16.0f, 16.0f, 16.0f);
-            boolean bl2 = bl = !bakedModel.isSideLit();
-            if (bl) {
+            matrices.scale(16.0f, 16.0f, 1.0f);
+            if (flat) {
                 DiffuseLighting.disableGuiDepthLighting();
+            } else {
+                DiffuseLighting.enableGuiDepthLighting();
             }
-            RenderSystem.enableDepthTest();
-            RenderSystem.enableCull();
             client.getItemRenderer().renderItem(stack, ModelTransformationMode.GUI, false, matrices, context.getVertexConsumers(), trContext.light, OverlayTexture.DEFAULT_UV, bakedModel);
             context.draw();
-            if (bl) {
+            if (flat) {
                 DiffuseLighting.enableGuiDepthLighting();
             }
         } catch (Throwable throwable) {

@@ -28,6 +28,10 @@ public class TextureSprite extends Spritelike{
         this.textHeight = textHeight;
     }
 
+    public static TextureSprite fromPixels(Identifier id, int left, int top, int width, int height, int textWidth, int textHeight){
+        return new TextureSprite(id, left / (float)textWidth, top / (float)textHeight, (left + width) / (float)textWidth, (top + height) / (float)textHeight, textWidth, textHeight);
+    }
+
     public TextureSprite(Identifier id){
         this(id, 0, 0, 1, 1, 16, 16);
     }

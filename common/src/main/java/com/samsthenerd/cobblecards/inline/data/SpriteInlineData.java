@@ -26,7 +26,8 @@ public class SpriteInlineData implements InlineData{
         this.sprite = sprite;
     }
 
-    public IDSerializer<SpriteInlineData> getSerializer(){
+    @Override
+    public IDSerializer<? extends SpriteInlineData> getSerializer(){
         return Serializer.INSTANCE;
     }
 

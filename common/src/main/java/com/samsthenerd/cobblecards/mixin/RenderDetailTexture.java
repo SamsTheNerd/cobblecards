@@ -77,6 +77,10 @@ public class RenderDetailTexture {
 
             tess.draw();
 
+            RenderSystem.enableCull();
+            RenderSystem.enableDepthTest();
+
+
             matrices.pop();
         }
     }

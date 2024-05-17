@@ -11,9 +11,11 @@ import net.minecraft.text.Style;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.ColorHelper.Argb;
 
-public class SpriteInlineRenderer implements InlineRenderer<SpriteInlineData>{
+// this is generic-d weirdly so that other renderers can extend and use its render method while keeping their own data types
+// ultimately the generics don't matter all that much since it's all called based on trust that the renderer a data says it should use can actually use it
+public class SpriteInlineRenderer<T extends SpriteInlineData> implements InlineRenderer<T>{
 
-    public static final SpriteInlineRenderer INSTANCE = new SpriteInlineRenderer();
+    public static final SpriteInlineRenderer<SpriteInlineData> INSTANCE = new SpriteInlineRenderer<SpriteInlineData>();
 
     public Identifier getId(){
         return new Identifier(Inline.MOD_ID, "spritelike");

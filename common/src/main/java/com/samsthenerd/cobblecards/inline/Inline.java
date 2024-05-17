@@ -4,17 +4,21 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.UUID;
 import java.util.regex.MatchResult;
 
+import com.mojang.authlib.GameProfile;
 import com.samsthenerd.cobblecards.CobbleCards;
 import com.samsthenerd.cobblecards.inline.InlineMatchResult.DataMatch;
 import com.samsthenerd.cobblecards.inline.InlineMatchResult.TextMatch;
 import com.samsthenerd.cobblecards.inline.data.EntityInlineData;
 import com.samsthenerd.cobblecards.inline.data.ItemInlineData;
 import com.samsthenerd.cobblecards.inline.data.ModIconData;
+import com.samsthenerd.cobblecards.inline.data.PlayerHeadData;
 import com.samsthenerd.cobblecards.inline.matchers.RegexMatcher;
 import com.samsthenerd.cobblecards.inline.renderers.InlineEntityRenderer;
 import com.samsthenerd.cobblecards.inline.renderers.InlineItemRenderer;
+import com.samsthenerd.cobblecards.inline.renderers.PlayerHeadRenderer;
 import com.samsthenerd.cobblecards.inline.renderers.SpriteInlineRenderer;
 
 import dev.architectury.platform.Mod;
@@ -87,9 +91,21 @@ public class Inline {
             }
         }));
 
+        addMatcher(new Identifier(MOD_ID, "playerface"), new RegexMatcher.Simple("<face:([a-z:A-Z0-9\\/_-]+)>", (MatchResult mr) -> {
+            String playerNameOrUUID = mr.group(1);
+            GameProfile profile;
+            try{
+                profile = new GameProfile(UUID.fromString(playerNameOrUUID), null);
+            } catch (IllegalArgumentException e){
+                profile = new GameProfile(null, playerNameOrUUID);
+            }
+            return new DataMatch(new PlayerHeadData(profile));
+        }));
+
         addRenderer(InlineItemRenderer.INSTANCE);
         addRenderer(InlineEntityRenderer.INSTANCE);
         addRenderer(SpriteInlineRenderer.INSTANCE);
+        addRenderer(PlayerHeadRenderer.INSTANCE);
     }
 
     public static void addMatcher(Identifier id, InlineMatcher matcher){
